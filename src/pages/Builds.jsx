@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Overlay from "../components/Overlay";
 import MainContainer from "../components/MainContainer";
 import "./Builds.css";
+import BuildCards from "../components/BuildCard";
 
 function Builds() {
     return (
@@ -20,6 +21,20 @@ function Builds() {
                     <h1 className="builds-title">
                         Builds
                     </h1>
+
+                    {/* Só editar e alterar os nomes dos arquivos e subir os links corretos! */}
+                    <BuildCards
+                        titulo="A Lenda do Assassino (Poison)"
+                        linkPob="https://pobb.in/8SGeFHOzrGVr"
+                        ascendencia="Assassin"
+                    />
+
+                    {/* aqui podemos criar um segundo cartão facilmente e apenas alterar os DADOS */}
+                    <BuildCards
+                        titulo="Hellow mundo"
+                        linkPob="https://pobb.in/OutroLink"
+                        ascendencia="juggernaut"
+                    />
 
                 </MainContainer>
 
