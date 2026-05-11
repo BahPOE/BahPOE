@@ -1,0 +1,36 @@
+.home-cards {
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .home-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.home-title {
+
+    font-size: 50px;
+    color: #4da6ff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.home-card-link {
+    
+    width: 100%;
+    max-width: 255px;
+    text-decoration: none;
+    color: inherit;
+}

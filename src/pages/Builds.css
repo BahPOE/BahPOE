@@ -1,0 +1,49 @@
+.builds-page {
+  
+  background-image: url("/background/bgbuilds.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.builds-content {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.builds-title {
+
+  color: #4da6ff;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button {
+
+  color: #4da6ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+
+  color: #80c1ff;
+}
+
+@media (max-width: 768px) {
+
+  .builds-title {
+
+    font-size: 32px;
+  }
+
+}

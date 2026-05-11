@@ -1,0 +1,31 @@
+.mechanics-page {
+
+    background-image: url("/background/bgmechanics.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.mechanics-content {
+
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+
+    color: #4da6ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-button:hover {
+    
+    color: #80c1ff;
+}
