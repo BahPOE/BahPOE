@@ -1,0 +1,25 @@
+/* src/pages/BuildDetail.css */
+/* Tauma: Estilos da página de detalhe com suporte a scroll e centralização correta */
+
+.build-detail-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Tauma: garante que role se o conteúdo for grande */
+    background-image: url("/background/bgbuilds.png"); /* Usando o mesmo fundo das builds */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Tauma: respiro no topo e fundo */
+}
+
+.extra-info h3 {
+    margin-top: 0;
+    color: #4da6ff;
+}
+
+.extra-info p {
+    line-height: 1.6;
+}

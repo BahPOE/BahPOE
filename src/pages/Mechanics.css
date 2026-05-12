@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh; /* Tauma: mudado para min-height */
     width: 100%;
     position: relative;
 }
@@ -12,10 +12,11 @@
 .mechanics-content {
 
     position: relative;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px; /* Tauma: adicionado padding */
 }
 
 .back-button {

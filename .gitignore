@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Log do Antigravity
+plano_estudo_antigravity.txt
+instrucoes_antigravity.txt
