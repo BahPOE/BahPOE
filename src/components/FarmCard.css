@@ -38,18 +38,14 @@
 .farm-tags {
 
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
 }
 
 .farm-tags span {
 
-    background: rgba(77, 166, 255, 0.12);
-    border: 1px solid rgba(77, 166, 255, 0.25);
     padding: 6px 10px;
     border-radius: 8px;
     font-size: 14px;
-    color: #6bb6ff;
 }
 
 .farm-description {

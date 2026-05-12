@@ -30,9 +30,21 @@ function Farms() {
 
                         <FarmCard
                             title="Expedition"
-                            variant="Early"
-                            difficulty="Fácil"
-                            buildType="Builds de Clear"
+                            variant={
+                                <spam className="tag-early">
+                                    Early
+                                </spam>
+                            }
+                            difficulty={
+                                <spam className="tag-facil">
+                                    Fácil
+                                </spam>
+                            }
+                            buildType={
+                                <spam className="tag-clear">
+                                    Map Clear
+                                </spam>
+                            }
                             description="Farm focado em Artefatos."
                             atlasLink="https://poeplanner.com/a/6J-y"
                             scarabs={
@@ -44,9 +56,21 @@ function Farms() {
 
                         <FarmCard
                             title="Expedition"
-                            variant="Mid-Game"
-                            difficulty="Médio"
-                            buildType="Builds de Clear"
+                            variant={
+                                <spam className="tag-mid-game">
+                                    Mid-Game
+                                </spam>
+                            }
+                            difficulty={
+                                <spam className="tag-medio">
+                                    Médio
+                                </spam>
+                            }
+                            buildType={
+                                <spam className="tag-clear">
+                                    Map Clear
+                                </spam>
+                            }
                             description="Farm focado em Logbooks."
                             atlasLink="https://poeplanner.com/a/6J-1"
                             scarabs={
