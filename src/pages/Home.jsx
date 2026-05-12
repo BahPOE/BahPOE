@@ -38,22 +38,27 @@ function Home() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                height: "100vh",
+                minHeight: "100vh", // Tauma: trocado de height para minHeight
                 width: "100%",
                 position: "relative",
+                display: "flex", // Tauma: usando flex aqui também
+                flexDirection: "column",
+                alignItems: "center",
+                paddingBottom: "40px"
             }}
         >
 
             {/* OVERLAY */}
             <Overlay theme="arcano" />
 
-            {/* LOGO NO TOPO */}
+            {/* LOGO NO TOPO - Tauma: Tiramos o absolute para ele não ficar "flutuando" por cima de tudo */}
             <div
                 style={{
-                    position: "absolute",
-                    top: "20px",
-                    width: "100%",
+                    marginTop: "40px",
+                    marginBottom: "20px",
                     textAlign: "center",
+                    position: "relative", // Garante que fique acima do overlay
+                    zIndex: 1
                 }}
             >
                 <img
@@ -65,14 +70,16 @@ function Home() {
                 />
             </div>
 
-            {/* CONTEÚDO CENTRAL */}
+            {/* CONTEÚDO CENTRAL - Tauma: Agora ele faz parte do fluxo vertical */}
             <div
                 style={{
                     position: "relative",
-                    height: "100%",
+                    flex: 1,
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    width: "100%",
+                    zIndex: 1
                 }}
             >
                 <MainContainer>
