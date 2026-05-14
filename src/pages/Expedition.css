@@ -1,0 +1,44 @@
+.expedition-page {
+
+    background-image: url("/background/bgmechanics.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.expedition-content {
+
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.expedition-title {
+
+    color: #f5f5f5;
+    font-size: clamp(36px, 5vw, 52px);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.expedition-card {
+
+    background: rgba(20, 20, 20, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 30px;
+    backdrop-filter: blur(6px);
+}
+
+.expedition-card h2 {
+
+    color: #f5f5f5;
+    margin-bottom: 16px;
+}
+
+.expedition-card p {
+
+    color: rgba(245, 245, 245, 0.8);
+    line-height: 1.6;
+}

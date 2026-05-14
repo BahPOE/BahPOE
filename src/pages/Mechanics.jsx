@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Overlay from "../components/Overlay";
 import MainContainer from "../components/MainContainer";
 import "./Mechanics.css";
+import MechanicsCard from "../components/MechanicsCard";
+import expeditionImage from "../assets/mechanics/expedition/logo-expedition.jpg"
 
 function Mechanics() {
     return (
@@ -17,6 +19,15 @@ function Mechanics() {
                     </Link>
 
                     <h1>Mecânicas do Jogo</h1>
+
+                    <div className="mechanics-grid">
+                        <MechanicsCard
+                            title="Expedition"
+                            description="Artefatos, Remnants e Logbooks"
+                            image={expeditionImage}
+                            link="/mechanics/expedition"
+                        />
+                    </div>
 
                 </MainContainer>
 
