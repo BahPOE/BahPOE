@@ -42,3 +42,32 @@
     color: rgba(245, 245, 245, 0.8);
     line-height: 1.6;
 }
+
+.boss-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.boss-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.boss-info-card {
+
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.boss-info-card ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
