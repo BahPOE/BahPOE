@@ -202,471 +202,490 @@ function Expedition() {
 
                     <section className="expedition-section">
 
-                        <h2>Bosses da Expedition</h2>
+                        <div>
 
-                        <div className="boss-container">
+                            <h2>Bosses da Expedition</h2>
 
-                            <h3>Olroth</h3>
+                            <div className="boss-container">
 
-                            <p className="boss-description">
-                                Boss ligado ao Danning
-                            </p>
+                                <div className="boss-header">
 
-                            <div className="boss-grid">
+                                    <img
+                                        src=""
+                                        alt=""
+                                        className="boss-image"
+                                    />
 
-                                <div className="boss-info-card">
+                                    <div className="boss-header-info">
 
-                                    <h4>Status</h4>
+                                        <h3>Olroth</h3>
 
-                                    <ul>
+                                        <p className="boss-description">
+                                            Boss ligado ao Danning
+                                        </p>
 
-                                        <li>
-                                            <strong>Dano</strong> - Fogo e Fisico
-                                        </li>
-
-                                        <li>
-                                            <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                        </li>
-
-                                        <li>
-                                            <strong>Modificadores Fixos</strong>
-
-                                            <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
-
-                                            <p>Não tem Escudo de Energia(Energy Shield)</p>
-
-                                            <p>Não pode ser totalmente desacelerado</p>
-
-                                            <p>Imune a knockback</p>
-
-                                        </li>
-
-                                    </ul>
+                                    </div>
 
                                 </div>
 
-                                <div className="boss-info-card">
+                                <div className="boss-grid">
 
-                                    <h4>Arena</h4>
+                                    <div className="boss-info-card">
 
-                                    <ul>
+                                        <div className="card-header">
 
-                                        <li>
-                                            <strong>Chama Exterminadora:</strong> A chama gira pela arena disparando um laser que persegue o jogador.
-                                            Ela para durante a fase de invulnerabilidade.
-                                            De vez em quando, solta um feixe que deixa uma linha de fogo no chão por um tempo.
-                                        </li>
+                                            <h4>Status</h4>
 
-                                        <li>
-                                            <strong>Portais Rúnicos:</strong> Portais que invocam inimigos extras.
-                                            Aparece um em cada fase de invulnerabilidade e você precisa usar explosivos para detonar o portal e pará-los.
-                                        </li>
+                                        </div>
 
-                                        <li>
-                                            <strong>Estrelas de Cristal:</strong> Cristais que emitem um Righteous Fire(aura que causa dano de fogo contínuo) e Blind(cegueira) em quem estiver perto.
-                                            Surge um em cada fase de invulnerabilidade e também pode ser desativado com explosivos.
-                                        </li>
+                                        <ul>
 
-                                    </ul>
+                                            <li>
+                                                <strong>Dano</strong> - Fogo e Fisico
+                                            </li>
+
+                                            <li>
+                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                            </li>
+                                            <li>
+                                                <strong>Modificadores Fixos</strong>
+
+                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+
+                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
+
+                                                <p>Não pode ser totalmente desacelerado</p>
+
+                                                <p>Imune a knockback</p>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Arena</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                <strong>Chama Exterminadora:</strong> A chama gira pela arena disparando um laser que persegue o jogador.
+                                                Ela para durante a fase de invulnerabilidade.
+                                                De vez em quando, solta um feixe que deixa uma linha de fogo no chão por um tempo.
+                                            </li>
+
+                                            <li>
+                                                <strong>Portais Rúnicos:</strong> Portais que invocam inimigos extras.
+                                                Aparece um em cada fase de invulnerabilidade e você precisa usar explosivos para detonar o portal e pará-los.
+                                            </li>
+
+                                            <li>
+                                                <strong>Estrelas de Cristal:</strong> Cristais que emitem um Righteous Fire(aura que causa dano de fogo contínuo) e Blind(cegueira) em quem estiver perto.
+                                                Surge um em cada fase de invulnerabilidade e também pode ser desativado com explosivos.
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Habilidades</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                <strong>Investida:</strong> Ele avança rápido e manda um corte em semicírculo ou uma estocada. Se te pegar, você fica Maim(mutilado).
+                                            </li>
+
+                                            <li>
+                                                <strong>Arremesso de Espada:</strong> Ele lança a espada, ela gira em linha reta e volta para a mão dele, causando Bleeding(sangramento).
+                                            </li>
+
+                                            <li>
+                                                <strong>Cleave:</strong> Uma sequência de ataques convertidos em dano de fogo.
+                                            </li>
+
+                                            <li>
+                                                <strong>Gaiola de Luz:</strong> Um círculo com 6 feixes de luz que se fecha na sua posição e depois expande, causando dano em anel.
+                                                Ele avisa quando vai soltar esse ataque: Purify!(Purificar!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Pancada no Chão:</strong> Ele carrega um golpe e soca o chão com tudo, ignorando metade da sua chance de bloqueio e esquiva. Deixa uma área que aplica o debuff Enervation(Enervação) isso reduz a velocidade de movimento e impede a recuperação de vida e escudo.
+                                                Ele avisa quando vai soltar esse ataque: Wasteland!(Terra desolada!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Invulnerabilidade:</strong> Quando a vida dele chega a zero, ressuscita com vida cheia e fica invulnerável.
+                                                Ele só volta a tomar dano depois que você detonar um Portal Rúnico ou uma Estrela de Cristal.
+                                                Isso acontece duas vezes na luta.
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Drops Unicos</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                Olroth's Resolve
+                                            </li>
+
+                                            <li>
+                                                Cadigan's Crown
+                                            </li>
+
+                                            <li>
+                                                Vorana's March
+                                            </li>
+
+                                            <li>
+                                                Olroth's Charge
+                                            </li>
+
+                                            <p>Além disso, ao derrotar Olroth vai aparecer um Altar para adquirir ou trocar outra Bloodline para a Bloodline dele.</p>
+
+                                        </ul>
+
+                                    </div>
 
                                 </div>
 
-                                <div className="boss-info-card">
+                            </div>
 
-                                    <h4>Habilidades</h4>
+                            <div className="boss-container">
 
-                                    <ul>
+                                <h3>Medved</h3>
 
-                                        <li>
-                                            <strong>Investida:</strong> Ele avança rápido e manda um corte em semicírculo ou uma estocada. Se te pegar, você fica Maim(mutilado).
-                                        </li>
+                                <p className="boss-description">
+                                    Boss ligado a Gwennen.
+                                </p>
 
-                                        <li>
-                                            <strong>Arremesso de Espada:</strong> Ele lança a espada, ela gira em linha reta e volta para a mão dele, causando Bleeding(sangramento).
-                                        </li>
+                                <div className="boss-grid">
 
-                                        <li>
-                                            <strong>Cleave:</strong> Uma sequência de ataques convertidos em dano de fogo.
-                                        </li>
+                                    <div className="boss-info-card">
 
-                                        <li>
-                                            <strong>Gaiola de Luz:</strong> Um círculo com 6 feixes de luz que se fecha na sua posição e depois expande, causando dano em anel.
-                                            Ele avisa quando vai soltar esse ataque: Purify!(Purificar!)
-                                        </li>
+                                        <h4>Status</h4>
 
-                                        <li>
-                                            <strong>Pancada no Chão:</strong> Ele carrega um golpe e soca o chão com tudo, ignorando metade da sua chance de bloqueio e esquiva. Deixa uma área que aplica o debuff Enervation(Enervação) isso reduz a velocidade de movimento e impede a recuperação de vida e escudo.
-                                            Ele avisa quando vai soltar esse ataque: Wasteland!(Terra desolada!)
-                                        </li>
+                                        <ul>
 
-                                        <li>
-                                            <strong>Invulnerabilidade:</strong> Quando a vida dele chega a zero, ressuscita com vida cheia e fica invulnerável.
-                                            Ele só volta a tomar dano depois que você detonar um Portal Rúnico ou uma Estrela de Cristal.
-                                            Isso acontece duas vezes na luta.
-                                        </li>
+                                            <li>
+                                                <strong>Dano</strong> - Fisico
+                                            </li>
 
-                                    </ul>
+                                            <li>
+                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                            </li>
 
+                                            <li>
+                                                <strong>Modificadores Fixos</strong>
+
+                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+
+                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Arena</h4>
+
+                                        <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Habilidades</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                <strong>Salto Esmagador:</strong> Pula alto e cai com tudo no chão, causando dano em área no impacto.
+                                            </li>
+
+                                            <li>
+                                                <strong>Cleave:</strong> Um golpe com um dos machados, feito em um ângulo meio enviesado bem na sua frente.
+                                            </li>
+
+                                            <li>
+                                                <strong>Ataque Combo:</strong> Avança em linha reta dando um golpe com cada machado e termina atacando com as duas armas ao mesmo tempo.</li>
+
+                                            <li>
+                                                <strong>Arremesso de Rocha:</strong> Se atira para frente enquanto lança uma pedra em linha reta.
+                                            </li>
+
+                                            <li>
+                                                <strong>Invocar Cultista:</strong> Quando a vida dele chega em 75%, 50% e 25%, ele chama ajudantes que se conectam a ele (tether).
+                                                Ele avisa quando vai soltar esse ataque: Aid me!(Me ajudem!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Invocar Aranha:</strong> Invoca várias aranhas fraquinhas para te cercar.
+                                                Ele avisa quando vai soltar esse ataque: Swarm!(Enxame!)
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Drops Unicos</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                Elixir of the Unbroken Circle
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div className="boss-info-card">
+                            <div className="boss-container">
 
+                                <h3>Uhtred</h3>
 
-                                    <h4>Drops Unicos</h4>
+                                <p className="boss-description">
+                                    Boss ligado ao Rog.
+                                </p>
 
-                                    <ul>
+                                <div className="boss-grid">
 
-                                        <li>
-                                            Olroth's Resolve
-                                        </li>
+                                    <div className="boss-info-card">
 
-                                        <li>
-                                            Cadigan's Crown
-                                        </li>
+                                        <h4>Status</h4>
 
-                                        <li>
-                                            Vorana's March
-                                        </li>
+                                        <ul>
 
-                                        <li>
-                                            Olroth's Charge
-                                        </li>
+                                            <li>
+                                                <strong>Dano</strong> - Gelo
+                                            </li>
 
-                                        <p>Além disso, ao derrotar Olroth vai aparecer um Altar para adquirir ou trocar outra Bloodline para a Bloodline dele.</p>
+                                            <li>
+                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                            </li>
 
-                                    </ul>
+                                            <li>
+                                                <strong>Modificadores Fixos</strong>
+
+                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+
+                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
+
+                                                <p>Não pode ser totalmente desacelerado</p>
+
+                                                <p>Imune a knockback</p>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Arena</h4>
+
+                                        <p>
+                                            A arena tem um formato retangular bem amplo, com um grande espelho ao longo da parede nordeste.
+                                        </p>
+
+                                        <p>
+                                            O Uhtred quebra esse espelho para se esconder lá dentro e invocar inimigos (adds) durante as fases de transição.
+                                        </p>
+
+                                        <p>
+                                            Depois da primeira transição até o fim da luta, o espelho também começa a disparar vários raios lasers em direções aleatórias.
+                                        </p>
+
+                                        <p>
+                                            Esses lasers vão ficando cada vez mais largos conforme a vida do chefe diminui.
+                                        </p>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Habilidades</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                <strong>Lasers do Espelho:</strong>
+
+                                                Dispara várias fileiras de lasers pela arena, seja em linha reta ou na diagonal.
+                                                Eles continuam atirando depois da primeira fase de invocação e ficam mais largos a cada etapa.
+                                                Aplica o debuff Vislumbre do Infinito(Glimpse of Infinity) que reduz a sua velocidade de ação.
+                                            </li>
+
+                                            <li>
+                                                <strong>Feixe de Gelo Giratório:</strong>
+
+                                                Ele canaliza um raio negro e gira em círculo por mais ou menos 3 voltas e meia.
+                                                Também aplica o debuff Vislumbre do Infinito(Glimpse of Infinity).
+                                                Ele avisa quando vai soltar esse ataque: Sem escapatória!(No Escape!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Fogo Stygian:</strong>
+
+                                                Dispara projéteis azul-escuros que aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos) que reduz a sua resistência máxima a gelo.
+                                                Ele avisa quando vai soltar esse ataque: Inútil!(Futile!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Bola de Raio:</strong>
+
+                                                Dispara uma onda de pequenas esferas elétricas monocromáticas que também aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos).
+                                                Ele avisa quando vai soltar esse ataque: Renda-se! ou Insolente!(Give in! or Defiant Whelp!)
+                                            </li>
+
+                                            <li>
+                                                <strong>Estrelas Perseguidoras:</strong>
+
+                                                Invoca uma orb branca que fica perseguindo o jogador por até 10 segundos antes de estourar.
+                                                Quando explode, cria uma poça cheia de mãos negras no chão que dura um tempo e causa Resfriamento(Chill).
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div className="boss-info-card">
+
+                                        <h4>Drops Unicos</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                Starlight Chalice
+                                            </li>
+
+                                            <li>
+                                                Altered Perception
+                                            </li>
+
+                                        </ul>
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+                            <div className="boss-container">
 
-                        <div className="boss-container">
+                                <h3>Vorana</h3>
 
-                            <h3>Medved</h3>
+                                <p className="boss-description">
+                                    Boss ligada ao Tujen
+                                </p>
 
-                            <p className="boss-description">
-                                Boss ligado a Gwennen.
-                            </p>
+                                <div className="boss-grid">
 
-                            <div className="boss-grid">
+                                    <div className="boss-info-card">
 
-                                <div className="boss-info-card">
+                                        <h4>Status</h4>
 
-                                    <h4>Status</h4>
+                                        <ul>
 
-                                    <ul>
+                                            <li>
+                                                <strong>Dano</strong> - Fisico
+                                            </li>
 
-                                        <li>
-                                            <strong>Dano</strong> - Fisico
-                                        </li>
+                                            <li>
+                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                            </li>
 
-                                        <li>
-                                            <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                        </li>
+                                            <li>
+                                                <strong>Modificadores Fixos</strong>
 
-                                        <li>
-                                            <strong>Modificadores Fixos</strong>
+                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
 
-                                            <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
 
-                                            <p>Não tem Escudo de Energia(Energy Shield)</p>
+                                                <p>Não pode ser totalmente desacelerada</p>
 
-                                        </li>
+                                            </li>
 
-                                    </ul>
+                                        </ul>
 
-                                </div>
 
-                                <div className="boss-info-card">
 
-                                    <h4>Arena</h4>
+                                    </div>
 
-                                    <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
+                                    <div className="boss-info-card">
 
-                                </div>
+                                        <h4>Arena</h4>
 
-                                <div className="boss-info-card">
+                                        <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
 
-                                    <h4>Habilidades</h4>
+                                    </div>
 
-                                    <ul>
+                                    <div className="boss-info-card">
 
-                                        <li>
-                                            <strong>Salto Esmagador:</strong> Pula alto e cai com tudo no chão, causando dano em área no impacto.
-                                        </li>
+                                        <h4>Habilidades</h4>
 
-                                        <li>
-                                            <strong>Cleave:</strong> Um golpe com um dos machados, feito em um ângulo meio enviesado bem na sua frente.
-                                        </li>
+                                        <ul>
 
-                                        <li>
-                                            <strong>Ataque Combo:</strong> Avança em linha reta dando um golpe com cada machado e termina atacando com as duas armas ao mesmo tempo.</li>
+                                            <li>
+                                                <strong>A Ceifa Negra:</strong> Cria uma névoa escura que gira em torno do ponto onde a Vorana surge.
+                                                Essa névoa aplica debuffs que acumulam e causam dano ao longo do tempo.
+                                            </li>
 
-                                        <li>
-                                            <strong>Arremesso de Rocha:</strong> Se atira para frente enquanto lança uma pedra em linha reta.
-                                        </li>
+                                            <li>
+                                                <strong>Estrelas Orbitais:</strong> Esferas ficam girando pela arena e, de tempos em tempos, disparam projéteis na direção do jogador.
+                                                Se você passar por dentro de uma delas, ela vai cair e explodir após um curto atraso, causando dano em área.
+                                            </li>
 
-                                        <li>
-                                            <strong>Invocar Cultista:</strong> Quando a vida dele chega em 75%, 50% e 25%, ele chama ajudantes que se conectam a ele (tether).
-                                            Ele avisa quando vai soltar esse ataque: Aid me!(Me ajudem!)
-                                        </li>
+                                            <li>
+                                                <strong>Ciclone:</strong> Ela ataca continuamente ao seu redor enquanto avança em uma direção.
+                                                Ela avisa quando vai soltar esse ataque: Vento da Morte!(Death Wind!)
+                                            </li>
 
-                                        <li>
-                                            <strong>Invocar Aranha:</strong> Invoca várias aranhas fraquinhas para te cercar.
-                                            Ele avisa quando vai soltar esse ataque: Swarm!(Enxame!)
-                                        </li>
+                                            <li>
+                                                <strong>Laceração:</strong> Faz um golpe com as duas foices em formato de cruz e semicírculo bem na sua frente.
+                                                Ela avisa quando vai soltar esse ataque: Vou te derrubar!(I shall cut you down!)
+                                            </li>
 
-                                    </ul>
+                                            <li>
+                                                <strong>Investida com Corte:</strong> Avança rapidamente e corta com as foices.
+                                            </li>
 
-                                </div>
+                                            <li>
+                                                <strong>Emboscada:</strong> Ela se esconde na névoa e fica imune a dano. Ela continua visível no minimapa, e também dá para ver um leve rastro de vento se movendo em direção ao centro da arena, indicando de onde ela vai reaparecer.
+                                            </li>
 
-                                <div className="boss-info-card">
+                                        </ul>
 
-                                    <h4>Drops Unicos</h4>
+                                    </div>
 
-                                    <ul>
+                                    <div className="boss-info-card">
 
-                                        <li>
-                                            Elixir of the Unbroken Circle
-                                        </li>
+                                        <h4>Drops Unicos</h4>
 
-                                    </ul>
+                                        <ul>
 
-                                </div>
-                            </div>
-                        </div>
+                                            <li>
+                                                Vorana's Preparation
+                                            </li>
 
-                        <div className="boss-container">
+                                        </ul>
 
-                            <h3>Uhtred</h3>
-
-                            <p className="boss-description">
-                                Boss ligado ao Rog.
-                            </p>
-
-                            <div className="boss-grid">
-
-                                <div className="boss-info-card">
-
-                                    <h4>Status</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            <strong>Dano</strong> - Gelo
-                                        </li>
-
-                                        <li>
-                                            <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                        </li>
-
-                                        <li>
-                                            <strong>Modificadores Fixos</strong>
-
-                                            <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
-
-                                            <p>Não tem Escudo de Energia(Energy Shield)</p>
-
-                                            <p>Não pode ser totalmente desacelerado</p>
-
-                                            <p>Imune a knockback</p>
-
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Arena</h4>
-
-                                    <p>
-                                        A arena tem um formato retangular bem amplo, com um grande espelho ao longo da parede nordeste.
-                                    </p>
-
-                                    <p>
-                                        O Uhtred quebra esse espelho para se esconder lá dentro e invocar inimigos (adds) durante as fases de transição.
-                                    </p>
-
-                                    <p>
-                                        Depois da primeira transição até o fim da luta, o espelho também começa a disparar vários raios lasers em direções aleatórias.
-                                    </p>
-
-                                    <p>
-                                        Esses lasers vão ficando cada vez mais largos conforme a vida do chefe diminui.
-                                    </p>
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Habilidades</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            <strong>Lasers do Espelho:</strong>
-
-                                            Dispara várias fileiras de lasers pela arena, seja em linha reta ou na diagonal.
-                                            Eles continuam atirando depois da primeira fase de invocação e ficam mais largos a cada etapa.
-                                            Aplica o debuff Vislumbre do Infinito(Glimpse of Infinity) que reduz a sua velocidade de ação.
-                                        </li>
-
-                                        <li>
-                                            <strong>Feixe de Gelo Giratório:</strong>
-
-                                            Ele canaliza um raio negro e gira em círculo por mais ou menos 3 voltas e meia.
-                                            Também aplica o debuff Vislumbre do Infinito(Glimpse of Infinity).
-                                            Ele avisa quando vai soltar esse ataque: Sem escapatória!(No Escape!)
-                                        </li>
-
-                                        <li>
-                                            <strong>Fogo Stygian:</strong>
-
-                                            Dispara projéteis azul-escuros que aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos) que reduz a sua resistência máxima a gelo.
-                                            Ele avisa quando vai soltar esse ataque: Inútil!(Futile!)
-                                        </li>
-
-                                        <li>
-                                            <strong>Bola de Raio:</strong>
-
-                                            Dispara uma onda de pequenas esferas elétricas monocromáticas que também aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos).
-                                            Ele avisa quando vai soltar esse ataque: Renda-se! ou Insolente!(Give in! or Defiant Whelp!)
-                                        </li>
-
-                                        <li>
-                                            <strong>Estrelas Perseguidoras:</strong>
-
-                                            Invoca uma orb branca que fica perseguindo o jogador por até 10 segundos antes de estourar.
-                                            Quando explode, cria uma poça cheia de mãos negras no chão que dura um tempo e causa Resfriamento(Chill).
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Drops Unicos</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            Starlight Chalice
-                                        </li>
-
-                                        <li>
-                                            Altered Perception
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="boss-container">
-
-                            <h3>Vorana</h3>
-
-                            <p className="boss-description">
-                                Boss ligada ao Tujen
-                            </p>
-
-                            <div className="boss-grid">
-
-                                <div className="boss-info-card">
-
-                                    <h4>Status</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            <strong>Dano</strong> - Fisico
-                                        </li>
-
-                                        <li>
-                                            <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                        </li>
-
-                                        <li>
-                                            <strong>Modificadores Fixos</strong>
-
-                                            <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
-
-                                            <p>Não tem Escudo de Energia(Energy Shield)</p>
-
-                                            <p>Não pode ser totalmente desacelerada</p>
-
-                                        </li>
-
-                                    </ul>
-
-
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Arena</h4>
-
-                                    <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Habilidades</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            <strong>A Ceifa Negra:</strong> Cria uma névoa escura que gira em torno do ponto onde a Vorana surge.
-                                            Essa névoa aplica debuffs que acumulam e causam dano ao longo do tempo.
-                                        </li>
-
-                                        <li>
-                                            <strong>Estrelas Orbitais:</strong> Esferas ficam girando pela arena e, de tempos em tempos, disparam projéteis na direção do jogador.
-                                            Se você passar por dentro de uma delas, ela vai cair e explodir após um curto atraso, causando dano em área.
-                                        </li>
-
-                                        <li>
-                                            <strong>Ciclone:</strong> Ela ataca continuamente ao seu redor enquanto avança em uma direção.
-                                            Ela avisa quando vai soltar esse ataque: Vento da Morte!(Death Wind!)
-                                        </li>
-
-                                        <li>
-                                            <strong>Laceração:</strong> Faz um golpe com as duas foices em formato de cruz e semicírculo bem na sua frente.
-                                            Ela avisa quando vai soltar esse ataque: Vou te derrubar!(I shall cut you down!)
-                                        </li>
-
-                                        <li>
-                                            <strong>Investida com Corte:</strong> Avança rapidamente e corta com as foices.
-                                        </li>
-
-                                        <li>
-                                            <strong>Emboscada:</strong> Ela se esconde na névoa e fica imune a dano. Ela continua visível no minimapa, e também dá para ver um leve rastro de vento se movendo em direção ao centro da arena, indicando de onde ela vai reaparecer.
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                                <div className="boss-info-card">
-
-                                    <h4>Drops Unicos</h4>
-
-                                    <ul>
-
-                                        <li>
-                                            Vorana's Preparation
-                                        </li>
-
-                                    </ul>
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -676,7 +695,7 @@ function Expedition() {
 
             </div>
 
-        </div>
+        </div >
     );
 }
 
