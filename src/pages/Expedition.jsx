@@ -2,10 +2,45 @@ import { Link } from "react-router-dom";
 
 import Overlay from "../components/Overlay";
 import MainContainer from "../components/MainContainer";
+import NpcCard from "../components/expedition/NpcCard";
+import LoopCard from "../components/expedition/LoopCard";
 
 import "./Expedition.css";
 
 function Expedition() {
+
+    const npcs = [
+        {
+            title: "Danning ( Knights of the Sun )",
+            description: "Oferece logbooks,artefatos e moedas de refresh dos outros companheiros de Expedição"
+        },
+
+        {
+            title: "Gwennen (Druids of the Broken Circle)",
+            description: "Te permite comprar itens não identificados sabendo apenas a classe dele"
+        },
+
+        {
+            title: "Rog (Order of the Chalice)",
+            description: "É possível realizar diversos crafts em algum item selecionado da loja"
+        },
+
+        {
+            title: "Tujen (Black Scythe Mercenaries)",
+            description: "Trabalha com Currency e Fragmentos"
+        },
+
+    ];
+
+    const expeditionLoop = [
+
+        "Encontre o evento",
+        "Posicione as bombas",
+        "Detone os explosivos",
+        "Elimine os inimigos",
+        "Abra os baús"
+
+    ];
 
     return (
 
@@ -66,42 +101,15 @@ function Expedition() {
 
                         <div className="npc-grid">
 
-                            <div className="npc-card">
+                            {npcs.map((npc) => (
 
-                                <h3>Danning ( Knights of the Sun )</h3>
+                                <NpcCard
+                                    key={npc.title}
+                                    title={npc.title}
+                                    description={npc.description}
+                                />
 
-                                <p>
-                                    Oferece logbooks, artefatos e moedas de refresh dos outros companheiros de Expedição
-                                </p>
-                            </div>
-
-                            <div className="npc-card">
-
-                                <h3>Gwennen (Druids of the Broken Circle)</h3>
-
-                                <p>
-                                    Gwennen (Druids of the Broken Circle) - Te permite comprar itens não identificados sabendo apenas a classe dele sendo a raridade desconhecida. Exemplo: Classe ~ Leather Belt ~ Headhunter
-                                </p>
-
-                            </div>
-
-                            <div className="npc-card">
-
-                                <h3>Rog (Order of the Chalice)</h3>
-
-                                <p>
-                                    É possível realizar diversos crafts em algum item selecionado da loja
-                                </p>
-                            </div>
-
-                            <div className="npc-card">
-
-                                <h3>Tujen (Black Scythe Mercenaries)</h3>
-
-                                <p>
-                                    Trabalha com Currency e Fragmentos
-                                </p>
-                            </div>
+                            ))}
 
                         </div>
 
@@ -109,25 +117,13 @@ function Expedition() {
 
                         <div className="loop-grid">
 
-                            <div className="loop-card">
-                                Encontre o evento
-                            </div>
+                            {expeditionLoop.map((step) => (
 
-                            <div className="loop-card">
-                                Posicione as bombas
-                            </div>
-
-                            <div className="loop-card">
-                                Detone os explosivos
-                            </div>
-
-                            <div className="loop-card">
-                                Elimine os inimigos
-                            </div>
-
-                            <div className="loop-card">
-                                Abra os baús
-                            </div>
+                                <LoopCard
+                                    key={step}
+                                    text={step}
+                                />
+                            ))}
 
                         </div>
 
