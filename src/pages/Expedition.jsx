@@ -4,43 +4,12 @@ import Overlay from "../components/Overlay";
 import MainContainer from "../components/MainContainer";
 import NpcCard from "../components/expedition/NpcCard";
 import LoopCard from "../components/expedition/LoopCard";
+import InfoCard from "../components/expedition/InfoCard";
+import { npcs, expeditionLoop } from "../data/expeditionData";
 
 import "./Expedition.css";
 
 function Expedition() {
-
-    const npcs = [
-        {
-            title: "Danning ( Knights of the Sun )",
-            description: "Oferece logbooks,artefatos e moedas de refresh dos outros companheiros de Expedição"
-        },
-
-        {
-            title: "Gwennen (Druids of the Broken Circle)",
-            description: "Te permite comprar itens não identificados sabendo apenas a classe dele"
-        },
-
-        {
-            title: "Rog (Order of the Chalice)",
-            description: "É possível realizar diversos crafts em algum item selecionado da loja"
-        },
-
-        {
-            title: "Tujen (Black Scythe Mercenaries)",
-            description: "Trabalha com Currency e Fragmentos"
-        },
-
-    ];
-
-    const expeditionLoop = [
-
-        "Encontre o evento",
-        "Posicione as bombas",
-        "Detone os explosivos",
-        "Elimine os inimigos",
-        "Abra os baús"
-
-    ];
 
     return (
 
@@ -141,17 +110,17 @@ function Expedition() {
 
                         <h2>Logbook's</h2>
 
-                        <div className="logbook-card">
+                        <InfoCard className="logbook-card">
                             Além dos encontros nos mapas, também existe a versão dedicada desse evento, o chamado Logbook.
-                        </div>
+                        </InfoCard>
 
-                        <div className="logbook-card">
+                        <InfoCard className="logbook-card">
                             Nele você vai precisar ir até o Danning, escolher a opção de abrir o Logbook e então escolher para qual area você vai partir, chegando lá o mapa inteiro vai ser somente sobre Expedition, o número de bombas a sua disposição vai ser maior que o normal já que o mapa todo é sobre exploração, aqui os monstros no final do evento vão ser bem fortes então tome cuidado.
-                        </div>
+                        </InfoCard>
 
-                        <div className="logbook-card">
+                        <InfoCard className="logbook-card">
                             Dentro dos Logbooks temos algumas areas especiais, como barreiras físicas que precisam ser explodidas por uma bomba para lhe dar acesso, cavernas subterrâneas, arenas de boss e buffs, tudo que envolve expedition precisa passar pela area de explosão, esse é o trigger da mecânica.
-                        </div>
+                        </InfoCard>
 
                     </section>
 
@@ -161,17 +130,17 @@ function Expedition() {
 
                         <h2>Diferença entre os eventos</h2>
 
-                        <div className="event-card">
+                        <InfoCard className="event-card">
                             Ambos os eventos são excelentes porém cada um tem foco diferente
-                        </div>
+                        </InfoCard>
 
-                        <div className="event-card">
+                        <InfoCard className="event-card">
                             Encontros nos mapas normais do Atlas são mais voltados para artefatos e drop de logbooks, enquanto isso os logbook's também dropam muitos artefatos porém o foco maior de drop aqui são as moedas de roletar das lojas, além do bonus que é enfrentar o boss daquele Grupo
-                        </div>
+                        </InfoCard>
 
-                        <div className="event-card">
+                        <InfoCard className="event-card">
                             Vale avisar também que dentro de um logbook você não pode dropar outro logbook
-                        </div>
+                        </InfoCard>
 
                     </section>
 
@@ -181,28 +150,28 @@ function Expedition() {
 
                         <h2>Agora vamos falar sobre os tipos de inimigos que temos nessa mecânica</h2>
 
-                        <div className="enemy-card">
+                        <InfoCard className="enemy-card">
                             Caveiras pequenas - Monstros normais com os modificadores do evento
                             Caveiras Maiores - Runic Monsters, esses dropam Artefatos, Itens para dar Refresh na loja e Logbook's
                             Baús - A bandeira indica qual o tipo de baú que vai aparecer, a cor da bandeira indica o valor do seu conteúdo sendo Branca - Menor  Amarela - Media  Vermelha - Grande
-                        </div>
+                        </InfoCard>
 
-                        <div className="enemy-card">
+                        <InfoCard className="enemy-card">
                             Essas três categorias são extremamente importantes para melhorar a sua eficiência e direcionamento ao posicionar as bombas, pois existem modificadores dedicados a algo especifico. Exemplo: Runic Monsters tem 40% a mais de quantity
                             Lembrando que essa é uma mecânica de herança, para se ter um melhor resultado imagine ter 3 modificadores desses na sua linha de detonação, isso significa um aumento bonus de 120% na quantity de drop dos monstros Rúnicos, ou seja, mais artefatos, mais itens para dar refresh na loja e mais drops de logbook's
-                        </div>
+                        </InfoCard>
 
-                        <div className="enemy-card">
+                        <InfoCard className="enemy-card">
                             Porém nem tudo é positivo, quanto mais recompensas mais difícil o conteúdo fica, e é bem fácil "brickar" um mapa pegando modificadores que deixam os monstros imortais
 
                             * Imunidade a algum tipo de dano
                             * Acumular chance de block e deixar os monstros com 100%
                             * Stackar Regen e deixar eles imortais pois recuperam vida mais rápido do que você tira
-                        </div>
+                        </InfoCard>
 
-                        <div className="enemy-card">
+                        <InfoCard className="enemy-card">
                             Então antes de colocar as bombas pensando somente no positivo, tenha em mente quais modificadores negativos você já pegou e quais a sua build faz, uma build que se baseia em leech não pode pegar um modificador que impede os monstros de serem leechados e assim por diante.
-                        </div>
+                        </InfoCard>
 
                         <h2>Além dos monstros padrões que aparecem no evento, temos 4 Boss que são encontrados somente em Logbook's e são possíveis de serem encontrados 1 a cada 5 areas.
                         </h2>
