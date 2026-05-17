@@ -9,6 +9,7 @@ function MainContainer({ children }) {
         backdropFilter: "blur(6px)",
         maxWidth: "900px",
         width: "90%",
+        margin: "0 auto",
       }}
     >
       {children}

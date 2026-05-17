@@ -6,6 +6,17 @@ import NpcCard from "../components/expedition/NpcCard";
 import LoopCard from "../components/expedition/LoopCard";
 import InfoCard from "../components/expedition/InfoCard";
 import { npcs, expeditionLoop } from "../data/expeditionData";
+import arenaIcon from "../assets/icons/boss-icons/arena-icon.png";
+import dropsIcon from "../assets/icons/boss-icons/drops-icon.png";
+import shieldIcon from "../assets/icons/boss-icons/shield-icon.png";
+import skillsIcon from "../assets/icons/boss-icons/skills-icon.png";
+import starIcon from "../assets/icons/boss-icons/star-icon.png";
+import statusIcon from "../assets/icons/boss-icons/status-icon.png";
+import swordIcon from "../assets/icons/boss-icons/sword-icon.png";
+import medvedIcon from "../assets/icons/boss-icons/expedition/Medved.png";
+import olrothIcon from "../assets/icons/boss-icons/expedition/Olroth.png";
+import uhtredIcon from "../assets/icons/boss-icons/expedition/Uhtred.png";
+import voranaIcon from "../assets/icons/boss-icons/expedition/Vorana.png";
 
 import "./Expedition.css";
 
@@ -452,8 +463,8 @@ function Expedition() {
                                 <div className="boss-header">
 
                                     <img
-                                        src=""
-                                        alt=""
+                                        src={olrothIcon}
+                                        alt="Olroth"
                                         className="boss-image"
                                     />
 
@@ -477,7 +488,17 @@ function Expedition() {
 
                                             <div className="card-header">
 
-                                                <h4>Status</h4>
+                                                <div className="card-title">
+
+                                                    <img
+                                                        src={statusIcon}
+                                                        alt="Status"
+                                                        className="card-title-icon"
+                                                    />
+
+                                                    <h4>Status</h4>
+
+                                                </div>
 
                                             </div>
 
@@ -512,7 +533,17 @@ function Expedition() {
 
                                             <div className="card-header">
 
-                                                <h4>Drops Unicos</h4>
+                                                <div className="card-title">
+
+                                                    <img
+                                                        src={dropsIcon}
+                                                        alt="Drops Unicos"
+                                                        className="card-title-icon"
+                                                    />
+
+                                                    <h4>Drops Unicos</h4>
+
+                                                </div>
 
                                             </div>
 
@@ -546,7 +577,17 @@ function Expedition() {
 
                                     <div className="boss-info-card">
 
-                                        <h4>Arena</h4>
+                                        <div className="card-title">
+
+                                            <img
+                                                src={arenaIcon}
+                                                alt="Arena"
+                                                className="card-title-icon"
+                                            />
+
+                                            <h4>Arena</h4>
+
+                                        </div>
 
                                         <ul>
 
@@ -572,7 +613,17 @@ function Expedition() {
 
                                     <div className="boss-info-card boss-skills">
 
-                                        <h4>Habilidades</h4>
+                                        <div className="card-title">
+
+                                            <img
+                                                src={skillsIcon}
+                                                alt="Habilidades"
+                                                className="card-title-icon"
+                                            />
+
+                                            <h4>Habilidades</h4>
+
+                                        </div>
 
                                         <ul>
 
@@ -617,8 +668,8 @@ function Expedition() {
                                 <div className="boss-header">
 
                                     <img
-                                        src=""
-                                        alt=""
+                                        src={medvedIcon}
+                                        alt="Medved"
                                         className="boss-image"
                                     />
 
@@ -641,7 +692,17 @@ function Expedition() {
 
                                             <div className="card-header">
 
-                                                <h4>Status</h4>
+                                                <div className="card-title">
+
+                                                    <img
+                                                        src={statusIcon}
+                                                        alt="Status"
+                                                        className="card-title-icon"
+                                                    />
+
+                                                    <h4>Status</h4>
+
+                                                </div>
 
                                             </div>
 
@@ -671,7 +732,17 @@ function Expedition() {
 
                                             <div className="card-header">
 
-                                                <h4>Drops Unicos</h4>
+                                                <div className="card-title">
+
+                                                    <img
+                                                        src={dropsIcon}
+                                                        alt="Drops Unicos"
+                                                        className="card-title-icon"
+                                                    />
+
+                                                    <h4>Drops Unicos</h4>
+
+                                                </div>
 
                                             </div>
 
@@ -687,7 +758,17 @@ function Expedition() {
 
                                     <div className="boss-info-card">
 
-                                        <h4>Arena</h4>
+                                        <div className="card-title">
+
+                                            <img
+                                                src={arenaIcon}
+                                                alt="Arena"
+                                                className="card-title-icon"
+                                            />
+
+                                            <h4>Arena</h4>
+
+                                        </div>
 
                                         <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
 
@@ -695,7 +776,17 @@ function Expedition() {
 
                                     <div className="boss-info-card boss-skills">
 
-                                        <h4>Habilidades</h4>
+                                        <div className="card-title">
+
+                                            <img
+                                                src={skillsIcon}
+                                                alt="Habilidades"
+                                                className="card-title-icon"
+                                            />
+
+                                            <h4>Habilidades</h4>
+
+                                        </div>
 
                                         <ul>
 
@@ -736,8 +827,8 @@ function Expedition() {
                             <div className="boss-header">
 
                                 <img
-                                    src=""
-                                    alt=""
+                                    src={uhtredIcon}
+                                    alt="Uhtred"
                                     className="boss-image"
                                 />
 
@@ -760,7 +851,17 @@ function Expedition() {
 
                                         <div className="card-header">
 
-                                            <h4>Status</h4>
+                                            <div className="card-title">
+
+                                                <img
+                                                    src={statusIcon}
+                                                    alt="Status"
+                                                    className="card-title-icon"
+                                                />
+
+                                                <h4>Status</h4>
+
+                                            </div>
 
                                         </div>
 
@@ -794,7 +895,19 @@ function Expedition() {
                                     <div className="card-section">
 
                                         <div className="card-header">
-                                            <h4>Drops Unicos</h4>
+
+                                            <div className="card-title">
+
+                                                <img
+                                                    src={dropsIcon}
+                                                    alt="Drops Unicos"
+                                                    className="card-title-icon"
+                                                />
+
+                                                <h4>Drops Unicos</h4>
+
+                                            </div>
+
                                         </div>
 
                                         <ul>
@@ -814,7 +927,17 @@ function Expedition() {
 
                                 <div className="boss-info-card">
 
-                                    <h4>Arena</h4>
+                                    <div className="card-title">
+
+                                        <img
+                                            src={arenaIcon}
+                                            alt="Arena"
+                                            className="card-title-icon"
+                                        />
+
+                                        <h4>Arena</h4>
+
+                                    </div>
 
                                     <ul>
 
@@ -840,7 +963,17 @@ function Expedition() {
 
                                 <div className="boss-info-card boss-skills">
 
-                                    <h4>Habilidades</h4>
+                                    <div className="card-title">
+
+                                        <img
+                                            src={skillsIcon}
+                                            alt="Habilidades"
+                                            className="card-title-icon"
+                                        />
+
+                                        <h4>Habilidades</h4>
+
+                                    </div>
 
                                     <ul>
 
@@ -893,8 +1026,8 @@ function Expedition() {
                             <div className="boss-header">
 
                                 <img
-                                    src=""
-                                    alt=""
+                                    src={voranaIcon}
+                                    alt="Vorana"
                                     className="boss-image"
                                 />
 
@@ -918,8 +1051,17 @@ function Expedition() {
 
                                         <div className="card-header">
 
-                                            <h4>Status</h4>
+                                            <div className="card-title">
 
+                                                <img
+                                                    src={statusIcon}
+                                                    alt="Status"
+                                                    className="card-title-icon"
+                                                />
+
+                                                <h4>Status</h4>
+
+                                            </div>
                                         </div>
 
                                         <ul>
@@ -949,7 +1091,19 @@ function Expedition() {
                                     <div className="card-section">
 
                                         <div className="card-header">
-                                            <h4>Drops Unicos</h4>
+
+                                            <div className="card-title">
+
+                                                <img
+                                                    src={dropsIcon}
+                                                    alt="Drops Unicos"
+                                                    className="card-title-icon"
+                                                />
+
+                                                <h4>Drops Unicos</h4>
+
+                                            </div>
+
                                         </div>
 
                                         <ul>
@@ -965,7 +1119,17 @@ function Expedition() {
 
                                 <div className="boss-info-card">
 
-                                    <h4>Arena</h4>
+                                    <div className="card-title">
+
+                                        <img
+                                            src={arenaIcon}
+                                            alt="Arena"
+                                            className="card-title-icon"
+                                        />
+
+                                        <h4>Arena</h4>
+
+                                    </div>
 
                                     <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
 
@@ -973,7 +1137,17 @@ function Expedition() {
 
                                 <div className="boss-info-card boss-skills">
 
-                                    <h4>Habilidades</h4>
+                                    <div className="card-title">
+
+                                        <img
+                                            src={skillsIcon}
+                                            alt="Habilidades"
+                                            className="card-title-icon"
+                                        />
+
+                                        <h4>Habilidades</h4>
+
+                                    </div>
 
                                     <ul>
 
