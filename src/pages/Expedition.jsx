@@ -232,35 +232,74 @@ function Expedition() {
 
                                     <div className="boss-info-card">
 
-                                        <div className="card-header">
+                                        <div className="card-section">
 
-                                            <h4>Status</h4>
+                                            <div className="card-header">
+
+                                                <h4>Status</h4>
+
+                                            </div>
+
+                                            <ul>
+
+                                                <li>
+                                                    <strong>Dano</strong> - Fogo e Fisico
+                                                </li>
+
+                                                <li>
+                                                    <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                                </li>
+
+                                                <li>
+                                                    <strong>Modificadores Fixos</strong>
+
+                                                    <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+
+                                                    <p>Não tem Escudo de Energia(Energy Shield)</p>
+
+                                                    <p>Não pode ser totalmente desacelerado</p>
+
+                                                    <p>Imune a knockback</p>
+
+                                                </li>
+
+                                            </ul>
 
                                         </div>
 
-                                        <ul>
+                                        <div className="card-section">
 
-                                            <li>
-                                                <strong>Dano</strong> - Fogo e Fisico
-                                            </li>
+                                            <div className="card-header">
 
-                                            <li>
-                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                            </li>
-                                            <li>
-                                                <strong>Modificadores Fixos</strong>
+                                                <h4>Drops Unicos</h4>
 
-                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+                                            </div>
 
-                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
+                                            <ul>
 
-                                                <p>Não pode ser totalmente desacelerado</p>
+                                                <li>
+                                                    Olroth's Resolve
+                                                </li>
 
-                                                <p>Imune a knockback</p>
+                                                <li>
+                                                    Cadigan's Crown
+                                                </li>
 
-                                            </li>
+                                                <li>
+                                                    Vorana's March
+                                                </li>
 
-                                        </ul>
+                                                <li>
+                                                    Olroth's Charge
+                                                </li>
+
+                                            </ul>
+
+                                            <p>
+                                                Além disso, ao derrotar Olroth vai aparecer um Altar para adquirir ou trocar outra Bloodline para a Bloodline dele.
+                                            </p>
+
+                                        </div>
 
                                     </div>
 
@@ -290,7 +329,7 @@ function Expedition() {
 
                                     </div>
 
-                                    <div className="boss-info-card">
+                                    <div className="boss-info-card boss-skills">
 
                                         <h4>Habilidades</h4>
 
@@ -328,73 +367,81 @@ function Expedition() {
 
                                     </div>
 
-                                    <div className="boss-info-card">
-
-                                        <h4>Drops Unicos</h4>
-
-                                        <ul>
-
-                                            <li>
-                                                Olroth's Resolve
-                                            </li>
-
-                                            <li>
-                                                Cadigan's Crown
-                                            </li>
-
-                                            <li>
-                                                Vorana's March
-                                            </li>
-
-                                            <li>
-                                                Olroth's Charge
-                                            </li>
-
-                                            <p>Além disso, ao derrotar Olroth vai aparecer um Altar para adquirir ou trocar outra Bloodline para a Bloodline dele.</p>
-
-                                        </ul>
-
-                                    </div>
-
                                 </div>
 
                             </div>
 
                             <div className="boss-container">
 
-                                <h3>Medved</h3>
+                                <div className="boss-header">
 
-                                <p className="boss-description">
-                                    Boss ligado a Gwennen.
-                                </p>
+                                    <img
+                                        src=""
+                                        alt=""
+                                        className="boss-image"
+                                    />
+
+                                    <div className="boss-header-info">
+
+                                        <h3>Medved</h3>
+
+                                        <p className="boss-description">
+                                            Boss ligado a Gwennen.
+                                        </p>
+
+                                    </div>
+                                </div>
 
                                 <div className="boss-grid">
 
                                     <div className="boss-info-card">
 
-                                        <h4>Status</h4>
+                                        <div className="card-section">
 
-                                        <ul>
+                                            <div className="card-header">
 
-                                            <li>
-                                                <strong>Dano</strong> - Fisico
-                                            </li>
+                                                <h4>Status</h4>
 
-                                            <li>
-                                                <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
-                                            </li>
+                                            </div>
 
-                                            <li>
-                                                <strong>Modificadores Fixos</strong>
+                                            <ul>
 
-                                                <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
+                                                <li>
+                                                    <strong>Dano</strong> - Fisico
+                                                </li>
 
-                                                <p>Não tem Escudo de Energia(Energy Shield)</p>
+                                                <li>
+                                                    <strong>Resistencias</strong> - 50% de todas elementais e 30% de chaos
+                                                </li>
 
-                                            </li>
+                                                <li>
+                                                    <strong>Modificadores Fixos</strong>
 
-                                        </ul>
+                                                    <p>Ganha Ward base igual a 5% de sua Vida Máxima(Maximum Life)</p>
 
+                                                    <p>Não tem Escudo de Energia(Energy Shield)</p>
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div className="card-section">
+
+                                            <div className="card-header">
+
+                                                <h4>Drops Unicos</h4>
+
+                                            </div>
+
+                                            <ul>
+
+                                                <li>
+                                                    Elixir of the Unbroken Circle
+                                                </li>
+
+                                            </ul>
+                                        </div>
                                     </div>
 
                                     <div className="boss-info-card">
@@ -405,7 +452,7 @@ function Expedition() {
 
                                     </div>
 
-                                    <div className="boss-info-card">
+                                    <div className="boss-info-card boss-skills">
 
                                         <h4>Habilidades</h4>
 
@@ -439,36 +486,42 @@ function Expedition() {
                                         </ul>
 
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <div className="boss-info-card">
+                        <div className="boss-container">
 
-                                        <h4>Drops Unicos</h4>
+                            <div className="boss-header">
 
-                                        <ul>
+                                <img
+                                    src=""
+                                    alt=""
+                                    className="boss-image"
+                                />
 
-                                            <li>
-                                                Elixir of the Unbroken Circle
-                                            </li>
+                                <div className="boss-header-info">
 
-                                        </ul>
+                                    <h3>Uhtred</h3>
 
-                                    </div>
+                                    <p className="boss-description">
+                                        Boss ligado ao Rog.
+                                    </p>
+
                                 </div>
                             </div>
 
-                            <div className="boss-container">
+                            <div className="boss-grid">
 
-                                <h3>Uhtred</h3>
+                                <div className="boss-info-card">
 
-                                <p className="boss-description">
-                                    Boss ligado ao Rog.
-                                </p>
+                                    <div className="card-section">
 
-                                <div className="boss-grid">
+                                        <div className="card-header">
 
-                                    <div className="boss-info-card">
+                                            <h4>Status</h4>
 
-                                        <h4>Status</h4>
+                                        </div>
 
                                         <ul>
 
@@ -497,77 +550,11 @@ function Expedition() {
 
                                     </div>
 
-                                    <div className="boss-info-card">
+                                    <div className="card-section">
 
-                                        <h4>Arena</h4>
-
-                                        <p>
-                                            A arena tem um formato retangular bem amplo, com um grande espelho ao longo da parede nordeste.
-                                        </p>
-
-                                        <p>
-                                            O Uhtred quebra esse espelho para se esconder lá dentro e invocar inimigos (adds) durante as fases de transição.
-                                        </p>
-
-                                        <p>
-                                            Depois da primeira transição até o fim da luta, o espelho também começa a disparar vários raios lasers em direções aleatórias.
-                                        </p>
-
-                                        <p>
-                                            Esses lasers vão ficando cada vez mais largos conforme a vida do chefe diminui.
-                                        </p>
-
-                                    </div>
-
-                                    <div className="boss-info-card">
-
-                                        <h4>Habilidades</h4>
-
-                                        <ul>
-
-                                            <li>
-                                                <strong>Lasers do Espelho:</strong>
-
-                                                Dispara várias fileiras de lasers pela arena, seja em linha reta ou na diagonal.
-                                                Eles continuam atirando depois da primeira fase de invocação e ficam mais largos a cada etapa.
-                                                Aplica o debuff Vislumbre do Infinito(Glimpse of Infinity) que reduz a sua velocidade de ação.
-                                            </li>
-
-                                            <li>
-                                                <strong>Feixe de Gelo Giratório:</strong>
-
-                                                Ele canaliza um raio negro e gira em círculo por mais ou menos 3 voltas e meia.
-                                                Também aplica o debuff Vislumbre do Infinito(Glimpse of Infinity).
-                                                Ele avisa quando vai soltar esse ataque: Sem escapatória!(No Escape!)
-                                            </li>
-
-                                            <li>
-                                                <strong>Fogo Stygian:</strong>
-
-                                                Dispara projéteis azul-escuros que aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos) que reduz a sua resistência máxima a gelo.
-                                                Ele avisa quando vai soltar esse ataque: Inútil!(Futile!)
-                                            </li>
-
-                                            <li>
-                                                <strong>Bola de Raio:</strong>
-
-                                                Dispara uma onda de pequenas esferas elétricas monocromáticas que também aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos).
-                                                Ele avisa quando vai soltar esse ataque: Renda-se! ou Insolente!(Give in! or Defiant Whelp!)
-                                            </li>
-
-                                            <li>
-                                                <strong>Estrelas Perseguidoras:</strong>
-
-                                                Invoca uma orb branca que fica perseguindo o jogador por até 10 segundos antes de estourar.
-                                                Quando explode, cria uma poça cheia de mãos negras no chão que dura um tempo e causa Resfriamento(Chill).
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
-                                    <div className="boss-info-card">
-
-                                        <h4>Drops Unicos</h4>
+                                        <div className="card-header">
+                                            <h4>Drops Unicos</h4>
+                                        </div>
 
                                         <ul>
 
@@ -584,21 +571,115 @@ function Expedition() {
 
                                 </div>
 
+                                <div className="boss-info-card">
+
+                                    <h4>Arena</h4>
+
+                                    <ul>
+
+                                        <li>
+                                            A arena tem um formato retangular bem amplo, com um grande espelho ao longo da parede nordeste.
+                                        </li>
+
+                                        <li>
+                                            O Uhtred quebra esse espelho para se esconder lá dentro e invocar inimigos (adds) durante as fases de transição.
+                                        </li>
+
+                                        <li>
+                                            Depois da primeira transição até o fim da luta, o espelho também começa a disparar vários raios lasers em direções aleatórias.
+                                        </li>
+
+                                        <li>
+                                            Esses lasers vão ficando cada vez mais largos conforme a vida do chefe diminui.
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div className="boss-info-card boss-skills">
+
+                                    <h4>Habilidades</h4>
+
+                                    <ul>
+
+                                        <li>
+                                            <strong>Lasers do Espelho:</strong>
+
+                                            Dispara várias fileiras de lasers pela arena, seja em linha reta ou na diagonal.
+                                            Eles continuam atirando depois da primeira fase de invocação e ficam mais largos a cada etapa.
+                                            Aplica o debuff Vislumbre do Infinito(Glimpse of Infinity) que reduz a sua velocidade de ação.
+                                        </li>
+
+                                        <li>
+                                            <strong>Feixe de Gelo Giratório:</strong>
+
+                                            Ele canaliza um raio negro e gira em círculo por mais ou menos 3 voltas e meia.
+                                            Também aplica o debuff Vislumbre do Infinito(Glimpse of Infinity).
+                                            Ele avisa quando vai soltar esse ataque: Sem escapatória!(No Escape!)
+                                        </li>
+
+                                        <li>
+                                            <strong>Fogo Stygian:</strong>
+
+                                            Dispara projéteis azul-escuros que aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos) que reduz a sua resistência máxima a gelo.
+                                            Ele avisa quando vai soltar esse ataque: Inútil!(Futile!)
+                                        </li>
+
+                                        <li>
+                                            <strong>Bola de Raio:</strong>
+
+                                            Dispara uma onda de pequenas esferas elétricas monocromáticas que também aplicam o debuff Indiferença do Cosmos(Indifference of the Cosmos).
+                                            Ele avisa quando vai soltar esse ataque: Renda-se! ou Insolente!(Give in! or Defiant Whelp!)
+                                        </li>
+
+                                        <li>
+                                            <strong>Estrelas Perseguidoras:</strong>
+
+                                            Invoca uma orb branca que fica perseguindo o jogador por até 10 segundos antes de estourar.
+                                            Quando explode, cria uma poça cheia de mãos negras no chão que dura um tempo e causa Resfriamento(Chill).
+                                        </li>
+                                    </ul>
+
+                                </div>
+
                             </div>
 
-                            <div className="boss-container">
+                        </div>
 
-                                <h3>Vorana</h3>
+                        <div className="boss-container">
 
-                                <p className="boss-description">
-                                    Boss ligada ao Tujen
-                                </p>
+                            <div className="boss-header">
 
-                                <div className="boss-grid">
+                                <img
+                                    src=""
+                                    alt=""
+                                    className="boss-image"
+                                />
 
-                                    <div className="boss-info-card">
+                                <div className="boss-header-info">
 
-                                        <h4>Status</h4>
+                                    <h3>Vorana</h3>
+
+                                    <p className="boss-description">
+                                        Boss ligada ao Tujen
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div className="boss-grid">
+
+                                <div className="boss-info-card">
+
+                                    <div className="card-section">
+
+                                        <div className="card-header">
+
+                                            <h4>Status</h4>
+
+                                        </div>
 
                                         <ul>
 
@@ -622,60 +703,13 @@ function Expedition() {
                                             </li>
 
                                         </ul>
-
-
-
                                     </div>
 
-                                    <div className="boss-info-card">
+                                    <div className="card-section">
 
-                                        <h4>Arena</h4>
-
-                                        <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
-
-                                    </div>
-
-                                    <div className="boss-info-card">
-
-                                        <h4>Habilidades</h4>
-
-                                        <ul>
-
-                                            <li>
-                                                <strong>A Ceifa Negra:</strong> Cria uma névoa escura que gira em torno do ponto onde a Vorana surge.
-                                                Essa névoa aplica debuffs que acumulam e causam dano ao longo do tempo.
-                                            </li>
-
-                                            <li>
-                                                <strong>Estrelas Orbitais:</strong> Esferas ficam girando pela arena e, de tempos em tempos, disparam projéteis na direção do jogador.
-                                                Se você passar por dentro de uma delas, ela vai cair e explodir após um curto atraso, causando dano em área.
-                                            </li>
-
-                                            <li>
-                                                <strong>Ciclone:</strong> Ela ataca continuamente ao seu redor enquanto avança em uma direção.
-                                                Ela avisa quando vai soltar esse ataque: Vento da Morte!(Death Wind!)
-                                            </li>
-
-                                            <li>
-                                                <strong>Laceração:</strong> Faz um golpe com as duas foices em formato de cruz e semicírculo bem na sua frente.
-                                                Ela avisa quando vai soltar esse ataque: Vou te derrubar!(I shall cut you down!)
-                                            </li>
-
-                                            <li>
-                                                <strong>Investida com Corte:</strong> Avança rapidamente e corta com as foices.
-                                            </li>
-
-                                            <li>
-                                                <strong>Emboscada:</strong> Ela se esconde na névoa e fica imune a dano. Ela continua visível no minimapa, e também dá para ver um leve rastro de vento se movendo em direção ao centro da arena, indicando de onde ela vai reaparecer.
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
-
-                                    <div className="boss-info-card">
-
-                                        <h4>Drops Unicos</h4>
+                                        <div className="card-header">
+                                            <h4>Drops Unicos</h4>
+                                        </div>
 
                                         <ul>
 
@@ -684,11 +718,59 @@ function Expedition() {
                                             </li>
 
                                         </ul>
-
                                     </div>
+
                                 </div>
+
+                                <div className="boss-info-card">
+
+                                    <h4>Arena</h4>
+
+                                    <p>Não tem, aparece no mesmo mapa padrão que o resto dos Remnants</p>
+
+                                </div>
+
+                                <div className="boss-info-card boss-skills">
+
+                                    <h4>Habilidades</h4>
+
+                                    <ul>
+
+                                        <li>
+                                            <strong>A Ceifa Negra:</strong> Cria uma névoa escura que gira em torno do ponto onde a Vorana surge.
+                                            Essa névoa aplica debuffs que acumulam e causam dano ao longo do tempo.
+                                        </li>
+
+                                        <li>
+                                            <strong>Estrelas Orbitais:</strong> Esferas ficam girando pela arena e, de tempos em tempos, disparam projéteis na direção do jogador.
+                                            Se você passar por dentro de uma delas, ela vai cair e explodir após um curto atraso, causando dano em área.
+                                        </li>
+
+                                        <li>
+                                            <strong>Ciclone:</strong> Ela ataca continuamente ao seu redor enquanto avança em uma direção.
+                                            Ela avisa quando vai soltar esse ataque: Vento da Morte!(Death Wind!)
+                                        </li>
+
+                                        <li>
+                                            <strong>Laceração:</strong> Faz um golpe com as duas foices em formato de cruz e semicírculo bem na sua frente.
+                                            Ela avisa quando vai soltar esse ataque: Vou te derrubar!(I shall cut you down!)
+                                        </li>
+
+                                        <li>
+                                            <strong>Investida com Corte:</strong> Avança rapidamente e corta com as foices.
+                                        </li>
+
+                                        <li>
+                                            <strong>Emboscada:</strong> Ela se esconde na névoa e fica imune a dano. Ela continua visível no minimapa, e também dá para ver um leve rastro de vento se movendo em direção ao centro da arena, indicando de onde ela vai reaparecer.
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
                             </div>
                         </div>
+
                     </section>
 
                 </MainContainer>

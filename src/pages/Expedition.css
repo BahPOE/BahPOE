@@ -135,6 +135,7 @@
     flex-direction: column;
     gap: 25px;
     max-width: 1200px;
+    margin-inline: auto;
 
     margin-top: 40px;
     padding: 32px;
@@ -208,4 +209,64 @@
 
     border-color: #5c5c5c;
     transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.04);
+}
+
+.card-section {
+
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2f2f2f;
+    padding-bottom: 24px;
+}
+
+.card-section:last-of-type {
+
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.boss-skills {
+
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+
+    .boss-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .boss-skills {
+
+        grid-column: span 1;
+    }
+
+    .boss-header {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .boss-image {
+
+        width: 100%;
+        height: 220px;
+    }
+
+    .boss-header-info h3 {
+
+        font-size: 30px;
+    }
+
+    .loop-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .npc-grid {
+
+        grid-template-columns: 1fr;
+    }
 }
