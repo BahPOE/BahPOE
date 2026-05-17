@@ -94,12 +94,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
     padding: 1.2rem;
-
     border: 1px solid #3a3a3a;
     border-radius: 12px;
-
     background: rgba(0, 0, 0, 0.35);
 }
 
@@ -285,8 +282,8 @@
 
     .event-grid {
 
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 }
 
 .enemy-card {
@@ -305,7 +302,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
     padding-left: 1.2rem;
 }
 
@@ -367,7 +363,6 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
@@ -389,7 +384,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
     padding-left: 1.2rem;
 }
 
@@ -416,7 +410,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
     padding-left: 1.2rem;
 }
 
@@ -444,13 +437,10 @@
 .group-conclusion {
 
     margin-top: 2rem;
-
     padding-left: 1rem;
     border-left: 2px solid #d9b56d;
-
     padding-right: 1rem;
     border-right: 2px solid #d9b56d;
-
     color: #d0d0d0;
 }
 
@@ -465,7 +455,6 @@
 
     font-size: 1.1rem;
     color: #a8a8a8;
-
     max-width: 700px;
     line-height: 1.6;
 }
@@ -474,9 +463,7 @@
 
     width: auto;
     height: 2px;
-
     background: #d9b56d;
-
     margin-top: 1rem;
 }
 
@@ -489,10 +476,28 @@
 .intro-warning-card {
 
     margin-top: 2rem;
-
     border-left: 2px solid #d9b56d;
     padding-left: 10px;
-
     border-right: 2px solid #d9b56d;
     padding-right: 10px;
+}
+
+.card-title {
+
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 12px;
+}
+
+.card-title h4 {
+
+    margin: 0;
+}
+
+.card-title-icon {
+
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
