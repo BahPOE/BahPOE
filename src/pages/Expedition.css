@@ -80,14 +80,27 @@
 .loop-card,
 .logbook-card,
 .event-card,
-.enemy-card,
-.boss-card {
+.enemy-card {
 
     background: #1c1c1c;
     border: 1px solid #313131;
     border-radius: 12px;
     padding: 20px;
     margin-top: 20px;
+}
+
+.boss-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding: 1.2rem;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .npc-grid {
@@ -269,4 +282,217 @@
 
         grid-template-columns: 1fr;
     }
+
+    .event-grid {
+
+    grid-template-columns: 1fr;
+}
+}
+
+.enemy-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.enemy-card h3 {
+    font-size: 1.2rem;
+    color: #d9b56d;
+}
+
+.enemy-list,
+.danger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-left: 1.2rem;
+}
+
+.enemy-list li,
+.danger-list li {
+    line-height: 1.6;
+}
+
+.enemy-list strong {
+    color: #ffffff;
+}
+
+.warning-card {
+    border: 1px solid #8b3a3a;
+}
+
+.danger-list li {
+    color: #ff9b9b;
+}
+
+.boss-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.boss-card h3 {
+    color: #d9b56d;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.boss-card p {
+
+    color: #bdbdbd;
+    line-height: 1.5;
+}
+
+.boss-card span {
+    color: #8f8f8f;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.expedition-section .boss-intro {
+    margin-top: 20px;
+    color: #d9b56d;
+}
+
+.event-intro {
+
+    margin-bottom: 24px;
+    color: #c9c9c9;
+}
+
+.event-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.event-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-card h3 {
+
+    color: #d9b56d;
+    font-size: 1.3rem;
+}
+
+.event-card ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-left: 1.2rem;
+}
+
+.event-card li {
+
+    line-height: 1.6;
+}
+
+.logbook-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logbook-card h3 {
+
+    color: #d9b56d;
+    font-size: 1.2rem;
+}
+
+.logbook-list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-left: 1.2rem;
+}
+
+.logbook-list li {
+
+    line-height: 1.6;
+}
+
+.group-intro {
+
+    margin-bottom: 1rem;
+}
+
+.mechanic-loop-section {
+
+    margin-top: 3rem;
+}
+
+.loop-description {
+
+    margin-bottom: 1.5rem;
+    color: #bdbdbd;
+}
+
+.group-conclusion {
+
+    margin-top: 2rem;
+
+    padding-left: 1rem;
+    border-left: 2px solid #d9b56d;
+
+    padding-right: 1rem;
+    border-right: 2px solid #d9b56d;
+
+    color: #d0d0d0;
+}
+
+.expedition-main {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.expedition-subtitle {
+
+    font-size: 1.1rem;
+    color: #a8a8a8;
+
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.expedition-divider {
+
+    width: auto;
+    height: 2px;
+
+    background: #d9b56d;
+
+    margin-top: 1rem;
+}
+
+.expedition-intro {
+
+    font-size: 1.05rem;
+    color: #e0e0e0;
+}
+
+.intro-warning-card {
+
+    margin-top: 2rem;
+
+    border-left: 2px solid #d9b56d;
+    padding-left: 10px;
+
+    border-right: 2px solid #d9b56d;
+    padding-right: 10px;
 }

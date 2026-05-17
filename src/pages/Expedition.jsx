@@ -29,6 +29,7 @@ function Expedition() {
                     </Link>
 
                     {/* HEAD */}
+
                     <section className="expedition-main">
 
                         <h1 className="expedition-title">
@@ -36,8 +37,11 @@ function Expedition() {
                         </h1>
 
                         <p className="expedition-subtitle">
-                            Explosivos, Artefatos, Lojas com NPC e Logbook's
+                            Explosivos, artefatos,
+                            NPCs mercadores e Logbooks.
                         </p>
+
+                        <div className="expedition-divider" />
 
                     </section>
 
@@ -47,14 +51,30 @@ function Expedition() {
 
                         <h2>O que é Expedition?</h2>
 
-                        <p>
-                            A Expedition ( Expedição ) é um evento no qual algum dos 4 NPC's de Exploração vão aparecer e lhe pedir para colocar algumas bombas, ao terminar de colocar elas você vai utilizar o detonador e assim tudo o que você selecionou vai surgir revelando monstros e baús.
+                        <p className="expedition-intro">
+                            Expedition é uma mecânica onde um dos
+                            quatro NPCs exploradores aparece no mapa
+                            pedindo sua ajuda para escavar ruínas antigas.
                         </p>
 
                         <p>
-                            Os modificadores são herdados pelas
-                            explosões seguintes, tanto os positivos quanto os negativos.
+                            Você posiciona explosivos manualmente
+                            e depois ativa o detonador,
+                            revelando monstros, baús
+                            e modificadores especiais.
                         </p>
+
+                        <InfoCard className="intro-warning-card">
+
+                            <h3>Importante</h3>
+
+                            <p>
+                                Os modificadores são herdados
+                                pelas explosões seguintes,
+                                tanto os positivos quanto os negativos.
+                            </p>
+
+                        </InfoCard>
 
                     </section>
 
@@ -64,8 +84,14 @@ function Expedition() {
 
                         <h2>Grupos de Exploração</h2>
 
-                        <p>
-                            Os NPC's pertencem a 4 Grupos e possuem opções especiais únicas de cada um, para utilizar a sua loja você precisa de artefatos daquele Grupo.
+                        <p className="group-intro">
+                            Cada NPC pertence a um grupo de exploração diferente
+                            e possui mecânicas próprias de loja e interação.
+                        </p>
+
+                        <p className="group-intro">
+                            Para negociar com eles,
+                            você precisa obter artefatos específicos daquele grupo.
                         </p>
 
                         <div className="npc-grid">
@@ -82,24 +108,31 @@ function Expedition() {
 
                         </div>
 
-                        <h3>Loop da Mecânica</h3>
+                        <div className="mechanic-loop-section">
 
-                        <div className="loop-grid">
+                            <h3>Loop da Mecânica</h3>
 
-                            {expeditionLoop.map((step) => (
+                            <p className="loop-description">
+                                O ciclo principal da Expedition é simples:
+                            </p>
 
-                                <LoopCard
-                                    key={step}
-                                    text={step}
-                                />
-                            ))}
+                            <div className="loop-grid">
 
+                                {expeditionLoop.map((step) => (
+
+                                    <LoopCard
+                                        key={step}
+                                        text={step}
+                                    />
+                                ))}
+
+                            </div>
                         </div>
 
-                        <p>
-                            O uso das lojas também é simples e rápido,
-                            e com poucos minutos você já vai
-                            entender o fluxo de todos os NPC's.
+                        <p className="group-conclusion">
+                            Apesar de parecer complexo no início,
+                            o fluxo das lojas é rápido de aprender
+                            e fica natural depois de algumas interações.
                         </p>
 
                     </section>
@@ -108,18 +141,72 @@ function Expedition() {
 
                     <section className="expedition-section">
 
-                        <h2>Logbook's</h2>
+                        <h2>Logbooks</h2>
 
                         <InfoCard className="logbook-card">
-                            Além dos encontros nos mapas, também existe a versão dedicada desse evento, o chamado Logbook.
+
+                            <h3>O que são Logbooks?</h3>
+
+                            <p>
+                                Além dos encontros nos mapas,
+                                existe também a versão dedicada da mecânica:
+                                os Logbooks.
+                            </p>
+
                         </InfoCard>
 
                         <InfoCard className="logbook-card">
-                            Nele você vai precisar ir até o Danning, escolher a opção de abrir o Logbook e então escolher para qual area você vai partir, chegando lá o mapa inteiro vai ser somente sobre Expedition, o número de bombas a sua disposição vai ser maior que o normal já que o mapa todo é sobre exploração, aqui os monstros no final do evento vão ser bem fortes então tome cuidado.
+
+                            <h3>Como funciona</h3>
+
+                            <p>
+                                Para acessar um Logbook,
+                                fale com Danning e selecione a área desejada.
+                            </p>
+
+                            <p>
+                                O mapa inteiro será focado em Expedition,
+                                com muito mais explosivos disponíveis.
+                            </p>
+
+                            <p>
+                                Os monstros encontrados no final das rotas
+                                podem ficar extremamente fortes,
+                                então planeje bem suas explosões.
+                            </p>
+
                         </InfoCard>
 
                         <InfoCard className="logbook-card">
-                            Dentro dos Logbooks temos algumas areas especiais, como barreiras físicas que precisam ser explodidas por uma bomba para lhe dar acesso, cavernas subterrâneas, arenas de boss e buffs, tudo que envolve expedition precisa passar pela area de explosão, esse é o trigger da mecânica.
+
+                            <h3>Elementos especiais</h3>
+
+                            <ul className="logbook-list">
+
+                                <li>
+                                    Barreiras destrutíveis
+                                </li>
+
+                                <li>
+                                    Cavernas subterrâneas
+                                </li>
+
+                                <li>
+                                    Arenas de Boss
+                                </li>
+
+                                <li>
+                                    Shrines
+                                </li>
+
+                            </ul>
+
+                            <p>
+                                Tudo relacionado à mecânica
+                                precisa passar pela área de explosão.
+                                Esse é o trigger principal da Expedition.
+                            </p>
+
                         </InfoCard>
 
                     </section>
@@ -130,17 +217,62 @@ function Expedition() {
 
                         <h2>Diferença entre os eventos</h2>
 
-                        <InfoCard className="event-card">
-                            Ambos os eventos são excelentes porém cada um tem foco diferente
-                        </InfoCard>
+                        <p className="event-intro">
+                            Ambos os formatos da mecânica são excelentes,
+                            porém cada um possui um foco diferente.
+                        </p>
 
-                        <InfoCard className="event-card">
-                            Encontros nos mapas normais do Atlas são mais voltados para artefatos e drop de logbooks, enquanto isso os logbook's também dropam muitos artefatos porém o foco maior de drop aqui são as moedas de roletar das lojas, além do bonus que é enfrentar o boss daquele Grupo
-                        </InfoCard>
+                        <div className="event-grid">
 
-                        <InfoCard className="event-card">
-                            Vale avisar também que dentro de um logbook você não pode dropar outro logbook
-                        </InfoCard>
+                            <InfoCard className="event-card">
+
+                                <h3>Atlas Maps</h3>
+
+                                <ul>
+
+                                    <li>
+                                        Maior foco em artefatos
+                                    </li>
+
+                                    <li>
+                                        Melhor para farmar Logbooks
+                                    </li>
+
+                                    <li>
+                                        Mais rápido para encontros frequentes
+                                    </li>
+
+                                </ul>
+
+                            </InfoCard>
+
+                            <InfoCard className="event-card">
+
+                                <h3>Logbooks</h3>
+
+                                <ul>
+
+                                    <li>
+                                        Grande quantidade de artefatos
+                                    </li>
+
+                                    <li>
+                                        Muito foco em currency de refresh
+                                    </li>
+
+                                    <li>
+                                        Possibilidade de enfrentar bosses
+                                    </li>
+
+                                    <li>
+                                        Não dropa outros Logbooks
+                                    </li>
+
+                                </ul>
+
+                            </InfoCard>
+
+                        </div>
 
                     </section>
 
@@ -148,53 +280,162 @@ function Expedition() {
 
                     <section className="expedition-section">
 
-                        <h2>Agora vamos falar sobre os tipos de inimigos que temos nessa mecânica</h2>
-
-                        <InfoCard className="enemy-card">
-                            Caveiras pequenas - Monstros normais com os modificadores do evento
-                            Caveiras Maiores - Runic Monsters, esses dropam Artefatos, Itens para dar Refresh na loja e Logbook's
-                            Baús - A bandeira indica qual o tipo de baú que vai aparecer, a cor da bandeira indica o valor do seu conteúdo sendo Branca - Menor  Amarela - Media  Vermelha - Grande
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card">
-                            Essas três categorias são extremamente importantes para melhorar a sua eficiência e direcionamento ao posicionar as bombas, pois existem modificadores dedicados a algo especifico. Exemplo: Runic Monsters tem 40% a mais de quantity
-                            Lembrando que essa é uma mecânica de herança, para se ter um melhor resultado imagine ter 3 modificadores desses na sua linha de detonação, isso significa um aumento bonus de 120% na quantity de drop dos monstros Rúnicos, ou seja, mais artefatos, mais itens para dar refresh na loja e mais drops de logbook's
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card">
-                            Porém nem tudo é positivo, quanto mais recompensas mais difícil o conteúdo fica, e é bem fácil "brickar" um mapa pegando modificadores que deixam os monstros imortais
-
-                            * Imunidade a algum tipo de dano
-                            * Acumular chance de block e deixar os monstros com 100%
-                            * Stackar Regen e deixar eles imortais pois recuperam vida mais rápido do que você tira
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card">
-                            Então antes de colocar as bombas pensando somente no positivo, tenha em mente quais modificadores negativos você já pegou e quais a sua build faz, uma build que se baseia em leech não pode pegar um modificador que impede os monstros de serem leechados e assim por diante.
-                        </InfoCard>
-
-                        <h2>Além dos monstros padrões que aparecem no evento, temos 4 Boss que são encontrados somente em Logbook's e são possíveis de serem encontrados 1 a cada 5 areas.
+                        <h2>
+                            Tipos de inimigos da Expedition
                         </h2>
 
-                        <div className="boss-card">
-                            <h3>Danning ( Knights of the Sun ) - Olroth, Origin of the Fall (Areas de level 81+)</h3>
-                        </div>
+                        <InfoCard className="enemy-card">
 
-                        <div className="boss-card">
-                            <h3>Gwennen (Druids of the Broken Circle) - Medved, Feller of Heroes (Areas de level 68+)</h3>
-                        </div>
+                            <h3>Categorias de Inimigos</h3>
 
-                        <div className="boss-card">
-                            <h3>Rog (Order of the Chalice) - Uhtred, Covetous Traitor (Areas de level 75+)</h3>
-                        </div>
+                            <ul className="enemy-list">
 
-                        <div className="boss-card">
-                            <h3>Tujen (Black Scythe Mercenaries) - Vorana, Last to Fall (Areas de level 68+)</h3>
-                        </div>
+                                <li>
+                                    <strong>Caveiras pequenas:</strong> Monstros normais com os modificadores do evento
+                                </li>
 
-                        <p>
-                            Cada um neles tem uma historia com o seu respectivo Grupo, é uma historia de fundo interessante e pode ser acompanhada por documentos achados durante o evento e pelas opções de conversa com o próprio NPC.
+                                <li>
+                                    <strong>Caveiras Maiores:</strong> Runic Monsters, esses dropam Artefatos, Itens para dar Refresh na loja e Logbook's
+                                </li>
+
+                                <li>
+                                    <strong>Baús:</strong> A bandeira indica qual o tipo de baú que vai aparecer, a cor da bandeira indica o valor do seu conteúdo sendo Branca - Menor  Amarela - Media  Vermelha - Grande
+                                </li>
+
+                            </ul>
+
+                        </InfoCard>
+
+                        <InfoCard className="enemy-card">
+
+                            <h3>Herança de Modificadores</h3>
+
+                            <p>
+                                Os modificadores são herdados pelas explosões seguintes,
+                                então posicionar corretamente as bombas aumenta muito
+                                sua eficiência.
+                            </p>
+
+                            <p>
+                                Exemplo:
+                                Runic Monsters com
+                                <strong> 40% increased quantity </strong>.
+                            </p>
+
+                            <p>
+                                Se você acumular 3 modificadores desse tipo,
+                                os monstros rúnicos terão um bônus total de
+                                <strong> 120% quantity</strong>,
+                                aumentando muito os drops.
+                            </p>
+
+                        </InfoCard>
+
+                        <InfoCard className="enemy-card">
+
+                            <h3>Planejamento das bombas</h3>
+
+                            <p>
+                                Antes de focar apenas nas recompensas,
+                                verifique quais modificadores negativos
+                                sua build consegue lidar.
+                            </p>
+
+                            <p>
+                                Por exemplo:
+                                builds baseadas em leech podem ser
+                                completamente anuladas por modificadores
+                                que impedem roubo de vida.
+                            </p>
+
+                        </InfoCard>
+
+                        <InfoCard className="enemy-card warning-card">
+
+                            <h3>Cuidado com modificadores negativos</h3>
+
+                            <p>
+                                Quanto maiores as recompensas,
+                                maior também a dificuldade.
+                                Alguns modificadores podem praticamente
+                                "brickar" seu mapa.
+                            </p>
+
+                            <ul className="danger-list">
+
+                                <li>
+                                    Imunidade a tipos de dano
+                                </li>
+
+                                <li>
+                                    Chance de block acumulada até 100%
+                                </li>
+
+                                <li>
+                                    Regeneração extremamente alta
+                                </li>
+
+                            </ul>
+
+                        </InfoCard>
+
+                        <p className="boss-intro">
+                            Existem 4 bosses exclusivos encontrados apenas em Logbooks.
+                            <br />
+                            Em média, eles aparecem a cada 5 áreas.
                         </p>
+
+                        <div className="boss-list">
+
+                            <div className="boss-card">
+
+                                <h3>Olroth</h3>
+
+                                <p>
+                                    Danning — Knights of the Sun
+                                </p>
+
+                                <span>Área level 81+</span>
+
+                            </div>
+
+                            <div className="boss-card">
+
+                                <h3>Medved</h3>
+
+                                <p>
+                                    Gwennen — Druids of the Broken Circle
+                                </p>
+
+                                <span>Área level 68+</span>
+
+                            </div>
+
+                            <div className="boss-card">
+
+                                <h3>Uhtred</h3>
+
+                                <p>
+                                    Rog — Order of the Chalice
+                                </p>
+
+                                <span>Área level 75+</span>
+
+                            </div>
+
+                            <div className="boss-card">
+
+                                <h3>Vorana</h3>
+
+                                <p>
+                                    Tujen — Black Scythe Mercenaries
+                                </p>
+
+                                <span>Área level 68+</span>
+
+                            </div>
+
+                        </div>
 
                     </section>
 
