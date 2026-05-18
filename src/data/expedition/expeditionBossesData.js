@@ -1,7 +1,7 @@
-import medvedIcon from "../assets/icons/boss-icons/expedition/Medved.png";
-import olrothIcon from "../assets/icons/boss-icons/expedition/Olroth.png";
-import uhtredIcon from "../assets/icons/boss-icons/expedition/Uhtred.png";
-import voranaIcon from "../assets/icons/boss-icons/expedition/Vorana.png";
+import medvedIcon from "../../assets/icons/boss-icons/expedition/Medved.png";
+import olrothIcon from "../../assets/icons/boss-icons/expedition/Olroth.png";
+import uhtredIcon from "../../assets/icons/boss-icons/expedition/Uhtred.png";
+import voranaIcon from "../../assets/icons/boss-icons/expedition/Vorana.png";
 
 export const expeditionBosses = [
     {
