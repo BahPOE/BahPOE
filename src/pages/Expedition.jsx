@@ -5,7 +5,7 @@ import MainContainer from "../components/MainContainer";
 import NpcCard from "../components/expedition/NpcCard";
 import LoopCard from "../components/expedition/LoopCard";
 import InfoCard from "../components/expedition/InfoCard";
-import { npcs, expeditionLoop } from "../data/expeditionData";
+import { npcs, expeditionLoop } from "../data/expedition/expeditionData";
 import BossCard from "../components/expedition/BossCard";
 import { expeditionBosses } from "../data/expedition/expeditionBossesData";
 
