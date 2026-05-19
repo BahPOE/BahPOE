@@ -8,8 +8,10 @@ import InfoCard from "../components/expedition/InfoCard";
 import { npcs, expeditionLoop } from "../data/expedition/expeditionData";
 import BossCard from "../components/expedition/BossCard";
 import { expeditionBosses } from "../data/expedition/expeditionBossesData";
+import ExpeditionEnemies from "../components/expedition/sections/ExpeditionEnemies";
 
 import "./Expedition.css";
+import ExpeditionBosses from "../components/expedition/sections/ExpeditionBosses";
 
 function Expedition() {
 
@@ -280,187 +282,11 @@ function Expedition() {
 
                     {/* TIPOS DE INIMIGOS */}
 
-                    <section className="expedition-section">
-
-                        <h2>
-                            Tipos de inimigos da Expedition
-                        </h2>
-
-                        <InfoCard className="enemy-card">
-
-                            <h3>Categorias de Inimigos</h3>
-
-                            <ul className="enemy-list">
-
-                                <li>
-                                    <strong>Caveiras pequenas:</strong> Monstros normais com os modificadores do evento
-                                </li>
-
-                                <li>
-                                    <strong>Caveiras Maiores:</strong> Runic Monsters, esses dropam Artefatos, Itens para dar Refresh na loja e Logbook's
-                                </li>
-
-                                <li>
-                                    <strong>Baús:</strong> A bandeira indica qual o tipo de baú que vai aparecer, a cor da bandeira indica o valor do seu conteúdo sendo Branca - Menor  Amarela - Media  Vermelha - Grande
-                                </li>
-
-                            </ul>
-
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card">
-
-                            <h3>Herança de Modificadores</h3>
-
-                            <p>
-                                Os modificadores são herdados pelas explosões seguintes,
-                                então posicionar corretamente as bombas aumenta muito
-                                sua eficiência.
-                            </p>
-
-                            <p>
-                                Exemplo:
-                                Runic Monsters com
-                                <strong> 40% increased quantity </strong>.
-                            </p>
-
-                            <p>
-                                Se você acumular 3 modificadores desse tipo,
-                                os monstros rúnicos terão um bônus total de
-                                <strong> 120% quantity</strong>,
-                                aumentando muito os drops.
-                            </p>
-
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card">
-
-                            <h3>Planejamento das bombas</h3>
-
-                            <p>
-                                Antes de focar apenas nas recompensas,
-                                verifique quais modificadores negativos
-                                sua build consegue lidar.
-                            </p>
-
-                            <p>
-                                Por exemplo:
-                                builds baseadas em leech podem ser
-                                completamente anuladas por modificadores
-                                que impedem roubo de vida.
-                            </p>
-
-                        </InfoCard>
-
-                        <InfoCard className="enemy-card warning-card">
-
-                            <h3>Cuidado com modificadores negativos</h3>
-
-                            <p>
-                                Quanto maiores as recompensas,
-                                maior também a dificuldade.
-                                Alguns modificadores podem praticamente
-                                "brickar" seu mapa.
-                            </p>
-
-                            <ul className="danger-list">
-
-                                <li>
-                                    Imunidade a tipos de dano
-                                </li>
-
-                                <li>
-                                    Chance de block acumulada até 100%
-                                </li>
-
-                                <li>
-                                    Regeneração extremamente alta
-                                </li>
-
-                            </ul>
-
-                        </InfoCard>
-
-                        <p className="boss-intro">
-                            Existem 4 bosses exclusivos encontrados apenas em Logbooks.
-                            <br />
-                            Em média, eles aparecem a cada 5 áreas.
-                        </p>
-
-                        <div className="boss-list">
-
-                            <div className="boss-card">
-
-                                <h3>Olroth</h3>
-
-                                <p>
-                                    Danning — Knights of the Sun
-                                </p>
-
-                                <span>Área level 81+</span>
-
-                            </div>
-
-                            <div className="boss-card">
-
-                                <h3>Medved</h3>
-
-                                <p>
-                                    Gwennen — Druids of the Broken Circle
-                                </p>
-
-                                <span>Área level 68+</span>
-
-                            </div>
-
-                            <div className="boss-card">
-
-                                <h3>Uhtred</h3>
-
-                                <p>
-                                    Rog — Order of the Chalice
-                                </p>
-
-                                <span>Área level 75+</span>
-
-                            </div>
-
-                            <div className="boss-card">
-
-                                <h3>Vorana</h3>
-
-                                <p>
-                                    Tujen — Black Scythe Mercenaries
-                                </p>
-
-                                <span>Área level 68+</span>
-
-                            </div>
-
-                        </div>
-
-                    </section>
+                    <ExpeditionEnemies />
 
                     {/* BOSS */}
 
-                    <section className="expedition-section">
-
-                        <div>
-
-                            <h2>Bosses da Expedition</h2>
-
-                            {expeditionBosses.map((boss) => (
-
-                                <BossCard
-                                    key={boss.name}
-                                    boss={boss}
-                                />
-
-                            ))}
-
-                        </div>
-
-                    </section>
+                    <ExpeditionBosses />
 
                 </MainContainer>
 
