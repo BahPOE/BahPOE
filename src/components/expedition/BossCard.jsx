@@ -1,3 +1,5 @@
+import BossInfoSection from "../BossInfoSection";
+
 function BossCard({ boss }) {
     return (
 
@@ -25,87 +27,57 @@ function BossCard({ boss }) {
 
             <div className="boss-grid">
 
-                <div className="boss-info-card">
+                <BossInfoSection title="Status">
 
-                    <div className="card-section">
+                    <ul>
 
-                        <div className="card-header">
+                        <li>
+                            <strong>Dano</strong> - {boss.status.damage}
+                        </li>
 
-                            <div className="card-title">
+                        <li>
+                            <strong>Resistências</strong> - {boss.status.resistances}
+                        </li>
 
-                                <h4>Status</h4>
+                        <li>
 
-                            </div>
+                            <strong>Modificadores Fixos</strong>
 
-                        </div>
+                            {boss.status.modifiers.map((modifier) => (
 
-                        <ul>
-
-                            <li>
-                                <strong>Dano</strong> - {boss.status.damage}
-                            </li>
-
-                            <li>
-                                <strong>Resistências</strong> - {boss.status.resistances}
-                            </li>
-
-                            <li>
-
-                                <strong>Modificadores Fixos</strong>
-
-                                {boss.status.modifiers.map((modifier) => (
-
-                                    <p key={modifier}>
-                                        {modifier}
-                                    </p>
-
-                                ))}
-
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div className="card-section">
-
-                        <div className="card-header">
-
-                            <div className="card-title">
-
-                                <h4>Drops Únicos</h4>
-
-                            </div>
-
-                        </div>
-
-                        <ul>
-
-                            {boss.drops.map((drop) => (
-
-                                <li key={drop}>
-                                    {drop}
-                                </li>
+                                <p key={modifier}>
+                                    {modifier}
+                                </p>
 
                             ))}
 
-                        </ul>
+                        </li>
 
-                        <p>
-                            {boss.dropsDescription}
-                        </p>
+                    </ul>
 
-                    </div>
+                </BossInfoSection>
 
-                </div>
+                <BossInfoSection title="Drops">
 
-                <div className="boss-info-card">
+                    <ul>
 
-                    <div className="card-title">
+                        {boss.drops.map((drop) => (
 
-                        <h4>Arena</h4>
+                            <li key={drop}>
+                                {drop}
+                            </li>
 
-                    </div>
+                        ))}
+
+                    </ul>
+
+                    <p>
+                        {boss.dropsDescription}
+                    </p>
+
+                </BossInfoSection>
+
+                <BossInfoSection title="Arena">
 
                     <ul>
 
@@ -126,38 +98,35 @@ function BossCard({ boss }) {
 
                     </ul>
 
-                </div>
-
-                <div className="boss-info-card boss-skills">
-
-                    <div className="card-title">
-
-                        <h4>Habilidades</h4>
-
-                    </div>
-
-                    <ul>
-
-                        {boss.skills.map((skill) => (
-
-                            <li key={skill.name}>
-
-                                <strong>
-                                    {skill.name}:
-                                </strong>
-
-                                {" "}
-                                {skill.description}
-
-                            </li>
-
-                        ))}
-
-                    </ul>
-
-                </div>
+                </BossInfoSection>
 
             </div>
+
+            <BossInfoSection
+                title="Habilidades"
+                className="boss-skills"
+            >
+
+                <ul>
+
+                    {boss.skills.map((skill) => (
+
+                        <li key={skill.name}>
+
+                            <strong>
+                                {skill.name}:
+                            </strong>
+
+                            {" "}
+                            {skill.description}
+
+                        </li>
+
+                    ))}
+
+                </ul>
+
+            </BossInfoSection>
 
         </div>
 
