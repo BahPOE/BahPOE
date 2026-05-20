@@ -1,7 +1,11 @@
-import InfoCard from "../InfoCard";
 import { expeditionEnemies } from "../../../data/expedition/expeditionEnemiesData";
 import MiniBossCard from "../MiniBossCard";
 import { expeditionMiniBosses } from "../../../data/expedition/expeditionMiniBossesData";
+
+import MechanicSection from "../../layout/MechanicSection";
+import ContentCard from "../../general/ContentCard";
+import InfoList from "../../general/InfoList";
+import ParagraphGroup from "../../general/ParagraphGroup";
 
 function ExpeditionEnemies() {
 
@@ -9,73 +13,48 @@ function ExpeditionEnemies() {
 
         <>
 
-            <section className="expedition-section">
-
-                <h2>
-                    Tipos de inimigos da Expedition
-                </h2>
+            <MechanicSection title="Tipos de inimigos da Expedition">
 
                 {expeditionEnemies.map((card) => (
 
-                    <InfoCard
+                    <ContentCard
                         key={card.title}
-                        className={`enemy-card ${card.className || ""}`}
+                        title={card.title}
+                        className={`info-card enemy-card ${card.className || ""}`}
                     >
 
-                        <h3>{card.title}</h3>
 
-                        {card.paragraphs?.map((paragraph) => (
+                        {card.paragraphs && (
 
-                            <p key={paragraph}>
-                                {paragraph}
-                            </p>
+                            <ParagraphGroup
+                                paragraphs={card.paragraphs}
+                            />
 
-                        ))}
+                        )}
 
                         {card.items && (
 
-                            <ul className="enemy-list">
-
-                                {card.items.map((item) => (
-
-                                    <li key={item.label}>
-
-                                        <strong>
-                                            {item.label}:
-                                        </strong>
-
-                                        {" "}
-                                        {item.text}
-
-                                    </li>
-
-                                ))}
-
-                            </ul>
+                            <InfoList
+                                items={card.items}
+                                className="enemy-list"
+                            />
 
                         )}
 
                         {card.dangerList && (
 
-                            <ul className="danger-list">
-
-                                {card.dangerList.map((danger) => (
-
-                                    <li key={danger}>
-                                        {danger}
-                                    </li>
-
-                                ))}
-
-                            </ul>
+                            <InfoList
+                                items={card.dangerList}
+                                className="danger-list"
+                            />
 
                         )}
 
-                    </InfoCard>
+                    </ContentCard>
 
                 ))}
 
-            </section>
+            </MechanicSection>
 
             <div className="boss-list">
 

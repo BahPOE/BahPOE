@@ -1,8 +1,8 @@
 // src/pages/BuildDetail.jsx
 // Tauma: Página de detalhe da build, exibindo informações completas
 import { useParams } from "react-router-dom";
-import Overlay from "../components/Overlay";
-import MainContainer from "../components/MainContainer";
+import Overlay from "../components/layout/Overlay.jsx";
+import MainContainer from "../components/layout/MainContainer.jsx";
 import "./BuildDetail.css";
 import { listaBuilds } from "../builds.js";
 import BuildCards from "../components/BuildCard";

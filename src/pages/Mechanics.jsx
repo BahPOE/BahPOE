@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Overlay from "../components/Overlay";
-import MainContainer from "../components/MainContainer";
+import Overlay from "../components/layout/Overlay.jsx";
+import MainContainer from "../components/layout/MainContainer.jsx";
 import "./Mechanics.css";
 import MechanicsCard from "../components/MechanicsCard";
 import expeditionImage from "../assets/mechanics/expedition/logo-expedition.jpg"

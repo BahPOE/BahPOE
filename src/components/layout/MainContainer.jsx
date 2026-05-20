@@ -1,7 +1,11 @@
 function MainContainer({ children }) {
+
   return (
+
     <div
       style={{
+        position: "relative",
+        zIndex: 1,
         background: "rgba(0, 0, 0, 0.6)",
         padding: "40px",
         borderRadius: "16px",
@@ -12,8 +16,11 @@ function MainContainer({ children }) {
         margin: "0 auto",
       }}
     >
+
       {children}
+
     </div>
+
   );
 }
 
