@@ -1,7 +1,7 @@
 import { useState } from "react"; // Tauma: Importando o useState para controlar as páginas
 import { Link } from "react-router-dom";
-import Overlay from "../components/Overlay";
-import MainContainer from "../components/MainContainer";
+import Overlay from "../components/layout/Overlay.jsx";
+import MainContainer from "../components/layout/MainContainer.jsx";
 import "./Builds.css";
 import BuildCards from "../components/BuildCard";
 import { listaBuilds } from "../builds.js";

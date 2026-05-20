@@ -1,4 +1,5 @@
 function Overlay({ theme = "arcano" }) {
+
   const colors = {
     arcano: "rgba(10, 20, 40, 0.7)",
     templo: "rgba(60, 45, 10, 0.6)",
@@ -7,13 +8,17 @@ function Overlay({ theme = "arcano" }) {
   };
 
   return (
+
     <div
       style={{
         position: "absolute",
         inset: 0,
         backgroundColor: colors[theme],
+        zIndex: 0,
+        pointerEvents: "none",
       }}
     />
+
   );
 }
 

@@ -1,4 +1,4 @@
-import BossInfoSection from "../BossInfoSection";
+import BossInfoSection from "./BossInfoSection";
 
 function BossCard({ boss }) {
     return (
@@ -27,7 +27,7 @@ function BossCard({ boss }) {
 
             <div className="boss-grid">
 
-                <BossInfoSection title="Status">
+                <BossInfoSection title="Status e Drops">
 
                     <ul>
 
@@ -55,9 +55,7 @@ function BossCard({ boss }) {
 
                     </ul>
 
-                </BossInfoSection>
-
-                <BossInfoSection title="Drops">
+                    <h4>Drops Únicos</h4>
 
                     <ul>
 

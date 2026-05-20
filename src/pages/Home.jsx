@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 import zanaIcon from "../assets/icons/zanaicon.png";
 import buildIcon from "../assets/icons/buildicon.png";
 import farmsIcon from "../assets/icons/farmsicon.png";
 import bahpoeLogo from "../assets/logo/bahpoelogo.png";
-import Overlay from "../components/Overlay";
-import MainContainer from "../components/MainContainer";
-import HubCard from "../components/HubCard";
-import { Link } from "react-router-dom";
+
+import Overlay from "../components/layout/Overlay.jsx";
+import MainContainer from "../components/layout/MainContainer.jsx";
+import HubCard from "../components/HubCard.jsx";
+
 import "./Home.css";
 
 function Home() {
@@ -90,7 +93,7 @@ function Home() {
 
                     {/* CARDS */}
                     <div className="home-cards">
-                        
+
                         {cards.map((card) => (
                             <Link
                                 key={card.title}
