@@ -11,8 +11,8 @@ function MainContainer({ children }) {
         borderRadius: "16px",
         border: "1px solid rgba(77,166,255,0.3)",
         backdropFilter: "blur(6px)",
-        maxWidth: "900px",
-        width: "90%",
+        maxWidth: "1200px",
+        width: "92%",
         margin: "0 auto",
       }}
     >

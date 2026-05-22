@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import Overlay from "../components/layout/Overlay.jsx";
 import MainContainer from "../components/layout/MainContainer.jsx";
 
-import InfoCard from "../components/expedition/InfoCard.jsx";
+import InfoCard from "../components/mechanics/expedition/InfoCard.jsx";
 
-import ExpeditionGroups from "../components/expedition/sections/ExpeditionGroups.jsx";
-import ExpeditionLogbooks from "../components/expedition/sections/ExpeditionLogbooks.jsx";
-import ExpeditionEvents from "../components/expedition/sections/ExpeditionEvents.jsx";
-import ExpeditionEnemies from "../components/expedition/sections/ExpeditionEnemies.jsx";
-import ExpeditionBosses from "../components/expedition/sections/ExpeditionBosses.jsx";
+import ExpeditionGroups from "../components/mechanics/expedition/sections/ExpeditionGroups.jsx";
+import ExpeditionLogbooks from "../components/mechanics/expedition/sections/ExpeditionLogbooks.jsx";
+import ExpeditionEvents from "../components/mechanics/expedition/sections/ExpeditionEvents.jsx";
+import ExpeditionEnemies from "../components/mechanics/expedition/sections/ExpeditionEnemies.jsx";
+import ExpeditionBosses from "../components/mechanics/expedition/sections/ExpeditionBosses.jsx";
 
 import "./Expedition.css";
 

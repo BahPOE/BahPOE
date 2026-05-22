@@ -1,11 +1,11 @@
-import { expeditionEnemies } from "../../../data/expedition/expeditionEnemiesData";
+import { expeditionEnemies } from "../../../../data/expedition/expeditionEnemiesData";
 import MiniBossCard from "../MiniBossCard";
-import { expeditionMiniBosses } from "../../../data/expedition/expeditionMiniBossesData";
+import { expeditionMiniBosses } from "../../../../data/expedition/expeditionMiniBossesData";
 
-import MechanicSection from "../../layout/MechanicSection";
-import ContentCard from "../../general/ContentCard";
-import InfoList from "../../general/InfoList";
-import ParagraphGroup from "../../general/ParagraphGroup";
+import MechanicSection from "../../../layout/MechanicSection";
+import ContentCard from "../../../general/ContentCard";
+import InfoList from "../../../general/InfoList";
+import ParagraphGroup from "../../../general/ParagraphGroup";
 
 function ExpeditionEnemies() {
 

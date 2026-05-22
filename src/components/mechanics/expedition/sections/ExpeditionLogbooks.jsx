@@ -1,4 +1,4 @@
-import MechanicSection from "../../layout/MechanicSection";
+import MechanicSection from "../../../layout/MechanicSection";
 import InfoCard from "../InfoCard";
 
 function ExpeditionLogbooks() {
@@ -6,8 +6,6 @@ function ExpeditionLogbooks() {
     return (
 
         <MechanicSection title="Logbooks">
-
-            <h2>Logbooks</h2>
 
             <InfoCard className="logbook-card">
 

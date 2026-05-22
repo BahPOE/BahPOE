@@ -1,20 +1,18 @@
 import LoopCard from "../LoopCard";
 import NpcCard from "../NpcCard";
 import InfoCard from "../InfoCard";
-import MechanicSection from "../../layout/MechanicSection";
+import MechanicSection from "../../../layout/MechanicSection";
 
 import {
     npcs,
     expeditionLoop,
-} from "../../../data/expedition/expeditionData";
+} from "../../../../data/expedition/expeditionData";
 
 function ExpeditionGroups() {
 
     return (
 
-        <MechanicSection title="Grupos">
-
-            <h2>Grupos de Exploração</h2>
+        <MechanicSection title="Grupos de Exploração">
 
             <p className="group-intro">
                 Cada NPC pertence a um grupo de exploração diferente
