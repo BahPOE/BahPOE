@@ -1,5 +1,5 @@
 import BossCard from "../BossCard";
-import { expeditionBosses } from "../../../data/expedition/expeditionBossesData";
+import { expeditionBosses } from "../../../../data/expedition/expeditionBossesData";
 
 function ExpeditionBosses() {
 

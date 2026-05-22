@@ -1,13 +1,11 @@
-import MechanicSection from "../../layout/MechanicSection";
+import MechanicSection from "../../../layout/MechanicSection";
 import InfoCard from "../InfoCard";
 
 function ExpeditionEvents() {
 
     return (
 
-        <MechanicSection title="Eventos">
-
-            <h2>Diferença entre os eventos</h2>
+        <MechanicSection title="Diferença entre os eventos">
 
             <p className="event-intro">
                 Ambos os formatos da mecânica são excelentes,

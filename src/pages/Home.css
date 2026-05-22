@@ -1,14 +1,16 @@
 .home-cards {
 
     display: flex;
-    gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
     .home-cards {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -28,7 +30,7 @@
 }
 
 .home-card-link {
-    
+
     width: 100%;
     max-width: 255px;
     text-decoration: none;
