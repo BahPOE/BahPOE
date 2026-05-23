@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import Overlay from "../components/layout/Overlay.jsx";
-import MainContainer from "../components/layout/MainContainer.jsx";
-import FarmCard from "../components/FarmCard";
-import ScarabItem from "../components/ScarabItem";
-import expeditionScarab from "../assets/scarabs/expedition/expeditionScarab.png";
+import Overlay from "../../components/layout/Overlay.jsx";
+import MainContainer from "../../components/layout/MainContainer.jsx";
+import FarmCard from "../../components/FarmCard.jsx";
+import ScarabItem from "../../components/ScarabItem.jsx";
+import expeditionScarab from "../../assets/scarabs/expedition/expeditionScarab.png";
 
 import "./Farms.css";
 

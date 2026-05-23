@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Mechanics from "./pages/Mechanics";
-import Builds from "./pages/Builds";
-import Expedition from "./pages/Expedition";
-import Farms from "./pages/Farms";
-import BuildDetail from "./pages/BuildDetail"; // Tauma: página de detalhe da build
+import Mechanics from "../src/pages/mechanics/Mechanics";
+import Builds from "../src/pages/builds/Builds";
+import Expedition from "../src/pages/mechanics/Expedition";
+import Farms from "../src/pages/farms/Farms";
+import BuildDetail from "../src/pages/builds/BuildDetail"; // Tauma: página de detalhe da build
 
 // import Mechanics from "./pages/Mechanics";
 // import Expedition from "./pages/Expedition";
