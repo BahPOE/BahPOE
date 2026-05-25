@@ -3,7 +3,8 @@ import Overlay from "../../components/layout/Overlay.jsx";
 import MainContainer from "../../components/layout/MainContainer.jsx";
 import "./Mechanics.css";
 import MechanicsCard from "../../components/MechanicsCard.jsx";
-import expeditionImage from "../../assets/mechanics/expedition/logo-expedition.jpg"
+import expeditionImage from "../../assets/mechanics/expedition/mobs-expedition.jpg"
+import abyssImage from "../../assets/mechanics/abyss/logo-abyss.png"
 
 function Mechanics() {
     return (
@@ -26,6 +27,15 @@ function Mechanics() {
                             description="Artefatos, Remnants e Logbooks"
                             image={expeditionImage}
                             link="/mechanics/expedition"
+                        />
+                    </div>
+
+                    <div className="mechanics-grid">
+                        <MechanicsCard
+                            title="Abyss"
+                            description="Crateras, Báus e Jewels"
+                            image={abyssImage}
+                            link="/mechanics/abyss"
                         />
                     </div>
 
