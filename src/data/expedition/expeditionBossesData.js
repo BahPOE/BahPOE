@@ -2,6 +2,22 @@ import medvedIcon from "../../assets/icons/boss-icons/expedition/Medved.png";
 import olrothIcon from "../../assets/icons/boss-icons/expedition/Olroth.png";
 import uhtredIcon from "../../assets/icons/boss-icons/expedition/Uhtred.png";
 import voranaIcon from "../../assets/icons/boss-icons/expedition/Vorana.png";
+import cadiganCrownIcon from "../../assets/itens/icons/olroth/Cadigan's-Crown-icon.png";
+import olrothChargeIcon from "../../assets/itens/icons/olroth/Olroth's-Charge-icon.png";
+import olrothResolveIcon from "../../assets/itens/icons/olroth/Olroth's-Resolve-icon.png";
+import voranaMarchIcon from "../../assets/itens/icons/olroth/Vorana's-March-icon.png";
+import elixirUnbrokenCircleIcon from "../../assets/itens/icons/medved/Elixir-of-the-Unbroken-Circle-icon.png";
+import stackedDeckIcon from "../../assets/itens/icons/uhtred/Stacked-Deck-icon.png";
+import starlightChaliceIcon from "../../assets/itens/icons/uhtred/Starlight-Chalice-icon.png";
+import voranaPreparationIcon from "../../assets/itens/icons/vorana/Vorana's-Preparation-icon.png";
+import cadiganCrownPreview from "../../assets/itens/previews/olroth/Cadigan's-Crown.png";
+import olrothChargePreview from "../../assets/itens/previews/olroth/Olroth's-Charge.png";
+import olrothResolvePreview from "../../assets/itens/previews/olroth/Olroth's-Resolve.png";
+import voranaMarchPreview from "../../assets/itens/previews/olroth/Vorana's-March.png";
+import elixirUnbrokenCirclePreview from "../../assets/itens/previews/medved/Elixir-of-the-Unbroken-Circle.png";
+import alteredPerceptionPreview from "../../assets/itens/previews/uhtred/Altered-Perception.png";
+import starlightChalicePreview from "../../assets/itens/previews/uhtred/Starlight-Chalice.png";
+import voranaPreparationPreview from "../../assets/itens/previews/vorana/Vorana's-Preparation.png";
 
 export const expeditionBosses = [
     {
@@ -25,10 +41,26 @@ export const expeditionBosses = [
         },
 
         drops: [
-            "Olroth's Resolve",
-            "Cadigan's Crown",
-            "Vorana's March",
-            "Olroth's Charge",
+            {
+                name: "Olroth's Resolve",
+                icon: olrothResolveIcon,
+                preview: olrothResolvePreview,
+            },
+            {
+                name: "Cadigan's Crown",
+                icon: cadiganCrownIcon,
+                preview: cadiganCrownPreview,
+            },
+            {
+                name: "Vorana's March",
+                icon: voranaMarchIcon,
+                preview: voranaMarchPreview,
+            },
+            {
+                name: "Olroth's Charge",
+                icon: olrothChargeIcon,
+                preview: olrothChargePreview,
+            },
         ],
 
         dropsDescription: "Além disso, ao derrotar Olroth vai aparecer um Altar para adquirir ou trocar outra Bloodline para a Bloodline dele.",
@@ -102,7 +134,11 @@ export const expeditionBosses = [
         },
 
         drops: [
-            "Elixir of the Unbroken Circle",
+            {
+                name: "Elixir of the Unbroken Circle",
+                icon: elixirUnbrokenCircleIcon,
+                preview: elixirUnbrokenCirclePreview,
+            },
         ],
 
         arena: [
@@ -167,7 +203,11 @@ export const expeditionBosses = [
         },
 
         drops: [
-            "Vorana's Preparation",
+            {
+                name: "Vorana's Preparation",
+                icon: voranaPreparationIcon,
+                preview: voranaPreparationPreview,
+            },
         ],
 
         arena: [
@@ -233,8 +273,16 @@ export const expeditionBosses = [
         },
 
         drops: [
-            "Starlight Chalice",
-            "Altered Perception",
+            {
+                name: "Starlight Chalice",
+                icon: starlightChaliceIcon,
+                preview: starlightChalicePreview,
+            },
+            {
+                name: "Altered Perception",
+                icon: stackedDeckIcon,
+                preview: alteredPerceptionPreview,
+            },
         ],
 
         arena: [

@@ -19,7 +19,7 @@ function Expedition() {
 
         <div className="expedition-page">
 
-            <Overlay theme="selva" />
+            <Overlay theme="templo" />
 
             <div className="expedition-content">
 

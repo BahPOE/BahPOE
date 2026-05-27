@@ -497,14 +497,83 @@
 .expedition-page {
 
     position: relative;
-
     min-height: 100vh;
-
     background-image: url("/background/bgmechanics.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     overflow-x: hidden;
+}
+
+.drop-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    min-width: 220px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    transition: 0.2s ease;
+    cursor: pointer;
+    list-style: none;
+    z-index: 1;
+}
+
+.drop-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 180, 70, 0.5);
+    background: rgba(255, 180, 70, 0.08);
+    box-shadow: 0 0 12px rgba(255, 180, 70, 0.15);
+    z-index: 1000;
+}
+
+.drop-item span {
+    font-weight: 600;
+    color: #f0e6d2;
+}
+
+.drop-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 4px;
+}
+
+.drop-preview {
+    position: absolute;
+    right: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.drop-preview img {
+    width: 360px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.drop-item:hover .drop-preview {
+    opacity: 1;
+    visibility: visible;
+}
+
+.drops-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
 }

@@ -1,5 +1,9 @@
 import amanamuIcon from "../../assets/icons/boss-icons/abyss/Amanamu.png";
 import ulamanIcon from "../../assets/icons/boss-icons/abyss/Ulaman.jpg";
+import lightpoacherIcon from "../../assets/itens/icons/ulaman-amanamu/Lightpoacher-icon.png";
+import tombfistIcon from "../../assets/itens/icons/ulaman-amanamu/Tombfist-icon.png";
+import lightpoacherPreview from "../../assets/itens/previews/ulaman-amanamu/Lightpoacher.png";
+import tombfistPreview from "../../assets/itens/previews/ulaman-amanamu/Tombfist.png";
 
 export const abyssBosses = [
     {
@@ -22,9 +26,17 @@ export const abyssBosses = [
         },
 
         drops: [
-            "Lightpoacher (1~2 slots)",
+            {
+                name: "Lightpoacher (1~2 slots)",
+                icon: lightpoacherIcon,
+                preview: lightpoacherPreview,
+            },
             "Bubonic Trail (1~2 slots)",
-            "Tombfist (1~2 slots)",
+            {
+                name: "Tombfist (1~2 slots)",
+                icon: tombfistIcon,
+                preview: tombfistPreview,
+            },
             "Shroud of the Lightless (2~3 slots)",
             "Amanamu's Gaze",
             "Ulaman's Gaze",
