@@ -57,17 +57,37 @@ function BossCard({ boss }) {
 
                     <h4>Drops Únicos</h4>
 
-                    <ul>
+                    <div className="drops-list">
 
                         {boss.drops.map((drop) => (
 
-                            <li key={drop}>
-                                {drop}
+                            <li
+                                key={drop.name}
+                                className="drop-item"
+                            >
+
+                                <img
+                                    src={drop.icon}
+                                    alt={drop.name}
+                                    className="drop-icon"
+                                />
+
+                                <span>{drop.name}</span>
+
+                                <div className="drop-preview">
+
+                                    <img
+                                        src={drop.preview}
+                                        alt={drop.name}
+                                    />
+
+                                </div>
+
                             </li>
 
                         ))}
 
-                    </ul>
+                    </div>
 
                     <p>
                         {boss.dropsDescription}

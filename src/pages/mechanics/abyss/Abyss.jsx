@@ -18,7 +18,7 @@ function Abyss() {
 
         <div className="abyss-page">
 
-            <Overlay theme="selva" />
+            <Overlay theme="templo" />
 
             <div className="abyss-content">
 

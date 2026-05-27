@@ -59,13 +59,37 @@ function BossCard({ boss }) {
 
                     <ul>
 
-                        {boss.drops.map((drop) => (
+                        <div className="drops-list">
 
-                            <li key={drop}>
-                                {drop}
-                            </li>
+                            {boss.drops.map((drop) => (
 
-                        ))}
+                                <li
+                                    key={drop.name}
+                                    className="drop-item"
+                                >
+
+                                    <img
+                                        src={drop.icon}
+                                        alt={drop.name}
+                                        className="drop-icon"
+                                    />
+
+                                    <span>{drop.name}</span>
+
+                                    <div className="drop-preview">
+
+                                        <img
+                                            src={drop.preview}
+                                            alt={drop.name}
+                                        />
+
+                                    </div>
+
+                                </li>
+
+                            ))}
+
+                        </div>
 
                     </ul>
 
