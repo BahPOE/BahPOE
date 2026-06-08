@@ -5,8 +5,10 @@ import MechanicSection from "../../../layout/MechanicSection";
 
 import {
     npcs,
-    expeditionLoop,
 } from "../../../../data/expedition/expeditionData";
+import {
+    expeditionLoop,
+} from "../../../../data/expedition/expeditionLoopData";
 
 function ExpeditionGroups() {
 

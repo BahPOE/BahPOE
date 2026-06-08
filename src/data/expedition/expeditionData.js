@@ -20,13 +20,3 @@ export const npcs = [
     },
 
 ];
-
-export const expeditionLoop = [
-
-    "Encontre o evento",
-    "Posicione as bombas",
-    "Detone os explosivos",
-    "Elimine os inimigos",
-    "Abra os baús"
-
-];

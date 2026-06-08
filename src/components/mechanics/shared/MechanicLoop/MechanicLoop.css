@@ -1,0 +1,54 @@
+.mechanic-loop {
+
+    margin-top: 60px;
+}
+
+.mechanic-loop-container {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.mechanic-loop-step {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: fit-content;
+
+    padding: 14px 20px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #313131;
+
+    border-radius: 12px;
+}
+
+.mechanic-loop-number {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #d9b56d;
+
+    color: #111;
+
+    font-weight: 700;
+}
+
+.mechanic-loop-step p {
+
+    margin: 0;
+}

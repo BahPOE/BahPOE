@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Mechanics from "../src/pages/mechanics/Mechanics";
 import Builds from "../src/pages/builds/Builds";
 import Expedition from "../src/pages/mechanics/Expedition";
+import ExpeditionShared from "../src/pages/mechanics/ExpeditionShared";
 import Abyss from "../src/pages/mechanics/abyss/Abyss";
 import Farms from "../src/pages/farms/Farms";
 import BuildDetail from "../src/pages/builds/BuildDetail"; // Tauma: página de detalhe da build
@@ -28,6 +29,11 @@ function App() {
 
       <Route path="/mechanics/expedition"
         element={<Expedition />} />
+
+      <Route
+        path="/mechanics/expedition-shared"
+        element={<ExpeditionShared />}
+      />
 
       <Route path="/mechanics/abyss"
         element={<Abyss />} />
