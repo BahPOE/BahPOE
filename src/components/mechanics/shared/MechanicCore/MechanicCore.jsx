@@ -1,8 +1,10 @@
+import "./MechanicCore.css";
+
 function MechanicCore({ title, items = [] }) {
 
     return (
 
-        <section className="mechanic-core">
+        <section className="mechanic-section mechanic-core">
 
             <h2>{title}</h2>
 
@@ -20,7 +22,19 @@ function MechanicCore({ title, items = [] }) {
                             />
                         )}
 
-                        <h3>{item.title}</h3>
+                        <div className="mechanic-core-header">
+
+                            <h3>{item.title}</h3>
+
+                            {item.subtitle && (
+
+                                <p className="mechanic-core-subtitle">
+                                    {item.subtitle}
+                                </p>
+
+                            )}
+
+                        </div>
 
                         <p>{item.description}</p>
 
@@ -31,6 +45,7 @@ function MechanicCore({ title, items = [] }) {
             </div>
 
         </section>
+
     );
 }
 

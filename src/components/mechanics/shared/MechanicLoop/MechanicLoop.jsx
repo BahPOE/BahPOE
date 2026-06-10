@@ -1,8 +1,10 @@
+import "./MechanicLoop.css";
+
 function MechanicLoop({ steps }) {
 
     return (
 
-        <section className="mechanic-loop">
+        <section className="mechanic-section mechanic-loop">
 
             <h2>Como Funciona</h2>
 
@@ -29,6 +31,7 @@ function MechanicLoop({ steps }) {
             </div>
 
         </section>
+
     );
 }
 

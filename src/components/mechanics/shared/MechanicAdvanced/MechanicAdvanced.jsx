@@ -1,29 +1,35 @@
-function MechanicAdvanced({ title, tips }) {
+import "./MechanicAdvanced.css";
+
+function MechanicAdvanced({ title, tips = [] }) {
 
     return (
 
-        <section className="mechanic-advanced">
+        <section className="mechanic-section mechanic-advanced">
 
             <h2>{title}</h2>
 
-            <div className="mechanic-advanced-grid">
+            {tips.map((tip) => (
 
-                {tips.map((tip) => (
+                <div
+                    key={tip.title}
+                    className="mechanic-advanced-tip"
+                >
 
-                    <div
-                        key={tip.title}
-                        className="mechanic-advanced-card"
-                    >
+                    <div className="mechanic-advanced-header">
+
+                        <span className="mechanic-advanced-icon">
+                            💡
+                        </span>
 
                         <h3>{tip.title}</h3>
 
-                        <p>{tip.description}</p>
-
                     </div>
 
-                ))}
+                    <p>{tip.description}</p>
 
-            </div>
+                </div>
+
+            ))}
 
         </section>
 

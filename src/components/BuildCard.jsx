@@ -2,7 +2,7 @@
 // Tauma: Refatorando o cartão de build para aceitar tags, autor e versão
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Tags from './Tag';
+import Tag from "../components/general/Tag.jsx";
 
 // Tauma: Importando todas as imagens de ascendência (assim fica tudo pronto para uso)
 import imgAssassin from '../assets/ascendancies/assassin.png';

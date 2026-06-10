@@ -2,7 +2,7 @@ function MechanicRewards({ title, rewards }) {
 
     return (
 
-        <section className="mechanic-rewards">
+        <section className="mechanic-section mechanic-rewards">
 
             <h2>{title}</h2>
 

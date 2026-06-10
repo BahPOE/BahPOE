@@ -1,10 +1,21 @@
+import BossInfoSection from "./BossInfoSection";
+
+import "./BossCard.css";
+
+import { useState } from "react";
+
 function BossCard({ boss }) {
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
 
         <div className="boss-container">
 
-            <div className="boss-header">
+            <div
+                className="boss-header"
+                onClick={() => setIsOpen(!isOpen)}
+            >
 
                 <img
                     src={boss.image}
@@ -14,7 +25,17 @@ function BossCard({ boss }) {
 
                 <div className="boss-header-info">
 
-                    <h3>{boss.name}</h3>
+                    <div className="boss-title-row">
+
+                        <h3>{boss.name}</h3>
+
+                        <spam className="boss-toggle">
+
+                            {isOpen ? "▼" : "▶"}
+
+                        </spam>
+
+                    </div>
 
                     <p className="boss-description">
                         {boss.subtitle}
@@ -24,156 +45,171 @@ function BossCard({ boss }) {
 
             </div>
 
-            <div className="boss-grid">
+            {isOpen && (
 
-                {(boss.status || boss.drops?.length > 0) && (
+                <>
 
-                    <BossInfoSection title="Status e Drops">
+                    <div className="boss-grid">
 
-                        {boss.status && (
+                        {(boss.status || boss.drops?.length > 0) && (
 
-                            <ul>
+                            <div className="boss-top-section">
 
-                                <li>
-                                    <strong>Dano</strong> - {boss.status.damage}
-                                </li>
+                                <BossInfoSection title="Status">
 
-                                <li>
-                                    <strong>Resistências</strong> - {boss.status.resistances}
-                                </li>
+                                    {boss.status && (
 
-                                <li>
+                                        <ul>
 
-                                    <strong>Modificadores Fixos</strong>
-
-                                    <ul>
-
-                                        {boss.status.modifiers?.map((modifier) => (
-
-                                            <li key={modifier}>
-                                                {modifier}
+                                            <li>
+                                                <strong>Dano</strong> - {boss.status.damage}
                                             </li>
 
-                                        ))}
+                                            <li>
+                                                <strong>Resistências</strong> - {boss.status.resistances}
+                                            </li>
 
-                                    </ul>
+                                            <li>
 
-                                </li>
+                                                <strong>Modificadores Fixos</strong>
 
-                            </ul>
+                                                <ul>
 
-                        )}
+                                                    {boss.status.modifiers?.map((modifier) => (
 
-                        {boss.drops?.length > 0 && (
+                                                        <li key={modifier}>
+                                                            {modifier}
+                                                        </li>
 
-                            <>
+                                                    ))}
 
-                                <h4>Drops Únicos</h4>
+                                                </ul>
 
-                                <div className="drops-list">
+                                            </li>
 
-                                    {boss.drops.map((drop) => (
+                                        </ul>
 
-                                        <li
-                                            key={drop.name}
-                                            className="drop-item"
-                                        >
+                                    )}
 
-                                            <img
-                                                src={drop.icon}
-                                                alt={drop.name}
-                                                className="drop-icon"
-                                            />
+                                </BossInfoSection>
 
-                                            <span>{drop.name}</span>
+                                <BossInfoSection title="Drops">
 
-                                            <div className="drop-preview">
+                                    {boss.drops?.length > 0 && (
 
-                                                <img
-                                                    src={drop.preview}
-                                                    alt={drop.name}
-                                                />
+                                        <>
+
+                                            <h4>Drops Únicos</h4>
+
+                                            <div className="drops-list">
+
+                                                {boss.drops.map((drop) => (
+
+                                                    <li
+                                                        key={drop.name}
+                                                        className="drop-item"
+                                                    >
+
+                                                        <img
+                                                            src={drop.icon}
+                                                            alt={drop.name}
+                                                            className="drop-icon"
+                                                        />
+
+                                                        <span>{drop.name}</span>
+
+                                                        <div className="drop-preview">
+
+                                                            <img
+                                                                src={drop.preview}
+                                                                alt={drop.name}
+                                                            />
+
+                                                        </div>
+
+                                                    </li>
+
+                                                ))}
 
                                             </div>
+
+                                        </>
+
+                                    )}
+
+                                    {boss.dropsDescription && (
+
+                                        <p>
+                                            {boss.dropsDescription}
+                                        </p>
+
+                                    )}
+
+                                </BossInfoSection>
+
+                            </div>
+                        )}
+                        
+                        {boss.arena?.length > 0 && (
+
+                            <BossInfoSection title="Arena">
+
+                                <ul>
+
+                                    {boss.arena.map((arenaItem) => (
+
+                                        <li key={arenaItem.title}>
+
+                                            <strong>
+                                                {arenaItem.title}:
+                                            </strong>
+
+                                            {" "}
+                                            {arenaItem.description}
 
                                         </li>
 
                                     ))}
 
-                                </div>
+                                </ul>
 
-                            </>
-
-                        )}
-
-                        {boss.dropsDescription && (
-
-                            <p>
-                                {boss.dropsDescription}
-                            </p>
+                            </BossInfoSection>
 
                         )}
 
-                    </BossInfoSection>
+                    </div>
 
-                )}
+                    {boss.skills?.length > 0 && (
 
-                {boss.arena?.length > 0 && (
+                        <BossInfoSection
+                            title="Habilidades"
+                            className="boss-skills"
+                        >
 
-                    <BossInfoSection title="Arena">
+                            <ul>
 
-                        <ul>
+                                {boss.skills.map((skill) => (
 
-                            {boss.arena.map((arenaItem) => (
+                                    <li key={skill.name}>
 
-                                <li key={arenaItem.title}>
+                                        <strong>
+                                            {skill.name}:
+                                        </strong>
 
-                                    <strong>
-                                        {arenaItem.title}:
-                                    </strong>
+                                        {" "}
+                                        {skill.description}
 
-                                    {" "}
-                                    {arenaItem.description}
+                                    </li>
 
-                                </li>
+                                ))}
 
-                            ))}
+                            </ul>
 
-                        </ul>
+                        </BossInfoSection>
 
-                    </BossInfoSection>
+                    )}
 
-                )}
-
-            </div>
-
-            {boss.skills?.length > 0 && (
-
-                <BossInfoSection
-                    title="Habilidades"
-                    className="boss-skills"
-                >
-
-                    <ul>
-
-                        {boss.skills.map((skill) => (
-
-                            <li key={skill.name}>
-
-                                <strong>
-                                    {skill.name}:
-                                </strong>
-
-                                {" "}
-                                {skill.description}
-
-                            </li>
-
-                        ))}
-
-                    </ul>
-
-                </BossInfoSection>
+                </>
 
             )}
 

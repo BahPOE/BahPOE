@@ -2,7 +2,7 @@ function MechanicIntroduction({ data }) {
 
     return (
 
-        <section className="mechanic-introduction">
+        <section className="mechanic-section mechanic-introduction">
 
             <h2>O que é esta mecânica?</h2>
 
@@ -15,6 +15,7 @@ function MechanicIntroduction({ data }) {
             ))}
 
         </section>
+
     );
 }
 

@@ -1,6 +1,8 @@
+import BossCard from "./BossCard";
+
 function MechanicBosses({ title, bosses }) {
 
-    if (!bosses.length) {
+    if (!bosses?.length) {
 
         return (
 

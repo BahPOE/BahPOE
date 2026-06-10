@@ -2,7 +2,7 @@ function MechanicOverview({ data }) {
 
     return (
 
-        <section>
+        <section className="mechanic-section mechanic-overview">
 
             <h1>{data.title}</h1>
 
@@ -11,6 +11,7 @@ function MechanicOverview({ data }) {
             <p>{data.summary}</p>
 
         </section>
+
     );
 }
 

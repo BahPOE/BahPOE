@@ -1,16 +1,11 @@
-.mechanic-loop {
-
-    margin-top: 60px;
-}
-
 .mechanic-loop-container {
 
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 
     overflow-x: auto;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 
 .mechanic-loop-step {
@@ -19,7 +14,9 @@
     align-items: center;
     gap: 12px;
 
-    min-width: fit-content;
+    flex-shrink: 0;
+    
+    min-width: 220px;
 
     padding: 14px 20px;
 

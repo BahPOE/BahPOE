@@ -2,7 +2,7 @@ function MechanicDanger({ title, dangers }) {
 
     return (
 
-        <section className="mechanic-danger">
+        <section className="mechanic-section mechanic-danger">
 
             <h2>{title}</h2>
 

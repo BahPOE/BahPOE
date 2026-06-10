@@ -5,7 +5,7 @@ import MainContainer from "../../components/layout/MainContainer";
 
 import MechanicOverview from "../../components/mechanics/shared/MechanicOverview/MechanicOverview";
 import { expeditionOverview }
-    from "../../data/expedition/expeditionOverviewData";
+    from "../../data/expedition/expeditionMechanicOverviewData";
 
 import MechanicIntroduction from
     "../../components/mechanics/shared/MechanicIntroduction/MechanicIntroduction";
@@ -14,10 +14,18 @@ import { expeditionIntroduction }
 
 import MechanicLoop from "../../components/mechanics/shared/MechanicLoop/MechanicLoop";
 import { expeditionLoop }
-    from "../../data/expedition/expeditionLoopData";
+    from "../../data/expedition/expeditionMechanicLoopData";
 
 import MechanicCore from "../../components/mechanics/shared/MechanicCore/MechanicCore";
 import { npcs } from "../../data/expedition/expeditionData";
+
+import MechanicBosses from "../../components/mechanics/shared/MechanicBosses/MechanicBosses"
+import { expeditionBosses } from "../../data/expedition/expeditionMechanicBossesData";
+
+import MechanicAdvanced from "../../components/mechanics/shared/MechanicAdvanced/MechanicAdvanced";
+import { expeditionAdvanced } from "../../data/expedition/expeditionMechanicAdvanced";
+
+import "../../components/mechanics/shared/MechanicShared.css";
 
 function ExpeditionShared() {
 
@@ -48,6 +56,14 @@ function ExpeditionShared() {
                 <MechanicCore
                     title="NPCs da Expedition"
                     items={npcs}
+                />
+                <MechanicBosses
+                    title="Chefes da Expedition"
+                    bosses={expeditionBosses}
+                />
+                <MechanicAdvanced
+                    title="Dicas Avançadas"
+                    tips={expeditionAdvanced}
                 />
 
             </MainContainer>
