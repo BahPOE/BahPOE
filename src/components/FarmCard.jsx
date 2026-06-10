@@ -1,10 +1,21 @@
 import "./FarmCard.css";
-import expeditionScarab from "../assets/scarabs/expedition/expeditionScarab.png";
-import ScarabItem from "./ScarabItem";
 
-function FarmCard({
-    title,variant,difficulty,buildType,description,atlasLink,scarabs,
-}) {
+import Tag from "./general/Tag.jsx";
+
+function FarmCard({ farm }) {
+
+    const {
+        title,
+        variant,
+        difficulty,
+        buildType,
+        description,
+        atlasLink,
+        scarabs,
+        layouts,
+        mapDevice,
+    } = farm;
+
     return (
 
         <div className="farm-card">
@@ -18,18 +29,14 @@ function FarmCard({
 
                 <div className="farm-tags">
 
-                    <span>{variant}</span>
-
-                    <span>{difficulty}</span>
-
-                    <span>{buildType}</span>
+                    <Tag type={variant} />
+                    <Tag type={difficulty} />
+                    <Tag type={buildType} />
 
                 </div>
 
                 <p className="farm-description">
-
                     {description}
-
                 </p>
 
                 <a
@@ -46,9 +53,19 @@ function FarmCard({
             {/* COLUNA CENTRAL */}
             <div className="farm-scarabs">
 
-                <h3>Scarabs</h3>
+                <h3>Consumíveis</h3>
 
-                {scarabs}
+                {scarabs?.length > 0 ? (
+                    scarabs.map((scarab) => (
+                        <div key={scarab.name}>
+                            {scarab.amount}x {scarab.name}
+                        </div>
+                    ))
+                ) : (
+                    <div className="farm-empty">
+                        Nenhum consumível necessário
+                    </div>
+                )}
 
             </div>
 
@@ -57,21 +74,30 @@ function FarmCard({
 
                 <h3>Layouts</h3>
 
-                <span>Dunes</span>
+                {layouts?.map((layout) => (
+                    <span key={layout}>
+                        {layout}
+                    </span>
+                ))}
 
-                <span>Jungle Valley</span>
+                {mapDevice && (
 
-                <div className="map-device">
+                    <div className="map-device">
 
-                    <strong>Map Device:</strong>
+                        <strong>Map Device:</strong>
 
-                    <span>Quantity Extra</span>
+                        <span>
+                            {mapDevice}
+                        </span>
 
-                </div>
+                    </div>
+
+                )}
 
             </div>
 
         </div>
+
     );
 }
 

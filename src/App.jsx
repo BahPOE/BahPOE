@@ -3,8 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Mechanics from "../src/pages/mechanics/Mechanics";
 import Builds from "../src/pages/builds/Builds";
-import Expedition from "../src/pages/mechanics/Expedition";
-import Abyss from "../src/pages/mechanics/abyss/Abyss";
+import ExpeditionShared from "../src/pages/mechanics/ExpeditionShared";
 import Farms from "../src/pages/farms/Farms";
 import BuildDetail from "../src/pages/builds/BuildDetail"; // Tauma: página de detalhe da build
 
@@ -25,12 +24,11 @@ function App() {
       <Route path="/mechanics" element={<Mechanics />} />
 
       <Route path="/builds" element={<Builds />} />
-
-      <Route path="/mechanics/expedition"
-        element={<Expedition />} />
-
-      <Route path="/mechanics/abyss"
-        element={<Abyss />} />
+      
+      <Route
+        path="/mechanics/expedition-shared"
+        element={<ExpeditionShared />}
+      />
 
       <Route path="/farms" element={<Farms />} />
 

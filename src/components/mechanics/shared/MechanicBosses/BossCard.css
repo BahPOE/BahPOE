@@ -1,0 +1,109 @@
+.boss-title-row {
+
+    font-size: 1.6rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.boss-toggle {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #d9b56d;
+}
+
+.boss-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 14px 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.boss-header-info {
+
+    flex: 1;
+}
+
+.boss-header:hover {
+
+    background: #242424;
+}
+
+.boss-container {
+
+    margin-top: 20px;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border: 1px solid #313131;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+.boss-image {
+
+    border: 1px solid #4a4a4a;
+
+    border-radius: 8px;
+}
+
+.boss-top-section {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(220px, 300px)
+        1fr;
+
+    gap: 20px;
+}
+
+.drop-item {
+
+    position: relative;
+}
+
+.drop-preview {
+
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 100%;
+
+    margin-left: 12px;
+
+    z-index: 100;
+}
+
+.drop-preview img {
+
+    max-width: 450px;
+
+    height: auto;
+}
+
+.drop-item:hover .drop-preview {
+
+    display: block;
+}

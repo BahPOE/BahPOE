@@ -1,0 +1,48 @@
+.mechanic-advanced-header {
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.mechanic-advanced-header h3 {
+
+    margin: 0;
+}
+
+.mechanic-advanced-icon {
+
+    font-size: 1.1rem;
+
+    flex-shrink: 0;
+}
+
+.mechanic-advanced-tip {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #313131;
+}
+
+.mechanic-advanced-tip:last-child {
+
+    border-bottom: none;
+}
+
+.mechanic-advanced-card h3 {
+
+    margin: 0;
+}
+
+
+.mechanic-advanced-tip p {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: #cfcfcf;
+}

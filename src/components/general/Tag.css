@@ -1,0 +1,106 @@
+.tag {
+
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* TAGS DO TIPO DE FARM */
+.tag-clear {
+
+    background: rgba(0, 200, 120, 0.12);
+    border: 1px solid rgba(0, 200, 120, 0.3);
+    color: rgba(80, 255, 170);
+
+}
+
+.tag-boss {
+
+    background: rgba(255, 80, 80, 0.12);
+    border: 1px solid rgba(255, 80, 80, 0.3);
+    color: rgba(255, 120, 120);
+
+}
+
+
+.tag-currency-basicas {
+
+    background: rgba(255, 180, 0, 0.12);
+    border: 1px solid rgba(255, 180, 0, 0.3);
+    color: rgb(255, 210, 90);
+
+}
+
+.tag-currency-raras {
+
+    background: rgba(125, 55, 211, 0.12);
+    border: 1px solid rgba(125, 55, 211, 0.3);
+    color: rgb(210, 170, 255);
+
+}
+
+.tag-exp {
+
+    background: rgba(180, 120, 255, 0.12);
+    border: 1px solid rgba(180, 120, 255, 0.3);
+    color: rgb(210, 170, 255);
+
+}
+
+.tag-speed {
+
+    background: rgba(120, 255, 199, 0.12);
+    border: 1px solid rgba(120, 255, 199, 0.3);
+    color: rgb(170, 255, 208);
+
+}
+
+.tag-early {
+
+    background: rgba(0, 170, 255, 0.12);
+    border: 1px solid rgba(0, 170, 255, 0.30);
+    color: rgb(110, 210, 255);
+
+}
+
+.tag-easy {
+
+    background: rgba(0, 220, 180, 0.12);
+    border: 1px solid rgba(0, 220, 180, 0.30);
+    color: rgb(120, 255, 220);
+
+}
+
+.tag-midgame {
+
+    background: rgba(255, 180, 0, 0.12);
+    border: 1px solid rgba(255, 180, 0, 0.30);
+    color: rgb(255, 210, 90);
+
+}
+
+.tag-medium {
+
+    background: rgba(255, 220, 60, 0.12);
+    border: 1px solid rgba(255, 220, 60, 0.30);
+    color: rgb(255, 240, 130);
+
+}
+
+.tag-endgame {
+
+    background: rgba(180, 40, 255, 0.12);
+    border: 1px solid rgba(180, 40, 255, 0.30);
+    color: rgb(220, 150, 255);
+
+}
+
+.tag-hard {
+
+    background: rgba(255, 70, 70, 0.12);
+    border: 1px solid rgba(255, 70, 70, 0.30);
+    color: rgb(255, 140, 140);
+
+}

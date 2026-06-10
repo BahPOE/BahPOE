@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Overlay from "../../components/layout/Overlay.jsx";
 import MainContainer from "../../components/layout/MainContainer.jsx";
 import FarmCard from "../../components/FarmCard.jsx";
-import ScarabItem from "../../components/ScarabItem.jsx";
-import expeditionScarab from "../../assets/scarabs/expedition/expeditionScarab.png";
+
+import expeditionFarmData from "../../data/farms/expeditionFarmData.js";
 
 import "./Farms.css";
 
@@ -28,61 +28,14 @@ function Farms() {
 
                     <div className="farms-list">
 
-                        <FarmCard
-                            title="Expedition"
-                            variant={
-                                <spam className="tag-early">
-                                    Early
-                                </spam>
-                            }
-                            difficulty={
-                                <spam className="tag-facil">
-                                    Fácil
-                                </spam>
-                            }
-                            buildType={
-                                <spam className="tag-clear">
-                                    Map Clear
-                                </spam>
-                            }
-                            description="Farm focado em Artefatos."
-                            atlasLink="https://poeplanner.com/a/6J-y"
-                            scarabs={
-                                <div className="farm-empty">
-                                    Nenhum Scarab Necessário
-                                </div>
-                            }
-                        />
+                        {expeditionFarmData.map((farm) => (
 
-                        <FarmCard
-                            title="Expedition"
-                            variant={
-                                <spam className="tag-mid-game">
-                                    Mid-Game
-                                </spam>
-                            }
-                            difficulty={
-                                <spam className="tag-medio">
-                                    Médio
-                                </spam>
-                            }
-                            buildType={
-                                <spam className="tag-clear">
-                                    Map Clear
-                                </spam>
-                            }
-                            description="Farm focado em Logbooks."
-                            atlasLink="https://poeplanner.com/a/6J-1"
-                            scarabs={
-                                <>
-                                    <ScarabItem
-                                        icon={expeditionScarab}
-                                        name="Expedition Scarab"
-                                        amount={1}
-                                    />
-                                </>
-                            }
-                        />
+                            <FarmCard
+                                key={farm.id}
+                                farm={farm}
+                            />
+
+                        ))}
 
                     </div>
                 </MainContainer>
