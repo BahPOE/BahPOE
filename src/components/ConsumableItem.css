@@ -1,4 +1,4 @@
-.scarab-item {
+.consumable-item {
 
     display: flex;
 
@@ -13,7 +13,7 @@
     border-radius: 8px;
 }
 
-.scarab-info {
+.consumable-info {
 
     display: flex;
 
@@ -22,7 +22,7 @@
     gap: 10px;
 }
 
-.scarab-icon {
+.consumable-icon {
 
     width: 32px;
 
@@ -31,7 +31,7 @@
     object-fit: contain;
 }
 
-.scarab-amount {
+.consumable-amount {
 
     color: #4da6ff;
 

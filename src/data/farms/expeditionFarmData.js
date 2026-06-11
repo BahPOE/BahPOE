@@ -16,14 +16,21 @@ const expeditionFarmData = [
 
         atlasLink: "https://poeplanner.com/a/6J-y",
 
-        scarabs: [],
+        consumables: [],
 
         layouts: [
-            "Dunes",
-            "Jungle Valley"
+            {
+                name: "Dunes",
+            },
+
+            {
+                name: "Jungle Valley",
+            },
         ],
 
-        mapDevice: null
+        mapDevice: {
+            name: "Quantity Extra",
+        }
     },
 
     {
@@ -41,20 +48,27 @@ const expeditionFarmData = [
 
         atlasLink: "https://poeplanner.com/a/6J-1",
 
-        scarabs: [
+        consumables: [
             {
                 icon: expeditionScarab,
                 name: "Expedition Scarab",
                 amount: 1
-            }
+            },
         ],
 
         layouts: [
-            "Dunes",
-            "Jungle Valley"
+            {
+                name: "Dunes",
+            },
+
+            {
+                name: "Jungle Valley",
+            },
         ],
 
-        mapDevice: null
+        mapDevice: {
+            name: "Quantity Extra",
+        }
     }
 ];
 

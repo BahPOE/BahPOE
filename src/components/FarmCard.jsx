@@ -2,6 +2,8 @@ import "./FarmCard.css";
 
 import Tag from "./general/Tag.jsx";
 
+import ConsumableItem from "./ConsumableItem.jsx";
+
 function FarmCard({ farm }) {
 
     const {
@@ -11,7 +13,7 @@ function FarmCard({ farm }) {
         buildType,
         description,
         atlasLink,
-        scarabs,
+        consumables,
         layouts,
         mapDevice,
     } = farm;
@@ -55,11 +57,14 @@ function FarmCard({ farm }) {
 
                 <h3>Consumíveis</h3>
 
-                {scarabs?.length > 0 ? (
-                    scarabs.map((scarab) => (
-                        <div key={scarab.name}>
-                            {scarab.amount}x {scarab.name}
-                        </div>
+                {consumables?.length > 0 ? (
+                    consumables.map((consumable) => (
+                        <ConsumableItem
+                            key={consumable.name}
+                            icon={consumable.icon}
+                            name={consumable.name}
+                            amount={consumable.amount}
+                        />
                     ))
                 ) : (
                     <div className="farm-empty">
@@ -75,8 +80,8 @@ function FarmCard({ farm }) {
                 <h3>Layouts</h3>
 
                 {layouts?.map((layout) => (
-                    <span key={layout}>
-                        {layout}
+                    <span key={layout.name}>
+                        {layout.name}
                     </span>
                 ))}
 
@@ -87,7 +92,7 @@ function FarmCard({ farm }) {
                         <strong>Map Device:</strong>
 
                         <span>
-                            {mapDevice}
+                            {mapDevice.name}
                         </span>
 
                     </div>
