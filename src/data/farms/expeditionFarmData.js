@@ -4,7 +4,9 @@ const expeditionFarmData = [
     {
         id: "expedition-artifacts",
 
-        title: "Expedition",
+        category: "expedition",
+
+        title: "Expedition Artefatos",
 
         variant: "early",
 
@@ -36,7 +38,9 @@ const expeditionFarmData = [
     {
         id: "expedition-logbooks",
 
-        title: "Expedition",
+        category: "expedition",
+
+        title: "Expedition Logbooks",
 
         variant: "midgame",
 

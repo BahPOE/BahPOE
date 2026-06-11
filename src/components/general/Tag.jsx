@@ -40,6 +40,11 @@ const tagConfig = {
         label: "Boss",
         className: "tag-boss",
     },
+
+    hybrid: {
+        label: "Híbrido",
+        className: "tag-hybrid",
+    },
 };
 
 function Tag({ type }) {
