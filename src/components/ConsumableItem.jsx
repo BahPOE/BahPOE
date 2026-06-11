@@ -1,6 +1,6 @@
-import "./ScarabItem.css";
+import "./ConsumableItem.css";
 
-function ScarabItem({
+function ConsumableItem({
     icon,
     name,
     amount,
@@ -8,21 +8,21 @@ function ScarabItem({
 
     return (
 
-        <div className="scarab-item">
+        <div className="consumable-item">
 
-            <div className="scarab-info">
+            <div className="consumable-info">
 
                 <img
                     src={icon}
                     alt={name}
-                    className="scarab-icon"
+                    className="consumable-icon"
                 />
 
                 <span>{name}</span>
 
             </div>
 
-            <span className="scarab-amount">
+            <span className="consumable-amount">
 
                 {amount}x
 
@@ -32,4 +32,4 @@ function ScarabItem({
     );
 }
 
-export default ScarabItem;
+export default ConsumableItem;
