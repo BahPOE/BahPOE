@@ -1,6 +1,10 @@
-import Abyss_Scarab from "../../assets/scarabs/abyss/Abyss_Scarab.png";
+import abyssScarabIcon from "../../assets/scarabs/abyss/icon/abyss-scarab-icon.png";
 
-import Abyss_Scarab_of_Multitudes from "../../assets/scarabs/abyss/Abyss_Scarab_of_Multitudes.png";
+import abyssScarabPreview from "../../assets/scarabs/abyss/preview/abyss-scarab-preview.png";
+
+import abyssScarabOfMultitudesIcon from "../../assets/scarabs/abyss/icon/abyss-scarab-of-multitudes-icon.png";
+
+import abyssScarabOfMultitudesPreview from "../../assets/scarabs/abyss/preview/abyss-scarab-of-multitudes-preview.png";
 
 import abyssRiftBackground from "../../assets/farm-backgrounds/abyss/abyss-rift-background.png";
 
@@ -26,13 +30,15 @@ const abyssFarmData = [
 
         consumables: [
             {
-                icon: Abyss_Scarab,
+                icon: abyssScarabIcon,
+                hoverPreview: abyssScarabPreview,
                 name: "Abyss Scarab",
                 amount: 2
             },
 
             {
-                icon: Abyss_Scarab_of_Multitudes,
+                icon: abyssScarabOfMultitudesIcon,
+                hoverPreview: abyssScarabOfMultitudesPreview,
                 name: "Abyss Scarab of Multitudes",
                 amount: 2
             },

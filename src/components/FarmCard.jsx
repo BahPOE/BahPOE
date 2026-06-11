@@ -4,6 +4,10 @@ import Tag from "./general/Tag.jsx";
 
 import ConsumableItem from "./ConsumableItem.jsx";
 
+import HoverPreview from "./general/HoverPreview.jsx";
+
+import { useState } from "react";
+
 function FarmCard({ farm }) {
 
     const {
@@ -18,6 +22,8 @@ function FarmCard({ farm }) {
         mapDevice,
         image,
     } = farm;
+
+    const [previewImage, setPreviewImage] = useState(null);
 
     return (
 
@@ -75,14 +81,33 @@ function FarmCard({ farm }) {
                     <h3>Consumíveis</h3>
 
                     {consumables?.length > 0 ? (
+
                         consumables.map((consumable) => (
-                            <ConsumableItem
+
+                            <HoverPreview
                                 key={consumable.name}
-                                icon={consumable.icon}
-                                name={consumable.name}
-                                amount={consumable.amount}
-                            />
+                                image={consumable.hoverPreview}
+                            >
+                                <div
+                                    onMouseEnter={() =>
+                                        setPreviewImage(consumable.hoverPreview)
+                                    }
+                                    onMouseLeave={() =>
+                                        setPreviewImage(null)
+                                    }
+                                >
+                                    <ConsumableItem
+
+                                        icon={consumable.icon}
+                                        name={consumable.name}
+                                        amount={consumable.amount}
+                                    />
+                                    
+                                </div>
+
+                            </HoverPreview>
                         ))
+
                     ) : (
                         <div className="farm-empty">
                             Nenhum consumível necessário
@@ -126,6 +151,18 @@ function FarmCard({ farm }) {
                     )}
 
                 </div>
+
+                {previewImage && (
+
+                    <div className="farm-preview-panel">
+
+                        <img
+                            src={previewImage}
+                            alt=""
+                        />
+                    </div>
+
+                )}
 
             </div>
 

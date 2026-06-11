@@ -179,3 +179,29 @@
     object-fit: cover;
     opacity: 0.35;
 }
+
+.farm-preview-panel {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 20;
+}
+
+.farm-preview-panel img {
+
+    max-width: 450px;
+
+    max-height: 90%;
+
+    object-fit: contain;
+}
