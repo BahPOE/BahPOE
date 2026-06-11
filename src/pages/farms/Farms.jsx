@@ -4,7 +4,7 @@ import Overlay from "../../components/layout/Overlay.jsx";
 import MainContainer from "../../components/layout/MainContainer.jsx";
 import FarmCard from "../../components/FarmCard.jsx";
 
-import expeditionFarmData from "../../data/farms/expeditionFarmData.js";
+import farms from "../../data/farms/index.js";
 
 import "./Farms.css";
 
@@ -28,7 +28,7 @@ function Farms() {
 
                     <div className="farms-list">
 
-                        {expeditionFarmData.map((farm) => (
+                        {farms.map((farm) => (
 
                             <FarmCard
                                 key={farm.id}
