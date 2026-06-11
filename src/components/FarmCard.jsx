@@ -16,6 +16,7 @@ function FarmCard({ farm }) {
         consumables,
         layouts,
         mapDevice,
+        image,
     } = farm;
 
     return (
@@ -52,52 +53,79 @@ function FarmCard({ farm }) {
 
             </div>
 
-            {/* COLUNA CENTRAL */}
-            <div className="farm-scarabs">
+            {/* ÁREA VISUAL */}
+            <div className="farm-details">
 
-                <h3>Consumíveis</h3>
+                {image && (
 
-                {consumables?.length > 0 ? (
-                    consumables.map((consumable) => (
-                        <ConsumableItem
-                            key={consumable.name}
-                            icon={consumable.icon}
-                            name={consumable.name}
-                            amount={consumable.amount}
+                    <div className="farm-card-background">
+
+                        <img
+                            src={image}
+                            alt=""
                         />
-                    ))
-                ) : (
-                    <div className="farm-empty">
-                        Nenhum consumível necessário
-                    </div>
-                )}
-
-            </div>
-
-            {/* COLUNA DIREITA */}
-            <div className="farm-layout">
-
-                <h3>Layouts</h3>
-
-                {layouts?.map((layout) => (
-                    <span key={layout.name}>
-                        {layout.name}
-                    </span>
-                ))}
-
-                {mapDevice && (
-
-                    <div className="map-device">
-
-                        <strong>Map Device:</strong>
-
-                        <span>
-                            {mapDevice.name}
-                        </span>
 
                     </div>
 
                 )}
+
+                {/* COLUNA CENTRAL */}
+                <div className="farm-scarabs">
+
+                    <h3>Consumíveis</h3>
+
+                    {consumables?.length > 0 ? (
+                        consumables.map((consumable) => (
+                            <ConsumableItem
+                                key={consumable.name}
+                                icon={consumable.icon}
+                                name={consumable.name}
+                                amount={consumable.amount}
+                            />
+                        ))
+                    ) : (
+                        <div className="farm-empty">
+                            Nenhum consumível necessário
+                        </div>
+                    )}
+
+                </div>
+
+                {/* COLUNA DIREITA */}
+                <div className="farm-layout">
+
+                    <h3>Layouts</h3>
+
+                    <div className="farm-layout-list">
+
+                        {layouts?.map((layout) => (
+
+                            <span
+                                key={layout.name}
+                                className="farm-layout-item"
+                            >
+                                {layout.name}
+                            </span>
+
+                        ))}
+
+                    </div>
+
+                    {mapDevice && (
+
+                        <div className="map-device">
+
+                            <strong>Map Device:</strong>
+
+                            <span className="map-device-item">
+                                {mapDevice.name}
+                            </span>
+
+                        </div>
+
+                    )}
+
+                </div>
 
             </div>
 
