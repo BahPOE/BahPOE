@@ -30,9 +30,6 @@ const expeditionFarmData = [
             },
         ],
 
-        mapDevice: {
-            name: "Quantity Extra",
-        }
     },
 
     {
@@ -69,10 +66,6 @@ const expeditionFarmData = [
                 name: "Jungle Valley",
             },
         ],
-
-        mapDevice: {
-            name: "Quantity Extra",
-        }
     }
 ];
 

@@ -37,3 +37,27 @@
 
     font-weight: bold;
 }
+
+.scarab-item {
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+    transition:
+    
+        transform 0.2s ease,
+
+        background 0.2s ease,
+
+        border-color 0.2s ease;
+}
+
+.scarab-item:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,0.05);
+
+    border-color: rgba(120,180,255,0.30);
+}
