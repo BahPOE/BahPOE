@@ -4,8 +4,6 @@ import Tag from "./general/Tag.jsx";
 
 import ConsumableItem from "./ConsumableItem.jsx";
 
-import HoverPreview from "./general/HoverPreview.jsx";
-
 import { useState } from "react";
 
 function FarmCard({ farm }) {
@@ -19,7 +17,6 @@ function FarmCard({ farm }) {
         atlasLink,
         consumables,
         layouts,
-        mapDevice,
         image,
     } = farm;
 
@@ -36,7 +33,7 @@ function FarmCard({ farm }) {
                     {title}
                 </h2>
 
-                <div className="farm-tags">
+                <div className="farm-tag">
 
                     <Tag type={variant} />
                     <Tag type={difficulty} />
@@ -54,7 +51,7 @@ function FarmCard({ farm }) {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Atlas Tree
+                    View Atlas Tree →
                 </a>
 
             </div>
@@ -84,28 +81,25 @@ function FarmCard({ farm }) {
 
                         consumables.map((consumable) => (
 
-                            <HoverPreview
+
+                            <div
                                 key={consumable.name}
-                                image={consumable.hoverPreview}
+                                onMouseEnter={() =>
+                                    setPreviewImage(consumable.hoverPreview)
+                                }
+                                onMouseLeave={() =>
+                                    setPreviewImage(null)
+                                }
                             >
-                                <div
-                                    onMouseEnter={() =>
-                                        setPreviewImage(consumable.hoverPreview)
-                                    }
-                                    onMouseLeave={() =>
-                                        setPreviewImage(null)
-                                    }
-                                >
-                                    <ConsumableItem
+                                <ConsumableItem
 
-                                        icon={consumable.icon}
-                                        name={consumable.name}
-                                        amount={consumable.amount}
-                                    />
-                                    
-                                </div>
+                                    icon={consumable.icon}
+                                    name={consumable.name}
+                                    amount={consumable.amount}
+                                />
 
-                            </HoverPreview>
+                            </div>
+
                         ))
 
                     ) : (
@@ -128,6 +122,14 @@ function FarmCard({ farm }) {
                             <span
                                 key={layout.name}
                                 className="farm-layout-item"
+
+                                onMouseEnter={() =>
+                                    setPreviewImage(layout.hoverPreview)
+                                }
+
+                                onMouseLeave={() =>
+                                    setPreviewImage(null)
+                                }
                             >
                                 {layout.name}
                             </span>
@@ -135,20 +137,6 @@ function FarmCard({ farm }) {
                         ))}
 
                     </div>
-
-                    {mapDevice && (
-
-                        <div className="map-device">
-
-                            <strong>Map Device:</strong>
-
-                            <span className="map-device-item">
-                                {mapDevice.name}
-                            </span>
-
-                        </div>
-
-                    )}
 
                 </div>
 
@@ -166,7 +154,7 @@ function FarmCard({ farm }) {
 
             </div>
 
-        </div>
+        </div >
 
     );
 }

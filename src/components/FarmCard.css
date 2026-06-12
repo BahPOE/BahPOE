@@ -53,31 +53,9 @@
 
 .farm-layout-item:hover {
 
-    border-color: rgba(120,180,255,0.35);
+    border-color: rgba(120, 180, 255, 0.35);
 
-    background: rgba(120,180,255,0.08);
-}
-
-.map-device {
-
-    margin-top: auto;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-.map-device-item {
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 8px;
-
-    padding: 8px 10px;
+    background: rgba(120, 180, 255, 0.08);
 }
 
 .farm-title {
@@ -107,22 +85,43 @@
 
 .farm-link {
 
-    color: #6bb6ff;
-    text-decoration: none;
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 12px 18px;
+
     margin-top: auto;
+
+    border-radius: 10px;
+
+    background: rgba(80, 140, 255, 0.15);
+
+    border: 1px solid rgba(80, 140, 255, 0.35);
+
+    color: #9fd0ff;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .farm-link:hover {
 
-    color: #80c1ff;
-}
+    transform: translateY(-2px);
 
-.map-device {
+    background: rgba(80, 140, 255, 0.22);
 
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    border-color: rgba(80, 140, 255, 0.60);
 }
 
 .farm-empty {
@@ -192,9 +191,16 @@
 
     align-items: center;
 
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.80);
+
+    backdrop-filter: blur(4px);
+
+    border-radius: 10px;
 
     z-index: 20;
+
+    pointer-events: none;
+    /*teste*/
 }
 
 .farm-preview-panel img {
@@ -204,4 +210,35 @@
     max-height: 90%;
 
     object-fit: contain;
+}
+
+.farm-layout-item {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 8px 12px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border-radius: 8px;
+
+    border: 1px solid transparent;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.farm-layout-item:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border-color: rgba(120, 180, 255, 0.30);
 }
