@@ -1,5 +1,6 @@
 .farm-card {
 
+    position: relative;
     width: 100%;
     box-sizing: border-box;
     background: rgba(10, 10, 10, 0.85);
@@ -13,7 +14,11 @@
     backdrop-filter: blur(6px);
 }
 
-.farm-info,
+.farm-info {
+
+    display: flex;
+    flex-direction: column;
+}
 .farm-scarabs,
 .farm-layout {
 
@@ -44,10 +49,10 @@
 
 .farm-layout-item {
 
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
     transition: 0.2s ease;
 }
 
@@ -62,25 +67,29 @@
 
     color: #ffffff;
     font-size: clamp(24px, 3vw, 32px);
+    margin-bottom: 12px;
 }
 
-.farm-tags {
+.farm-tag {
 
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 16px;
+    gap: 3px;
 }
 
-.farm-tags span {
+.farm-tag span {
 
     padding: 6px 10px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .farm-description {
 
     color: rgba(245, 245, 245, 0.8);
     line-height: 1.5;
+    margin-bottom: 24px;
 }
 
 .farm-link {
@@ -162,21 +171,23 @@
     gap: 20px;
 }
 
-.farm-card-background {
+.farm-card::before {
+
+    content: "";
 
     position: absolute;
+
     inset: 0;
-    overflow: hidden;
-    border-radius: 10px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        270deg,
+        rgba(0, 255, 0, 0.09),
+        transparent 90%
+    );
+
     pointer-events: none;
-}
-
-.farm-card-background img {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.35;
 }
 
 .farm-preview-panel {
@@ -214,24 +225,36 @@
 
 .farm-layout-item {
 
-    display: flex;
+    display: inline-flex;
 
     align-items: center;
 
-    padding: 8px 12px;
+    justify-content: center;
 
-    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 14px;
 
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
 
-    border: 1px solid transparent;
+    border-radius: 999px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
 
     cursor: pointer;
 
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
+    font-size: 14px;
+
+}
+
+.farm-scarabs h3,
+.farm-layout h3 {
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: rgba(255,255,255,0.70);
 }
 
 .farm-layout-item:hover {

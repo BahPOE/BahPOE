@@ -48,11 +48,7 @@ const abyssFarmData = [
 
         layouts: [
             {
-                name: "Lighthouse",
-
-                hoverPreview: lighthousePreview,
-
-                description:"Corredores favorecem o caminho do Abyss"
+                name: "Lighthouse"
             },
         ],
     },
