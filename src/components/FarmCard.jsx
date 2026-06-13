@@ -59,19 +59,6 @@ function FarmCard({ farm }) {
             {/* ÁREA VISUAL */}
             <div className="farm-details">
 
-                {image && (
-
-                    <div className="farm-card-background">
-
-                        <img
-                            src={image}
-                            alt=""
-                        />
-
-                    </div>
-
-                )}
-
                 {/* COLUNA CENTRAL */}
                 <div className="farm-scarabs">
 
@@ -122,14 +109,6 @@ function FarmCard({ farm }) {
                             <span
                                 key={layout.name}
                                 className="farm-layout-item"
-
-                                onMouseEnter={() =>
-                                    setPreviewImage(layout.hoverPreview)
-                                }
-
-                                onMouseLeave={() =>
-                                    setPreviewImage(null)
-                                }
                             >
                                 {layout.name}
                             </span>

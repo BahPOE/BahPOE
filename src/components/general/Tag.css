@@ -8,11 +8,12 @@
 }
 
 /* TAGS DO TIPO DE FARM */
+
 .tag-clear {
 
     background: rgba(0, 200, 120, 0.08);
     border: 1px solid rgba(0, 200, 120, 0.20);
-    color: rgba(80, 255, 170);
+    color: rgba(60, 200, 220);
 
 }
 
@@ -20,7 +21,15 @@
 
     background: rgba(255, 80, 80, 0.08);
     border: 1px solid rgba(255, 80, 80, 0.20);
-    color: rgba(255, 120, 120);
+    color: rgba(180, 100, 220);
+
+}
+
+.tag-hybrid {
+
+    background: rgba(140, 120, 220, 0.08);
+    border: 1px solid rgba(140, 120, 220, 0.20);
+    color: rgba(140, 120, 220);
 
 }
 
@@ -61,7 +70,7 @@
 
     background: rgba(0, 170, 255, 0.08);
     border: 1px solid rgba(0, 170, 255, 0.20);
-    color: rgb(110, 210, 255);
+    color: rgb(80, 140, 255);
 
 }
 
@@ -69,15 +78,15 @@
 
     background: rgba(0, 220, 180, 0.08);
     border: 1px solid rgba(0, 220, 180, 0.20);
-    color: rgb(120, 255, 220);
+    color: rgb(90, 180, 120);
 
 }
 
 .tag-midgame {
 
-    background: rgba(255, 180, 0, 0.08);
-    border: 1px solid rgba(255, 180, 0, 0.20);
-    color: rgb(255, 210, 90);
+    background: rgba(60, 110, 230, 0.08);
+    border: 1px solid rgba(60, 110, 230, 0.20);
+    color: rgb(60, 110, 230);
 
 }
 
@@ -85,7 +94,7 @@
 
     background: rgba(255, 220, 60, 0.08);
     border: 1px solid rgba(255, 220, 60, 0.20);
-    color: rgb(255, 240, 130);
+    color: rgb(220, 180, 70);
 
 }
 
@@ -93,7 +102,7 @@
 
     background: rgba(180, 40, 255, 0.08);
     border: 1px solid rgba(180, 40, 255, 0.20);
-    color: rgb(220, 150, 255);
+    color: rgb(130, 90, 255);
 
 }
 
@@ -101,6 +110,6 @@
 
     background: rgba(255, 70, 70, 0.08);
     border: 1px solid rgba(255, 70, 70, 0.20);
-    color: rgb(255, 140, 140);
+    color: rgb(210, 90, 90);
 
 }
