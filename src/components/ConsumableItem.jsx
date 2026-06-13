@@ -18,7 +18,11 @@ function ConsumableItem({
                     className="consumable-icon"
                 />
 
-                <span>{name}</span>
+                <span className="consumable-name">
+
+                    {name}
+
+                </span>
 
             </div>
 

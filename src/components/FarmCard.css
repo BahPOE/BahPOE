@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .farm-scarabs,
 .farm-layout {
 
@@ -54,13 +55,6 @@
     border-radius: 10px;
     padding: 12px;
     transition: 0.2s ease;
-}
-
-.farm-layout-item:hover {
-
-    border-color: rgba(120, 180, 255, 0.35);
-
-    background: rgba(120, 180, 255, 0.08);
 }
 
 .farm-title {
@@ -181,11 +175,9 @@
 
     border-radius: 12px;
 
-    background: linear-gradient(
-        270deg,
-        rgba(0, 255, 0, 0.09),
-        transparent 90%
-    );
+    background: linear-gradient(270deg,
+            var(--theme-color),
+            transparent 90%);
 
     pointer-events: none;
 }
@@ -250,11 +242,13 @@
 
     font-size: 13px;
 
+    text-align: center;
+
     text-transform: uppercase;
 
     letter-spacing: 1px;
 
-    color: rgba(255,255,255,0.70);
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .farm-layout-item:hover {

@@ -4,7 +4,7 @@ import Tag from "./general/Tag.jsx";
 
 import ConsumableItem from "./ConsumableItem.jsx";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function FarmCard({ farm }) {
 
@@ -18,13 +18,21 @@ function FarmCard({ farm }) {
         consumables,
         layouts,
         image,
+        themeColor,
     } = farm;
 
     const [previewImage, setPreviewImage] = useState(null);
 
+    const previewTimeoutRef = useRef(null);
+
     return (
 
-        <div className="farm-card">
+        <div
+            className="farm-card"
+            style={{
+                "--theme-color": themeColor
+            }}
+        >
 
             {/* COLUNA ESQUERDA */}
             <div className="farm-info">
@@ -70,13 +78,18 @@ function FarmCard({ farm }) {
 
 
                             <div
+
                                 key={consumable.name}
-                                onMouseEnter={() =>
-                                    setPreviewImage(consumable.hoverPreview)
-                                }
-                                onMouseLeave={() =>
+                                onMouseEnter={() => {
+                                    previewTimeoutRef.current = setTimeout(() => {
+                                        setPreviewImage(consumable.hoverPreview)
+                                    }, 400);
+                                }}
+
+                                onMouseLeave={() => {
+                                    clearTimeout(previewTimeoutRef.current);
                                     setPreviewImage(null)
-                                }
+                                }}
                             >
                                 <ConsumableItem
 
@@ -119,19 +132,19 @@ function FarmCard({ farm }) {
 
                 </div>
 
-                {previewImage && (
-
-                    <div className="farm-preview-panel">
-
-                        <img
-                            src={previewImage}
-                            alt=""
-                        />
-                    </div>
-
-                )}
-
             </div>
+
+            {previewImage && (
+
+                <div className="farm-preview-panel">
+
+                    <img
+                        src={previewImage}
+                        alt=""
+                    />
+                </div>
+
+            )}
 
         </div >
 
