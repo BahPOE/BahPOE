@@ -208,9 +208,9 @@
 
 .farm-preview-panel img {
 
-    max-width: 450px;
+    max-width: 700px;
 
-    max-height: 90%;
+    max-height: 98%;
 
     object-fit: contain;
 }

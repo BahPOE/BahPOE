@@ -17,7 +17,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 40px 20px;
     /* Tauma: adicionado padding */
 }
@@ -48,4 +48,120 @@
     flex-direction: column;
     gap: 25px;
     margin-top: 30px;
+    
+}
+
+.farm-filters {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.filter-group {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.filter-group button {
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.filter-group button:hover {
+
+    background: rgba(255,255,255,0.10);
+}
+
+.farms-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+
+.farms-header-left {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.farm-filters {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    align-items: flex-end;
+}
+
+.filter-group {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+
+    .farms-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .farm-filters {
+
+        align-items: flex-start;
+    }
+
+    .filter-group {
+
+        justify-content: flex-start;
+    }
+}
+
+.filter-button.active {
+
+    background: rgba(80, 140, 255, 0.15);
+
+    border-color: rgba(80, 140, 255, 0.40);
+
+    color: #9fd0ff;
 }
