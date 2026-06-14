@@ -8,7 +8,47 @@ import farms from "../../data/farms/index.js";
 
 import "./Farms.css";
 
+import { useState } from "react";
+
 function Farms() {
+
+    const [selectedMechanic, setSelectedMechanic] = useState("all");
+
+    const [selectedStage, setSelectedStage] = useState("all");
+
+    const mechanics = [
+
+        "all",
+
+        ...new Set(
+            farms.map((farm) => farm.category)
+        )
+    ];
+
+    const stages = [
+
+        "all",
+
+        ...new Set(
+            farms.map((farm) => farm.variant)
+        )
+    ];
+
+    const filteredFarms = farms.filter((farm) => {
+
+        const mechanicMatch =
+
+            selectedMechanic === "all" ||
+            farm.category === selectedMechanic;
+
+        const stageMatch =
+
+            selectedStage === "all" ||
+            farm.variant === selectedStage;
+
+        return mechanicMatch && stageMatch;
+    });
+
     return (
         <div className="farms-page">
 
@@ -18,26 +58,96 @@ function Farms() {
 
                 <MainContainer>
 
-                    <Link className="back-button" to="/">
-                        Voltar para Home
-                    </Link>
+                    <div className="farms-header">
 
-                    <h1 className="farms-title">
-                        Farms
-                    </h1>
+                        <div className="farms-header-left">
+
+                            <Link className="back-button" to="/">
+                                Voltar para Home
+                            </Link>
+
+                            <h1 className="farms-title">
+                                Farms
+                            </h1>
+
+                        </div>
+
+                        <div className="farm-filters">
+
+                            <div className="farm-filters">
+
+                                <div className="filter-group">
+
+                                    {mechanics.map((mechanic) => (
+
+                                        <button
+                                            key={mechanic}
+
+                                            className={
+                                                selectedMechanic === mechanic
+                                                    ? "filter-button active"
+                                                    : "filter-button"
+                                            }
+
+                                            onClick={() =>
+                                                setSelectedMechanic(mechanic)
+                                            }
+                                        >
+                                            {mechanic === "all"
+                                                ? "Todos"
+                                                : mechanic
+                                            }
+                                        </button>
+
+                                    ))}
+
+                                </div>
+
+                                <div className="filter-group">
+
+                                    {stages.map((stage) => (
+
+                                        <button
+                                            key={stage}
+
+                                            className={
+                                                selectedStage === stage
+                                                    ? "filter-button active"
+                                                    : "filter-button"
+                                            }
+
+                                            onClick={() =>
+                                                setSelectedStage(stage)
+                                            }
+                                        >
+                                            {stage === "all"
+                                                ? "Todos"
+                                                : stage
+                                            }
+                                        </button>
+
+                                    ))}
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <div className="farms-list">
 
-                        {farms.map((farm) => (
+                        {filteredFarms.map((farm) => (
 
                             <FarmCard
                                 key={farm.id}
                                 farm={farm}
                             />
-
                         ))}
 
                     </div>
+
                 </MainContainer>
 
             </div>
