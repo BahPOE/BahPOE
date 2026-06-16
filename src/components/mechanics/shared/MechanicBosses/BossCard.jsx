@@ -29,11 +29,11 @@ function BossCard({ boss }) {
 
                         <h3>{boss.name}</h3>
 
-                        <spam className="boss-toggle">
+                        <span className="boss-toggle">
 
                             {isOpen ? "▼" : "▶"}
 
-                        </spam>
+                        </span>
 
                     </div>
 
@@ -97,43 +97,37 @@ function BossCard({ boss }) {
 
                                     {boss.drops?.length > 0 && (
 
-                                        <>
+                                        <ul className="drops-list">
 
-                                            <h4>Drops Únicos</h4>
+                                            {boss.drops.map((drop) => (
 
-                                            <div className="drops-list">
+                                                <li
+                                                    key={drop.name}
+                                                    className="drop-item"
+                                                >
 
-                                                {boss.drops.map((drop) => (
+                                                    <img
+                                                        src={drop.icon}
+                                                        alt={drop.name}
+                                                        className="drop-icon"
+                                                    />
 
-                                                    <li
-                                                        key={drop.name}
-                                                        className="drop-item"
-                                                    >
+                                                    <span>{drop.name}</span>
+
+                                                    <div className="drop-preview">
 
                                                         <img
-                                                            src={drop.icon}
+                                                            src={drop.preview}
                                                             alt={drop.name}
-                                                            className="drop-icon"
                                                         />
 
-                                                        <span>{drop.name}</span>
+                                                    </div>
 
-                                                        <div className="drop-preview">
+                                                </li>
 
-                                                            <img
-                                                                src={drop.preview}
-                                                                alt={drop.name}
-                                                            />
+                                            ))}
 
-                                                        </div>
-
-                                                    </li>
-
-                                                ))}
-
-                                            </div>
-
-                                        </>
+                                        </ul>
 
                                     )}
 
@@ -148,8 +142,9 @@ function BossCard({ boss }) {
                                 </BossInfoSection>
 
                             </div>
+
                         )}
-                        
+
                         {boss.arena?.length > 0 && (
 
                             <BossInfoSection title="Arena">
@@ -158,14 +153,52 @@ function BossCard({ boss }) {
 
                                     {boss.arena.map((arenaItem) => (
 
-                                        <li key={arenaItem.title}>
+                                        <li
+                                            key={arenaItem.title}
+                                            className="arena-item"
+                                        >
 
-                                            <strong>
-                                                {arenaItem.title}:
-                                            </strong>
+                                            <h5>
+                                                {arenaItem.title}
+                                            </h5>
 
-                                            {" "}
-                                            {arenaItem.description}
+                                            <p>
+                                                {arenaItem.description}
+                                            </p>
+
+                                        </li>
+
+                                    ))}
+
+                                </ul>
+
+                            </BossInfoSection>
+
+                        )}
+
+                        {boss.skills?.length > 0 && (
+
+                            <BossInfoSection
+                                title="Habilidades"
+                                className="boss-skills"
+                            >
+
+                                <ul>
+
+                                    {boss.skills.map((skill) => (
+
+                                        <li
+                                            key={skill.name}
+                                            className="skill-item"
+                                        >
+
+                                            <h5>
+                                                {skill.name}
+                                            </h5>
+
+                                            <p>
+                                                {skill.description}
+                                            </p>
 
                                         </li>
 
@@ -179,35 +212,6 @@ function BossCard({ boss }) {
 
                     </div>
 
-                    {boss.skills?.length > 0 && (
-
-                        <BossInfoSection
-                            title="Habilidades"
-                            className="boss-skills"
-                        >
-
-                            <ul>
-
-                                {boss.skills.map((skill) => (
-
-                                    <li key={skill.name}>
-
-                                        <strong>
-                                            {skill.name}:
-                                        </strong>
-
-                                        {" "}
-                                        {skill.description}
-
-                                    </li>
-
-                                ))}
-
-                            </ul>
-
-                        </BossInfoSection>
-
-                    )}
 
                 </>
 
