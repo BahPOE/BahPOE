@@ -14,6 +14,8 @@
 
     position: relative;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,8 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-top: 30px;
-    
+
 }
 
 .farm-filters {
@@ -59,8 +60,20 @@
 
     gap: 15px;
 
-    margin-bottom: 30px;
+    margin-left: auto;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 12px;
+
+    padding: 14px 18px;
+
+    backdrop-filter: blur(4px);
+
 }
+
 
 .filter-group {
 
@@ -73,9 +86,9 @@
 
 .filter-group button {
 
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
 
-    border: 1px solid rgba(255,255,255,0.10);
+    border: 1px solid rgba(255, 255, 255, 0.10);
 
     color: white;
 
@@ -90,7 +103,7 @@
 
 .filter-group button:hover {
 
-    background: rgba(255,255,255,0.10);
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .farms-header {
@@ -101,9 +114,12 @@
 
     align-items: flex-end;
 
-    gap: 40px;
+    gap: 10px;
 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+
+    padding-top: 0px;
+
 }
 
 .farms-header-left {
@@ -112,7 +128,27 @@
 
     flex-direction: column;
 
-    gap: 12px;
+    gap: 4px;
+
+    position: relative;
+
+    top: 60px;
+
+    padding-top: 20px;
+}
+
+@media (min-width: 1600px) {
+
+    .farm-filters {
+        top: -40px;
+    }
+
+    .farms-header-left {
+
+        position: relative;
+
+        top: -40px;
+    }
 }
 
 .farm-filters {
@@ -124,6 +160,29 @@
     gap: 10px;
 
     align-items: flex-end;
+
+    margin-left: auto;
+
+    position: relative;
+
+    top: -40px;
+}
+
+@media (min-width: 1600px) {
+
+    .farm-filters {
+
+        top: -40px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+    .farm-filters {
+
+        top: -0px;
+    }
 }
 
 .filter-group {
@@ -144,6 +203,7 @@
         flex-direction: column;
 
         align-items: flex-start;
+
     }
 
     .farm-filters {
@@ -164,4 +224,51 @@
     border-color: rgba(80, 140, 255, 0.40);
 
     color: #9fd0ff;
+}
+
+.filter-label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.farms-title {
+
+    font-size: clamp(32px, 4vw, 42px);
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin: 0;
+
+    position: relative;
+
+    margin-top: 20px;
+}
+
+.farms-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 111px;
+
+    height: 3px;
+
+    margin-top: 8px;
+
+    border-radius: 999px;
+
+    background: rgba(80, 140, 255, 0.80);
 }
