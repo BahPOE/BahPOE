@@ -6,9 +6,13 @@ function MechanicOverview({ data }) {
 
             <h1>{data.title}</h1>
 
-            <p>{data.subtitle}</p>
+            <p className="mechanic-subtitle">
+                {data.subtitle}
+            </p>
 
-            <p>{data.summary}</p>
+            <p className="mechanic-summary">
+                {data.summary}
+            </p>
 
         </section>
 

@@ -4,10 +4,10 @@ export const expeditionLoop = [
 
     "Posicionar Explosivos",
 
-    "Detonar",
+    "Iniciar Detonação",
 
     "Eliminar Inimigos",
 
-    "Coletar Recompensas",
+    "Recolher Loot",
 
 ];

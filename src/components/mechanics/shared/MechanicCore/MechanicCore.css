@@ -10,9 +10,9 @@
 
 .mechanic-core-card {
 
-    padding: 20px;
+    padding: 18px;
 
-    background: #1c1c1c;
+    background: rgba(255, 255, 255, 0.02);
 
     border: 1px solid #313131;
 
@@ -27,14 +27,34 @@
 .mechanic-core-card p {
 
     margin: 0;
+
+    line-height: 1.5;
+
+    color: rgba(245, 245, 245, 0.8);
 }
 
 .mechanic-core-header {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .mechanic-core-header h3 {
     margin: 0;
+    color: #d9b56d;
+}
+
+.mechanic-core-header h3::after {
+
+    content: "";
+
+    display: block;
+
+    width: 250px;
+
+    height: 2px;
+
+    margin-top: 8px;
+
+    background: #d9b56d;
 }
 
 .mechanic-core-subtitle {

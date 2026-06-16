@@ -12,16 +12,27 @@ function MechanicLoop({ steps }) {
 
                 {steps.map((step, index) => (
 
-                    <div key={step} className="mechanic-loop-item">
+                    <div
+                        key={step}
+                        className="mechanic-loop-wrapper"
+                    >
 
-                        <div className="mechanic-loop-number">
-                            {index + 1}
+                        <div className="mechanic-loop-step">
+
+                            <div className="mechanic-loop-number">
+                                {index + 1}
+                            </div>
+
+                            <p>{step}</p>
+
                         </div>
 
-                        <p>{step}</p>
-
                         {index < steps.length - 1 && (
-                            <span className="mechanic-loop-arrow">→</span>
+
+                            <span className="mechanic-loop-arrow">
+                                →
+                            </span>
+
                         )}
 
                     </div>
