@@ -99,9 +99,7 @@ function BossCard({ boss }) {
 
                                         <>
 
-                                            <h4>Drops Únicos</h4>
-
-                                            <div className="drops-list">
+                                            <ul className="drops-list">
 
                                                 {boss.drops.map((drop) => (
 
@@ -131,7 +129,7 @@ function BossCard({ boss }) {
 
                                                 ))}
 
-                                            </div>
+                                            </ul>
 
                                         </>
 
@@ -149,7 +147,7 @@ function BossCard({ boss }) {
 
                             </div>
                         )}
-                        
+
                         {boss.arena?.length > 0 && (
 
                             <BossInfoSection title="Arena">
@@ -158,15 +156,19 @@ function BossCard({ boss }) {
 
                                     {boss.arena.map((arenaItem) => (
 
-                                        <li key={arenaItem.title}>
+                                        <li
+                                            key={arenaItem.title}
+                                            className="arena-item"
+                                        >
 
-                                            <strong>
-                                                {arenaItem.title}:
-                                            </strong>
+                                            <h5>
+                                                {arenaItem.title}
+                                            </h5>
 
-                                            {" "}
-                                            {arenaItem.description}
-
+                                            <p>
+                                                {arenaItem.description}
+                                            </p>
+                                            
                                         </li>
 
                                     ))}
