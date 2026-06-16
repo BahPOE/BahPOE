@@ -58,13 +58,13 @@ function Farms() {
 
                 <MainContainer>
 
+                    <Link className="back-button" to="/">
+                        Voltar para Home
+                    </Link>
+
                     <div className="farms-header">
 
                         <div className="farms-header-left">
-
-                            <Link className="back-button" to="/">
-                                Voltar para Home
-                            </Link>
 
                             <h1 className="farms-title">
                                 Farms
@@ -74,7 +74,11 @@ function Farms() {
 
                         <div className="farm-filters">
 
-                            <div className="farm-filters">
+                            <div>
+
+                                <span className="filter-label">
+                                    Progressão
+                                </span>
 
                                 <div className="filter-group">
 
@@ -102,6 +106,15 @@ function Farms() {
                                     ))}
 
                                 </div>
+
+                            </div>
+
+                            <div>
+
+                                <span className="filter-label">
+                                    Mecânica
+                                </span>
+
 
                                 <div className="filter-group">
 
