@@ -32,17 +32,6 @@
     object-fit: cover;
 }
 
-.mechanic-info {
-
-    padding: 20px;
-}
-
-.mechanic-info h2 {
-
-    color: #f5f5f5;
-    margin-bottom: 10px;
-}
-
 .mechanic-info p {
 
     color: rgba(245, 245, 245, 0.75);
