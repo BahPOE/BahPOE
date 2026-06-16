@@ -1,0 +1,32 @@
+.mechanic-npcs-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.mechanic-npc-card {
+
+    padding: 18px;
+
+    background: rgba(255,255,255,0.02);
+
+    border: 1px solid #313131;
+
+    border-radius: 10px;
+}
+
+.mechanic-npc-card h3 {
+
+    margin-bottom: 8px;
+}
+
+.npc-subtitle {
+
+    margin-bottom: 12px;
+
+    color: #d9b56d;
+}

@@ -5,25 +5,28 @@ import MainContainer from "../../components/layout/MainContainer";
 
 import MechanicOverview from "../../components/mechanics/shared/MechanicOverview/MechanicOverview";
 import { expeditionOverview }
-    from "../../data/expedition/expeditionMechanicOverviewData";
+    from "../../data/expedition/expeditionOverviewData";
 
 import MechanicIntroduction from
     "../../components/mechanics/shared/MechanicIntroduction/MechanicIntroduction";
 import { expeditionIntroduction }
-    from "../../data/expedition/expeditionMechanicIntroductionData";
+    from "../../data/expedition/expeditionIntroductionData";
 
 import MechanicLoop from "../../components/mechanics/shared/MechanicLoop/MechanicLoop";
 import { expeditionLoop }
-    from "../../data/expedition/expeditionMechanicLoopData";
+    from "../../data/expedition/expeditionLoopData";
 
 import MechanicCore from "../../components/mechanics/shared/MechanicCore/MechanicCore";
-import { npcs } from "../../data/expedition/expeditionData";
+import { expeditionCore } from "../../data/expedition/expeditionCoreData"
+
+import MechanicNpcs from "../../components/mechanics/shared/MechanicNpcs/MechanicNpcs";
+import { npcs } from "../../data/expedition/expeditionNpcData";
 
 import MechanicBosses from "../../components/mechanics/shared/MechanicBosses/MechanicBosses"
-import { expeditionBosses } from "../../data/expedition/expeditionMechanicBossesData";
+import { expeditionBosses } from "../../data/expedition/expeditionBossesData";
 
 import MechanicAdvanced from "../../components/mechanics/shared/MechanicAdvanced/MechanicAdvanced";
-import { expeditionAdvanced } from "../../data/expedition/expeditionMechanicAdvanced";
+import { expeditionAdvanced } from "../../data/expedition/expeditionAdvanced";
 
 import "../../components/mechanics/shared/MechanicShared.css";
 
@@ -54,9 +57,15 @@ function ExpeditionShared() {
                     steps={expeditionLoop}
                 />
                 <MechanicCore
-                    title="NPCs da Expedition"
-                    items={npcs}
+                    title="Elementos da Expedition"
+                    items={expeditionCore[0].items}
                 />
+
+                <MechanicNpcs
+                    title="NPCs da Expedition"
+                    npcs={npcs}
+                />
+
                 <MechanicBosses
                     title="Chefes da Expedition"
                     bosses={expeditionBosses}
