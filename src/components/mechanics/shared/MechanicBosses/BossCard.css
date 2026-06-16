@@ -49,7 +49,7 @@
 
     background: rgba(255, 255, 255, 0.02);
 
-    border: 1px solid #313131;
+    border: 2px solid #313131;
 
     border-radius: 12px;
 
@@ -82,37 +82,52 @@
 
     align-items: center;
 
-    gap: 12px;
+    gap: 10px;
 
-    padding: 10px;
-
-    border: 1px solid #313131;
+    padding: 8px 10px;
 
     border-radius: 8px;
+
+    position: relative;
+}
+
+.drop-item:hover {
+
+    background: rgba(255,255,255,0.04);
 }
 
 .drop-preview {
 
     display: none;
 
-    border: 2px solid red;
-
     position: absolute;
 
-    top: 0;
+    top: 50%;
 
-    left: 100%;
+    left: 70px;
 
-    margin-left: 12px;
+    transform: translateY(-50%);
 
     z-index: 100;
+
+    padding: 2px;
+
+    background: #111;
+
+    border: 1px solid #313131;
+
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
 }
 
 .drop-preview img {
 
-    max-width: 450px;
+    max-width: 320px;
 
     height: auto;
+
+    border-radius: 8px;
 }
 
 .drop-item:hover .drop-preview {
@@ -152,6 +167,32 @@
     border-radius: 10px;
 }
 
+.boss-info-card li {
+
+    margin-bottom: 10px;
+}
+
+.boss-info-card ul {
+
+    list-style: none;
+
+    margin-top: 12px;
+
+    padding-left: 0;
+}
+
+.arena-item,
+.skill-item {
+
+    padding: 10px 0;
+}
+
+.arena-item h5,
+.skill-item h5 {
+
+    margin-bottom: 6px;
+}
+
 .card-title {
 
     margin-bottom: 16px;
@@ -188,4 +229,39 @@
     margin: 0;
 
     line-height: 1.6;
+}
+
+.skill-item {
+
+    margin-bottom: 20px;
+}
+
+.skill-item:last-child {
+
+    margin-bottom: 0;
+}
+
+.skill-item h5 {
+
+    margin: 0 0 8px 0;
+}
+
+.skill-item p {
+
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+.boss-grid {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+    padding: 0 16px 16px;
 }
