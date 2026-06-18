@@ -40,12 +40,23 @@ function ExpeditionShared() {
 
             <MainContainer>
 
-                <Link
-                    className="back-button"
-                    to="/mechanics"
-                >
-                    Voltar para Mecânicas
-                </Link>
+                <div className="navigation-links">
+
+                    <Link
+                        className="back-button"
+                        to="/"
+                    >
+                        Home
+                    </Link>
+
+                    <Link
+                        className="back-button"
+                        to="/mechanics"
+                    >
+                        Mecânicas
+                    </Link>
+
+                </div>
 
                 <MechanicOverview
                     data={expeditionOverview}
