@@ -9,20 +9,25 @@
 
 .mechanic-card {
 
-    background: rgba(20, 20, 20, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.02);
+
+    border: 1px solid #313131;
+
+    border-radius: 12px;
+
     overflow: hidden;
+
     text-decoration: none;
+
     transition: 0.2s ease;
-    backdrop-filter: blur(6px);
+
     max-width: 350px;
 }
 
 .mechanic-card:hover {
 
     transform: translateY(-4px);
-    border-color: rgba(77, 166, 255, 0.35);
+    border-color: #d9b56d;
 }
 
 .mechanic-image {
@@ -32,8 +37,40 @@
     object-fit: cover;
 }
 
+.mechanic-info {
+
+    padding: 18px;
+}
+
+.mechanic-info h2 {
+
+    margin: 0 0 12px 0;
+
+    color: #d9b56d;
+
+    font-size: 1.3rem;
+}
+
+.mechanic-info h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 105px;
+
+    height: 2px;
+
+    margin-top: 8px;
+
+    background: #d9b56d;
+}
+
 .mechanic-info p {
 
+    margin: 0;
+
     color: rgba(245, 245, 245, 0.75);
+
     line-height: 1.5;
 }

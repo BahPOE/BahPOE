@@ -24,9 +24,19 @@
     color: #4da6ff;
     text-decoration: none;
     transition: color 0.2s ease;
+    
 }
 
 .back-button:hover {
     
     color: #80c1ff;
+}
+
+.navigation-links {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
 }

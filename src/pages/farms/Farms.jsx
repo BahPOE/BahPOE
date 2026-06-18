@@ -58,9 +58,22 @@ function Farms() {
 
                 <MainContainer>
 
-                    <Link className="back-button" to="/">
-                        Voltar para Home
-                    </Link>
+                    <div className="navigation-links">
+
+                        <Link
+                            className="back-button"
+                            to="/">
+                            Home
+                        </Link>
+
+                        <Link
+                            className="back-button"
+                            to="/mechanics"
+                        >
+                            Mecânicas
+                        </Link>
+
+                    </div>
 
                     <div className="farms-header">
 
