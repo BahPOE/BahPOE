@@ -1,0 +1,174 @@
+.build-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border: 1px solid #313131;
+
+    border-radius: 12px;
+
+    transition: 0.2s ease;
+}
+
+.build-card:hover {
+
+    border-color: #d9b56d;
+}
+
+.build-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #1c1c1c;
+
+    background-repeat: no-repeat;
+
+    background-position-x: 170%;
+
+    background-position-y: 20%;
+
+    background-size: 800px;
+}
+
+.build-card-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.build-card-content h3 {
+
+    margin: 0 0 6px 0;
+}
+
+.build-ascendancy {
+
+    color: #d9b56d;
+
+    margin-bottom: 18px;
+}
+
+.build-ratings {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.build-ratings p {
+
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.build-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.build-tags span {
+
+    padding: 4px 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid #313131;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+}
+
+.build-stars {
+
+    color: #d9b56d;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.rating-label {
+
+    width: 70px;
+
+    font-weight: 500;
+}
+
+.build-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(28, 28, 28, 1) 0%,
+            rgba(28, 28, 28, 1) 45%,
+            rgba(28, 28, 28, 0.85) 60%,
+            rgba(28, 28, 28, 0.35) 80%,
+            rgba(28, 28, 28, 0) 100%);
+
+    pointer-events: none;
+}
+
+.build-tag-endgame {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.build-tag-midgame {
+    border-color: #d9b56d;
+    color: #d9b56d;
+}
+
+.build-tag-starter {
+    border-color: #5cb85c;
+    color: #5cb85c;
+}
+
+.build-tag-low {
+    border-color: #5cb85c;
+    color: #5cb85c;
+}
+
+.build-tag-medium {
+    border-color: #d9b56d;
+    color: #d9b56d;
+}
+
+.build-tag-high {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.build-tag-patch {
+
+    border-color: #6f6756;
+
+    color: #b9ae8d;
+
+}

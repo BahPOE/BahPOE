@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    /* Tauma: mudado para min-height */
     position: relative;
 }
 
