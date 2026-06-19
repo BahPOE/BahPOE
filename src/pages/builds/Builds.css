@@ -1,50 +1,79 @@
+.build-card-image {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 140px;
+
+    opacity: 0.08;
+
+    pointer-events: none;
+}
+
+.build-card h3 {
+
+    margin: 0;
+
+    color: #f0f0f0;
+
+    font-size: 1.2rem;
+}
+
+.build-ascendancy {
+
+    color: #d9b56d;
+
+    margin-top: 4px;
+}
+
+.build-header {
+
+    margin-bottom: 16px;
+}
+
+.build-header::after {
+
+    content: "";
+
+    display: block;
+
+    width: 120px;
+
+    height: 2px;
+
+    margin-top: 8px;
+
+    background: #d9b56d;
+}
+
+.build-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: #4a4a4a;
+}
+
 .builds-page {
-  
-  background-image: url("/background/bgbuilds.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh; /* Tauma: mudado de height para min-height para permitir scroll */
-  position: relative;
+
+    background-image: url("/background/bgbuilds.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
 }
 
 .builds-content {
 
-  position: relative;
-  width: 100%;
-  min-height: 100vh; /* Tauma: garante que o fundo cubra tudo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px; /* Tauma: adicionado espaço no topo e fundo */
-}
-
-.builds-title {
-
-  color: #4da6ff;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.back-button {
-
-  color: #4da6ff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.back-button:hover {
-
-  color: #80c1ff;
-}
-
-@media (max-width: 768px) {
-
-  .builds-title {
-
-    font-size: 32px;
-  }
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 
 }

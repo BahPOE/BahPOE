@@ -1,0 +1,123 @@
+.build-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border: 1px solid #313131;
+
+    border-radius: 12px;
+
+    transition: 0.2s ease;
+}
+
+.build-card:hover {
+
+    border-color: #d9b56d;
+}
+
+.build-card-image {
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 140px;
+    height: 140px;
+
+    opacity: 0.12;
+
+    pointer-events: none;
+}
+
+.build-card-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.build-card-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.build-card-content h3 {
+
+    margin: 0 0 6px 0;
+}
+
+.build-ascendancy {
+
+    color: #d9b56d;
+
+    margin-bottom: 18px;
+}
+
+.build-ratings {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.build-ratings p {
+
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.build-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.build-tags span {
+
+    padding: 4px 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid #313131;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+}
+
+.build-stars {
+
+    color: #d9b56d;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.rating-label {
+
+    width: 70px;
+
+    font-weight: 500;
+}
