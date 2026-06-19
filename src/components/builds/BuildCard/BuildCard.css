@@ -20,27 +20,21 @@
     border-color: #d9b56d;
 }
 
-.build-card-image {
+.build-card {
 
-    position: absolute;
+    position: relative;
 
-    top: 0;
-    right: 0;
+    overflow: hidden;
 
-    width: 140px;
-    height: 140px;
+    background-color: #1c1c1c;
 
-    opacity: 0.12;
+    background-repeat: no-repeat;
 
-    pointer-events: none;
-}
+    background-position-x: 170%;
 
-.build-card-image img {
+    background-position-y: 20%;
 
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
+    background-size: 800px;
 }
 
 .build-card-content {
@@ -48,6 +42,7 @@
     position: relative;
 
     z-index: 2;
+
 }
 
 .build-card-content h3 {
@@ -120,4 +115,60 @@
     width: 70px;
 
     font-weight: 500;
+}
+
+.build-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(28, 28, 28, 1) 0%,
+            rgba(28, 28, 28, 1) 45%,
+            rgba(28, 28, 28, 0.85) 60%,
+            rgba(28, 28, 28, 0.35) 80%,
+            rgba(28, 28, 28, 0) 100%);
+
+    pointer-events: none;
+}
+
+.build-tag-endgame {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.build-tag-midgame {
+    border-color: #d9b56d;
+    color: #d9b56d;
+}
+
+.build-tag-starter {
+    border-color: #5cb85c;
+    color: #5cb85c;
+}
+
+.build-tag-low {
+    border-color: #5cb85c;
+    color: #5cb85c;
+}
+
+.build-tag-medium {
+    border-color: #d9b56d;
+    color: #d9b56d;
+}
+
+.build-tag-high {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.build-tag-patch {
+
+    border-color: #6f6756;
+
+    color: #b9ae8d;
+
 }

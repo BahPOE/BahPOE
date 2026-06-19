@@ -7,7 +7,7 @@ export const buildsData = [
 
         patch: "3.28",
 
-        buildName: "Heavy Strike Berserker",
+        buildName: "Heavy Strike",
 
         ascendancy: "Berserker",
 

@@ -4,16 +4,12 @@ function BuildCard({ build }) {
 
     return (
 
-        <div className="build-card">
-
-            <div className="build-card-image">
-
-                <img
-                    src={build.image}
-                    alt={build.ascendancy}
-                />
-
-            </div>
+        <div
+            className="build-card"
+            style={{
+                backgroundImage: `url(${build.image})`
+            }}
+        >
 
             <div className="build-card-content">
 
@@ -67,11 +63,21 @@ function BuildCard({ build }) {
 
                 <div className="build-tags">
 
-                    <span>{build.stage}</span>
+                    <span
+                        className={`build-tag build-tag-${build.stage.toLowerCase()}`}
+                    >
+                        {build.stage}
+                    </span>
 
-                    <span>{build.budget} Budget</span>
+                    <span
+                        className={`build-tag build-tag-${build.budget.toLowerCase()}`}
+                    >
+                        {build.budget} Budget
+                    </span>
 
-                    <span>Patch {build.patch}</span>
+                    <span className="build-tag build-tag-patch">
+                        Patch {build.patch}
+                    </span>
 
                 </div>
 
