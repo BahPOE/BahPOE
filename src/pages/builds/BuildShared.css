@@ -1,0 +1,44 @@
+.build-header {
+
+    margin-top: 32px;
+}
+
+.build-header h1 {
+
+    margin-bottom: 8px;
+}
+
+.build-header p {
+
+    color: #d9b56d;
+}
+
+.build-overview-wrapper {
+    max-width: 100%;
+}
+
+.build-stage-selector-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.build-content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.build-stage-selector {
+    justify-content: center;
+}
+
+.builds-layout {
+
+    background-image: url("/background/bgbuilds.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+}

@@ -32,6 +32,13 @@ function Mechanics() {
 
                         <Link
                             className="back-button"
+                            to="/builds"
+                        >
+                            Builds
+                        </Link>
+
+                        <Link
+                            className="back-button"
                             to="/farms"
                         >
                             Farms

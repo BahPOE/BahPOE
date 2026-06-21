@@ -1,26 +1,18 @@
 .build-card {
 
-    position: relative;
-
-    overflow: hidden;
+    display: block;
 
     padding: 20px;
-
-    background: rgba(255, 255, 255, 0.02);
 
     border: 1px solid #313131;
 
     border-radius: 12px;
 
     transition: 0.2s ease;
-}
 
-.build-card:hover {
+    text-decoration: none;
 
-    border-color: #d9b56d;
-}
-
-.build-card {
+    color: inherit;
 
     position: relative;
 
@@ -35,6 +27,11 @@
     background-position-y: 20%;
 
     background-size: 800px;
+}
+
+.build-card:hover {
+
+    border-color: #d9b56d;
 }
 
 .build-card-content {

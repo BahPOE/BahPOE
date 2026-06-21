@@ -1,0 +1,118 @@
+.build-overview {
+    position: relative;
+
+    padding: 24px;
+
+    background-size: auto 140%;
+    background-position: 195% center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #313131;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.build-overview::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9) 35%,
+        rgba(0, 0, 0, 0.4) 70%,
+        rgba(0, 0, 0, 0.2) 100%
+    );
+
+    z-index: 0;
+}
+
+.build-overview > * {
+    position: relative;
+    z-index: 1;
+}
+
+.build-overview-header {
+
+    margin-bottom: 20px;
+}
+
+.build-overview-header h1 {
+
+    margin: 0;
+}
+
+.build-overview-ascendancy {
+
+    margin-top: 6px;
+
+    color: #d9b56d;
+}
+
+.build-overview-ratings {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.build-overview-ratings p {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0;
+}
+
+.build-stars {
+
+    color: #d9b56d;
+
+    letter-spacing: 2px;
+}
+
+.build-overview-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.build-pob-button {
+
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border: 1px solid #d9b56d;
+
+    border-radius: 8px;
+
+    color: #d9b56d;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.build-pob-button:hover {
+
+    background: rgba(217, 181, 109, 0.1);
+}
+
+.build-ascendancy-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
