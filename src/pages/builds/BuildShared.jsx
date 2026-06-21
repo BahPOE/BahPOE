@@ -7,11 +7,39 @@ import { useParams } from "react-router-dom"
 
 import { buildsData } from "../../data/builds/buildsData";
 
-import BuildOverview from "../../components/builds/shared/BuildOverview";
+import BuildOverview from "../../components/builds/BuildOverview/BuildOverview";
 
 import BuildStageSelector from "../../components/builds/BuildStageSelector/BuildStageSelector";
 
+import { useState } from "react";
+
+import { BUILD_STAGES } from "../../data/builds/stages";
+
+import BuildStageContent from "../../components/builds/BuildStageContent/BuildStageContent";
+
+import "./BuildShared.css"
+
+import {
+    heavyStrikeCampaignData,
+    heavyStrikeEarlyMapsData,
+    heavyStrikeMidgameData,
+    heavyStrikeEndgameData
+} from "../../data/builds/heavyStrike";
+
 function BuildShared() {
+
+    const stageContentMap = {
+        Campaign: heavyStrikeCampaignData,
+        "Early Maps": heavyStrikeEarlyMapsData,
+        Midgame: heavyStrikeMidgameData,
+        Endgame: heavyStrikeEndgameData,
+    };
+
+    const [activeStage, setActiveStage] = useState(
+        BUILD_STAGES.campaign
+    );
+
+    const activeContent = stageContentMap[activeStage];
 
     const { slug } = useParams();
 
@@ -39,7 +67,7 @@ function BuildShared() {
 
     return (
 
-        <div className="mechanic-page">
+        <div className="builds-layout">
 
             <Overlay theme="infernal" />
 
@@ -77,13 +105,32 @@ function BuildShared() {
 
                 </div>
 
-                <BuildOverview
-                    build={build}
-                />
+                <div className="build-overview-wrapper">
 
-                <BuildStageSelector />
+                    <BuildOverview
+                        build={build}
+                    />
 
-            </MainContainer>
+                </div>
+
+                <div className="build-stage-selector-wrapper">
+
+                    <BuildStageSelector
+                        activeStage={activeStage}
+                        setActiveStage={setActiveStage}
+                    />
+
+                </div>
+
+                <div className="build-content-wrapper">
+
+                    <BuildStageContent
+                        content={activeContent}
+                    />
+
+                </div>
+
+            </MainContainer >
 
         </div>
 

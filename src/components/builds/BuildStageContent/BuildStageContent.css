@@ -1,0 +1,40 @@
+.build-stage-content {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #313131;
+    border-radius: 12px;
+}
+
+.stage-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.stage-objective {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.stage-sections {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stage-section {
+    padding: 12px;
+    border-left: 2px solid #d9b56d;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 16px;
+    color: #d9b56d;
+}
+
+.section-content {
+    margin-top: 6px;
+    color: #ccc;
+}
