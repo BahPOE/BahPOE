@@ -5,6 +5,8 @@ export const buildsData = [
     {
         id: 1,
 
+        slug: "heavy-strike",
+
         patch: "3.28",
 
         buildName: "Heavy Strike",
@@ -27,6 +29,18 @@ export const buildsData = [
         description:
             "Build focada em stunar bosses com facilidade.",
 
-    },
+        stages: {
+
+            campaign: {},
+
+            earlymaps: {},
+
+            midgame: {},
+
+            endgame: {},
+
+        },
+
+    }
 
 ];

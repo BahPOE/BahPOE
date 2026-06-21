@@ -1,0 +1,43 @@
+.build-stage-selector {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.stage-button {
+
+    padding: 10px 18px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid #313131;
+
+    border-radius: 999px;
+
+    color: #cfcfcf;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.stage-button:hover {
+
+    border-color: #d9b56d;
+
+    color: #ffffff;
+}
+
+.stage-button.active {
+
+    background: rgba(217, 181, 109, 0.15);
+
+    border-color: #d9b56d;
+
+    color: #d9b56d;
+}

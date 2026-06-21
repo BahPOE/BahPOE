@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
+
 import "./BuildCard.css"
 
 function BuildCard({ build }) {
 
     return (
 
-        <div
+        <Link
+            to={`/builds/${build.slug}`}
             className="build-card"
             style={{
                 backgroundImage: `url(${build.image})`
@@ -83,7 +86,7 @@ function BuildCard({ build }) {
 
             </div>
 
-        </div>
+        </Link>
 
     );
 }

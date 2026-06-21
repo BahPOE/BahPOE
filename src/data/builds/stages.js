@@ -1,6 +1,8 @@
 export const BUILD_STAGES = {
-    CAMPAIGN: "Campaign",
-    EARLY_MAPS: "Early Maps",
-    MIDGAME: "Midgame",
-    ENDGAME: "Endgame",
+
+    campaign: "Campaign",
+    earlyMaps: "Early Maps",
+    midgame: "Midgame",
+    endgame: "Endgame",
+    
 };
