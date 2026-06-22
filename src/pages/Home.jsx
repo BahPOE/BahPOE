@@ -37,7 +37,7 @@ function Home() {
     return (
         <div
             style={{
-                backgroundImage: "url('/background/bghome.png')",
+                backgroundImage: "url('/BahPOE/background/bghome.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
