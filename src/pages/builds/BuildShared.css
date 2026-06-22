@@ -24,7 +24,8 @@
 
 .build-content-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .build-stage-selector {
@@ -41,4 +42,62 @@
     min-height: 100vh;
     position: relative;
 
+}
+
+.recipes-wrapper {
+
+    margin-top: 48px;
+
+    padding-top: 32px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.section-recipe {
+    padding: 16px 18px;
+    margin-bottom: 16px;
+
+    border: 1px solid rgba(217, 181, 109, 0.18);
+    border-left: 4px solid #d9b56d;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.section-recipe h3 {
+    margin: 0 0 6px 0;
+    color: #d9b56d;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.section-recipe p:first-of-type {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+    opacity: 0.9;
+}
+
+.section-recipe ul {
+    margin: 8px 0 10px 0;
+    padding-left: 18px;
+}
+
+.section-recipe li {
+    margin-bottom: 4px;
+    color: #d0d0d0;
+}
+
+.section-recipe strong {
+    color: #d9b56d;
+}
+
+.recipes-subtitle {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 4px;
+    margin-bottom: 16px;
 }

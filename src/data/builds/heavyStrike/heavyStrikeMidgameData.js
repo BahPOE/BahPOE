@@ -1,28 +1,34 @@
 export const heavyStrikeMidgameData = {
 
-  title: "Midgame",
+    title: "Midgame",
 
-  objective:
-    "Escalar dano e defesa para finalizar mapas vermelhos sem morrer muito e preparar o personagem para entrar no endgame",
+    objective: "Consolidar a build e iniciar scaling consistente de dano.",
 
-  sections: [
-    {
-      type: "text",
-      title: "Scaling Damage",
-      content:
-        "Aqui você começa a otimizar sua skill principal com supports melhores e itens para ter mais consistência de dano."
-    },
-    {
-      type: "text",
-      title: "Defensive Layers",
-      content:
-        "Como Berserker a principal fonte de defesa que teremos será Armadura ( Armour )"
-    },
-    {
-      type: "text",
-      title: "Gear Progression",
-      content:
-        "Nessa etapa já é esperado que quase todos os itens tenham vida e resistência, é obrigatorio ter 75% em todas as Elementais e pelo menos 0% na de Chaos, além disso a sua Luva deve focar na parte ofensiva, então linhas que aumentem o seu dano são extremamente importantes."
-    }
-  ]
+    sections: [
+
+        {
+            type: "text",
+            title: "Visão Geral",
+            content:
+                "Aqui sua build ja deve ter uma identidade sólida e ser consistente em mapas amarelos."
+        },
+
+        {
+            type: "list",
+            title: "Objetivos",
+            items: [
+                "Rodar mapas T6~T10 com consistência",
+                "Melhorar links (5L/6L se possível)",
+                "Começar upgrades de armas principais",
+                "Ajustar tree para scaling final"
+            ]
+        },
+
+        {
+            type: "note",
+            title: "Importante",
+            content:
+                "Midgame é onde pequenas melhorias de gear fazem grande diferença no DPS."
+        }
+    ]
 };

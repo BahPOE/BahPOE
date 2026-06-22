@@ -58,7 +58,28 @@ function BuildSectionRenderer({ section }) {
 
     }
 
+    if (section.type === "recipe") {
+        return (
+            <div className="section-recipe">
+                <h3>{section.title}</h3>
+
+                <p>{section.problem}</p>
+
+                <ul>
+                    {section.inputs?.map((item, i) => (
+                        <li key={i}>{item}</li>
+                    ))}
+                </ul>
+
+                <p>
+                    <strong>Resultado:</strong> {section.output}
+                </p>
+            </div>
+        );
+    }
+
     return null;
+
 }
 
 export default BuildSectionRenderer;

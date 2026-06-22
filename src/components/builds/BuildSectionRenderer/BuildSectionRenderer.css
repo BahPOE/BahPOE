@@ -10,6 +10,7 @@
 .build-section h3 {
     margin-bottom: 8px;
     color: #d9b56d;
+    line-height: 1;
 }
 
 .build-note {
@@ -26,19 +27,27 @@
 .build-note-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    margin-bottom: 8px;
+    gap: 8px;
 }
 
 .build-note-icon {
+
     color: #d9b56d;
     font-size: 16px;
+    opacity: 0.9;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+
 }
 
 .build-note-header h3 {
     margin: 0;
     font-size: 14px;
+    line-height: 1;
     color: #d9b56d;
     letter-spacing: 0.3px;
 }
@@ -58,6 +67,7 @@
     margin-bottom: 6px;
     font-size: 15px;
     color: #ffffff;
+    line-height: 1;
 }
 
 .section-text p {
@@ -69,15 +79,16 @@
     padding: 12px 14px;
     margin-bottom: 16px;
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .section-list h3 {
     margin-bottom: 8px;
     font-size: 14px;
     color: #ffffff;
+    line-height: 1;
 }
 
 .section-list ul {
@@ -91,7 +102,34 @@
 }
 
 .section-note {
-    margin-bottom: 16px;
+    margin: 28px 0;
+
+    background: rgba(217, 181, 109, 0.04);
+    border-left: 4px solid #d9b56d;
+    border-top: 1px solid rgba(217, 181, 109, 0.15);
+    border-bottom: 1px solid rgba(217, 181, 109, 0.15);
+
+    border-right: 1px solid rgba(217, 181, 109, 0.15);
+
+    border-radius: 10px;
+
+    padding: 16px 18px;
+}
+
+.section-note h3 {
+    margin: 0 0 8px 0;
+
+    color: #d9b56d;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+}
+
+.section-note p {
+    margin: 0;
+
+    color: #d0d0d0;
+    line-height: 1.5;
 }
 
 .section-group {
