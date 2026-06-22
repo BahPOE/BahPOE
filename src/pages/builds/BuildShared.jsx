@@ -1,72 +1,47 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
 
 import Overlay from "../../components/layout/Overlay";
 import MainContainer from "../../components/layout/MainContainer";
-
-import { useParams } from "react-router-dom"
-
-import { buildsData } from "../../data/builds/buildsData";
-
 import BuildOverview from "../../components/builds/BuildOverview/BuildOverview";
-
 import BuildStageSelector from "../../components/builds/BuildStageSelector/BuildStageSelector";
-
-import { useState } from "react";
-
-import { BUILD_STAGES } from "../../data/builds/stages";
-
 import BuildStageContent from "../../components/builds/BuildStageContent/BuildStageContent";
 
-import "./BuildShared.css"
+import "./BuildShared.css";
 
-import {
-    heavyStrikeCampaignData,
-    heavyStrikeEarlyMapsData,
-    heavyStrikeMidgameData,
-    heavyStrikeEndgameData
-} from "../../data/builds/heavyStrike";
+import { buildRegistry } from "../../data/builds/buildRegistry";
+import { buildsData } from "../../data/builds/buildsData";
+import { BUILD_STAGES } from "../../data/builds/stages";
+import { campaignRecipePack } from "../../data/builds/campaignRecipePack";
 
 function BuildShared() {
 
-    const stageContentMap = {
-        Campaign: heavyStrikeCampaignData,
-        "Early Maps": heavyStrikeEarlyMapsData,
-        Midgame: heavyStrikeMidgameData,
-        Endgame: heavyStrikeEndgameData,
-    };
+    const { slug } = useParams();
+
+    const build = buildsData.find(
+        (build) => build.slug === slug
+    );
+
+    const buildSystem = buildRegistry[slug];
+    const contentMap = buildSystem?.content;
 
     const [activeStage, setActiveStage] = useState(
         BUILD_STAGES.campaign
     );
 
-    const activeContent = stageContentMap[activeStage];
+    const activeContent = contentMap?.[activeStage];
 
-    const { slug } = useParams();
+    const isCampaign = activeStage === BUILD_STAGES.campaign;
 
-    console.log(slug);
-
-    const build = buildsData.find(
-
-        (build) => build.slug === slug
-
-    );
-
-    if (!build) {
-
+    if (!build || !contentMap) {
         return (
-
             <MainContainer>
-
                 <h1>Build não encontrada</h1>
-
             </MainContainer>
-
         );
-
     }
 
     return (
-
         <div className="builds-layout">
 
             <Overlay theme="infernal" />
@@ -75,67 +50,57 @@ function BuildShared() {
 
                 <div className="navigation-links">
 
-                    <Link
-                        className="back-button"
-                        to="/"
-                    >
+                    <Link className="back-button" to="/">
                         Home
                     </Link>
 
-                    <Link
-                        className="back-button"
-                        to="/builds"
-                    >
+                    <Link className="back-button" to="/builds">
                         Builds
                     </Link>
 
-                    <Link
-                        className="back-button"
-                        to="/farms"
-                    >
+                    <Link className="back-button" to="/farms">
                         Farms
                     </Link>
 
-                    <Link
-                        className="back-button"
-                        to="/mechanics"
-                    >
+                    <Link className="back-button" to="/mechanics">
                         Mecânicas
                     </Link>
 
                 </div>
 
                 <div className="build-overview-wrapper">
-
-                    <BuildOverview
-                        build={build}
-                    />
-
+                    <BuildOverview build={build} />
                 </div>
 
                 <div className="build-stage-selector-wrapper">
-
                     <BuildStageSelector
                         activeStage={activeStage}
                         setActiveStage={setActiveStage}
                     />
-
                 </div>
 
                 <div className="build-content-wrapper">
-
-                    <BuildStageContent
-                        content={activeContent}
-                    />
-
+                    <BuildStageContent content={activeContent} />
                 </div>
 
-            </MainContainer >
+                {isCampaign && (
+                    <div className="recipes-wrapper">
+
+                        <h2>Receitas Úteis da Campanha</h2>
+
+                        <p className="recipes-subtitle">
+                            Use apenas se não encontrar alternativas no loot ou na loja.
+                        </p>
+
+                        <BuildStageContent content={campaignRecipePack} />
+
+                    </div>
+                )}
+
+            </MainContainer>
 
         </div>
-
-    )
-
-};
+    );
+}
 
 export default BuildShared;
