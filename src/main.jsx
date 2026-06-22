@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 import './index.css'
 import App from './App.jsx'
@@ -8,7 +8,7 @@ import App from './App.jsx'
 // render como o proprio nome diz, renderiza o que tem dentro do createRoot, ou seja, o App.jsx
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 )
