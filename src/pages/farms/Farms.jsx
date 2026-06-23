@@ -68,6 +68,13 @@ function Farms() {
 
                         <Link
                             className="back-button"
+                            to="/builds"
+                        >
+                            Builds
+                        </Link>
+
+                        <Link
+                            className="back-button"
                             to="/mechanics"
                         >
                             Mecânicas
