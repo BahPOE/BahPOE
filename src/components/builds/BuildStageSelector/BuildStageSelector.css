@@ -1,6 +1,7 @@
 .stage-selector {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin: 32px 0 28px;

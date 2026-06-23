@@ -1,16 +1,41 @@
 .build-overview {
-    position: relative;
+    display: block;
 
-    padding: 24px;
-
-    background-size: auto 140%;
-    background-position: 195% center;
-    background-repeat: no-repeat;
+    padding: 20px;
 
     border: 1px solid #313131;
+
     border-radius: 12px;
 
+    transition: 0.2s ease;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    position: relative;
+
     overflow: hidden;
+
+    background-color: #1c1c1c;
+
+    background-repeat: no-repeat;
+
+    background-position: 114% center;
+
+    background-size: auto 135%;
+}
+
+@media (max-width: 1600px) {
+    .build-overview {
+        background-position: 155% center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .build-overview {
+        background-position: 155% center;
+    }
 }
 
 .build-overview::before {
